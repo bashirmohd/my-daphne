@@ -1,0 +1,8 @@
+2020-08-18 16:39:31,736 - model.dcrnn_supervisor - INFO - Log directory: data/model/dcrnn_R_2_h_24_16-16_lr_0.01_bs_64_0818163931/
+2020-08-18 16:39:31,737 - model.dcrnn_supervisor - INFO - {'base_dir': 'data/model', 'log_level': 'INFO', 'data': {'batch_size': 64, 'dataset_dir': 'data/', 'val_batch_size': 1, 'test_batch_size': 1, 'validation_ratio': 0.1, 'test_ratio': 0.2, 'graph_pkl_filename': 'data/adj_mat.pkl'}, 'model': {'cl_decay_steps': 2000, 'filter_type': 'random_walk', 'horizon': 24, 'input_dim': 7, 'l1_decay': 0, 'max_diffusion_step': 2, 'num_nodes': 37, 'num_rnn_layers': 2, 'output_dim': 7, 'rnn_units': 16, 'seq_len': 30, 'use_curriculum_learning': True}, 'train': {'base_lr': 0.01, 'dropout': 0, 'epoch': 0, 'epochs': 30, 'epsilon': 0.001, 'global_step': 0, 'lr_decay_ratio': 0.1, 'max_grad_norm': 5, 'max_to_keep': 100, 'min_learning_rate': 2e-06, 'optimizer': 'adam', 'patience': 50, 'steps': [20, 30, 40, 50], 'test_every_n_epochs': 10}}
+2020-08-18 16:39:31,737 - model.dcrnn_supervisor - INFO - ('x_train', (2688, 30, 37, 7))
+2020-08-18 16:39:31,737 - model.dcrnn_supervisor - INFO - ('y_train', (2688, 24, 37, 7))
+2020-08-18 16:39:31,737 - model.dcrnn_supervisor - INFO - ('x_val', (823, 30, 37, 7))
+2020-08-18 16:39:31,737 - model.dcrnn_supervisor - INFO - ('y_val', (823, 24, 37, 7))
+2020-08-18 16:39:49,591 - model.dcrnn_supervisor - INFO - Total number of trainable parameters: 16144
+2020-08-18 16:39:50,699 - model.dcrnn_supervisor - INFO - Start training ...

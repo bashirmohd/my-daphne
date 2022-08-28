@@ -1,0 +1,6 @@
+miditime==1.1.3
+mido==1.2.9
+pygame==1.9.6
+matplotlib==2.2.5
+python-midi==0.2.4
+Datetime==4.3

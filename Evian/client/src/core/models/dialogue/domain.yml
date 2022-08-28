@@ -1,0 +1,105 @@
+action_factory: null
+action_names:
+- utter_greet
+- utter_goodbye
+- utter_default
+- utter_help
+- action_transfer
+- action_show
+actions:
+- utter_greet
+- utter_goodbye
+- utter_default
+- utter_help
+- actions.ActionTransfer
+- actions.ActionShow
+config:
+  store_entities_as_slots: true
+entities:
+- intent
+- type_file
+- endpoint_input
+- endpoint_output
+- path_output
+- path_input
+- size_file
+- unit_size_file
+- exact_time
+- begin_time
+intents:
+- greet
+- goodbye
+- inform
+- intent_transfer
+- intent_connection
+- intent_show
+slots:
+  begin_time:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  endpoint_input:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  endpoint_output:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  exact_time:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  intent:
+    initial_value: null
+    type: rasa_core.slots.CategoricalSlot
+    values:
+    - transfer
+    - connection
+    - show
+  path_input:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  path_output:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  requested_slot:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  size_file:
+    initial_value: null
+    max_value: 1.0
+    min_value: 0.0
+    type: rasa_core.slots.FloatSlot
+  type_file:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  unit_size_file:
+    initial_value: null
+    type: rasa_core.slots.CategoricalSlot
+    values:
+    - kb
+    - mb
+    - tb
+    - pb
+templates:
+  utter_ask_begin_time:
+  - text: When do you want to start your transfer ?
+  utter_ask_endpoint_input:
+  - text: From where ?
+  utter_ask_endpoint_output:
+  - text: To where ?
+  utter_ask_intent:
+  - text: What is your intent ?
+  utter_ask_path_input:
+  - text: What is the path in the input endpoint ?
+  utter_ask_path_output:
+  - text: What is the path in the output endpoint ?
+  utter_ask_size_file:
+  - text: What is the size of file ?
+  utter_ask_type_file:
+  - text: Which scientific field your file is related to ?
+  utter_default:
+  - text: Sorry, i did not understand :(
+  utter_goodbye:
+  - text: Good bye !
+  utter_greet:
+  - text: Hi there !
+  utter_help:
+  - text: How can i help you ?

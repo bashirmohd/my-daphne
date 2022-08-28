@@ -1,0 +1,384 @@
+﻿{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "I want to transfer a file to lbl",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 29,
+            "end": 32,
+            "value": "lbl",
+            "entity": "endpoint_output"
+          },
+          {
+            "start": 10,
+            "end": 18,
+            "value": "transfer",
+            "entity": "intent"
+          }
+        ]
+      },
+      {
+        "text": "i want to transfer a file to Lawrence Berkeley National Lab",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 10,
+            "end": 18,
+            "value": "transfer",
+            "entity": "intent"
+          },
+          {
+            "start": 29,
+            "end": 59,
+            "value": "lbl",
+            "entity": "endpoint_output"
+          }
+        ]
+      },
+      {
+        "text": "i want to transfer a file from anl to lbl",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 10,
+            "end": 18,
+            "value": "transfer",
+            "entity": "intent"
+          },
+          {
+            "start": 31,
+            "end": 34,
+            "value": "anl",
+            "entity": "endpoint_input"
+          },
+          {
+            "start": 38,
+            "end": 41,
+            "value": "lbl",
+            "entity": "endpoint_output"
+          }
+        ]
+      },
+      {
+        "text": "i would like to transfer a file to anl",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 35,
+            "end": 38,
+            "value": "anl",
+            "entity": "endpoint_output"
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "value": "transfer",
+            "entity": "intent"
+          }
+        ]
+      },
+      {
+        "text": "i would like to transfer a 13.3 TB file to lbl",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 27,
+            "end": 31,
+            "value": "13.3",
+            "entity": "size_file"
+          },
+          {
+            "start": 32,
+            "end": 34,
+            "value": "TB",
+            "entity": "unit_size_file"
+          },
+          {
+            "start": 43,
+            "end": 46,
+            "value": "lbl",
+            "entity": "endpoint_output"
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "value": "transfer",
+            "entity": "intent"
+          }
+        ]
+      },
+      {
+        "text": "i want to transfer a file from Ames Laboratory",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 31,
+            "end": 46,
+            "value": "ames",
+            "entity": "endpoint_input"
+          },
+          {
+            "start": 10,
+            "end": 18,
+            "value": "transfer",
+            "entity": "intent"
+          }
+        ]
+      },
+      {
+        "text": "i want to transfer a 22.1 PB to ames",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 32,
+            "end": 36,
+            "value": "ames",
+            "entity": "endpoint_output"
+          },
+          {
+            "start": 21,
+            "end": 25,
+            "value": "22.1",
+            "entity": "size_file"
+          },
+          {
+            "start": 26,
+            "end": 28,
+            "value": "PB",
+            "entity": "unit_size_file"
+          },
+          {
+            "start": 10,
+            "end": 18,
+            "value": "transfer",
+            "entity": "intent"
+          }
+        ]
+      },
+      {
+        "text": "i want to transfer a 13.2 TB file to Ames Laboratory",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 37,
+            "end": 52,
+            "value": "Ames Laboratory",
+            "entity": "endpoint_output"
+          },
+          {
+            "start": 21,
+            "end": 25,
+            "value": "13.2",
+            "entity": "size_file"
+          },
+          {
+            "start": 26,
+            "end": 28,
+            "value": "TB",
+            "entity": "unit_size_file"
+          },
+          {
+            "start": 10,
+            "end": 18,
+            "value": "transfer",
+            "entity": "intent"
+          }
+        ]
+      },
+      {
+        "text": "i would like to transfer a 0.2 TB file from Argonne National Laboratory",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 44,
+            "end": 71,
+            "value": "anl",
+            "entity": "endpoint_output"
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "value": "transfer",
+            "entity": "intent"
+          },
+          {
+            "start": 27,
+            "end": 30,
+            "value": "0.2",
+            "entity": "size_file"
+          },
+          {
+            "start": 31,
+            "end": 33,
+            "value": "TB",
+            "entity": "unit_size_file"
+          }
+        ]
+      },
+      {
+        "text": "i would like to transfer a 230 KB file at 3:10pm",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 42,
+            "end": 48,
+            "value": "3:10pm",
+            "entity": "exact_time"
+          },
+          {
+            "start": 27,
+            "end": 30,
+            "value": "230",
+            "entity": "unit_size_file"
+          },
+          {
+            "start": 31,
+            "end": 33,
+            "value": "KB",
+            "entity": "unit_size_file"
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "value": "transfer",
+            "entity": "intent"
+          }
+        ]
+      },
+      {
+        "text": "i want to transfer a file at 1am from ames to lbl",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 29,
+            "end": 32,
+            "value": "1am",
+            "entity": "exact_time"
+          },
+          {
+            "start": 38,
+            "end": 42,
+            "value": "ames",
+            "entity": "endpoint_input"
+          },
+          {
+            "start": 46,
+            "end": 49,
+            "value": "lbl",
+            "entity": "endpoint_output"
+          },
+          {
+            "start": 10,
+            "end": 18,
+            "value": "transfer",
+            "entity": "intent"
+          }
+        ]
+      },
+      {
+        "text": "i would like to transfer a 2.1 TB file from anl to lbl at 2pm",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 27,
+            "end": 30,
+            "value": "2.1",
+            "entity": "size_file"
+          },
+          {
+            "start": 31,
+            "end": 33,
+            "value": "TB",
+            "entity": "unit_size_file"
+          },
+          {
+            "start": 44,
+            "end": 47,
+            "value": "anl",
+            "entity": "endpoint_input"
+          },
+          {
+            "start": 51,
+            "end": 54,
+            "value": "lbl",
+            "entity": "endpoint_output"
+          },
+          {
+            "start": 58,
+            "end": 61,
+            "value": "2pm",
+            "entity": "exact_time"
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "value": "transfer",
+            "entity": "intent"
+          }
+        ]
+      },
+      {
+        "text": "i want to transfer a file at 10:45am to anl",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 29,
+            "end": 36,
+            "value": "10:45am",
+            "entity": "exact_time"
+          },
+          {
+            "start": 40,
+            "end": 43,
+            "value": "anl",
+            "entity": "endpoint_output"
+          },
+          {
+            "start": 10,
+            "end": 18,
+            "value": "transfer",
+            "entity": "intent"
+          }
+        ]
+      },
+      {
+        "text": "i want to transfer 22.2 TB file from Argonne National Laboratory to Lawrence Berkeley National Lab at 3:30pm",
+        "intent": "",
+        "entities": [
+          {
+            "start": 102,
+            "end": 108,
+            "value": "3:30pm",
+            "entity": "exact_time"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "value": "22.2",
+            "entity": "size_file"
+          },
+          {
+            "start": 24,
+            "end": 26,
+            "value": "TB",
+            "entity": "unit_size_file"
+          },
+          {
+            "start": 37,
+            "end": 64,
+            "value": "anl",
+            "entity": "endpoint_input"
+          },
+          {
+            "start": 68,
+            "end": 98,
+            "value": "lbl",
+            "entity": "endpoint_output"
+          }
+        ]
+      }
+    ]
+  }
+}

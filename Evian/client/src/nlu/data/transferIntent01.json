@@ -1,0 +1,168 @@
+﻿{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "i would like to transfer a file at 5pm",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 35,
+            "end": 38,
+            "value": "5pm",
+            "entity": "exact_time"
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "value": "transfer",
+            "entity": "intent"
+          }
+        ]
+      },
+      {
+        "text": "i would like to move a file at 5:10am",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 16,
+            "end": 20,
+            "value": "transfer",
+            "entity": "intent"
+          },
+          {
+            "start": 31,
+            "end": 37,
+            "value": "5:10am",
+            "entity": "exact_time"
+          }
+        ]
+      },
+      {
+        "text": "i want to transfer a 14 MB file at 1:10pm",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 10,
+            "end": 18,
+            "value": "transfer",
+            "entity": "intent"
+          },
+          {
+            "start": 35,
+            "end": 41,
+            "value": "1:10pm",
+            "entity": "exact_time"
+          },
+          {
+            "start": 21,
+            "end": 23,
+            "value": "14",
+            "entity": "size_file"
+          },
+          {
+            "start": 24,
+            "end": 26,
+            "value": "MB",
+            "entity": "unit_size_file"
+          }
+        ]
+      },
+      {
+        "text": "i wonder if i can move 17 TB file at 10:45am",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 37,
+            "end": 44,
+            "value": "10:45am",
+            "entity": "exact_time"
+          },
+          {
+            "start": 23,
+            "end": 25,
+            "value": "17",
+            "entity": "size_file"
+          },
+          {
+            "start": 26,
+            "end": 28,
+            "value": "TB",
+            "entity": "unit_size_file"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "value": "move",
+            "entity": "intent"
+          }
+        ]
+      },
+      {
+        "text": "For a experiment I need to transfer a file at 4:10pm",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 46,
+            "end": 52,
+            "value": "4:10pm",
+            "entity": "exact_time"
+          },
+          {
+            "start": 27,
+            "end": 35,
+            "value": "transfer",
+            "entity": "intent"
+          }
+        ]
+      },
+      {
+        "text": "i need to transfer a 13.3 KB file please",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 21,
+            "end": 25,
+            "value": "13.3",
+            "entity": "size_file"
+          },
+          {
+            "start": 26,
+            "end": 28,
+            "value": "KB",
+            "entity": "unit_size_file"
+          },
+          {
+            "start": 10,
+            "end": 18,
+            "value": "transfer",
+            "entity": "intent"
+          }
+        ]
+      },
+      {
+        "text": "i want to transfer a 12.2 TB file",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 21,
+            "end": 25,
+            "value": "12.2",
+            "entity": "size_file"
+          },
+          {
+            "start": 26,
+            "end": 28,
+            "value": "TB",
+            "entity": "unit_size_file"
+          },
+          {
+            "start": 10,
+            "end": 18,
+            "value": "transfer",
+            "entity": "intent"
+          }
+        ]
+      }
+    ]
+  }
+}

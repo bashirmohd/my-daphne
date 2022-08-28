@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "esnet-netbeam",
+  "private_key_id": "3a88abcf8e8befa2d809e4130e2a7e35ab09e9ed",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDF2iHIaR8nsXmN\nsV1+TKcoUH/ci30hfpfrMdO0+xzYEBs29hrgyhFsEypnX3c2lld598HAOdj7oYta\nonXD0RRPxPxr1bwmAzew8rL7fM1Et326tNfziSBN+efxCDR04DcUNC//3HPH+5bm\n5xApUe0bSMG5NSfLR8kco/b5Gzc8xDpAlrXLbstfJYTn637+hpb6qR1Lak8UvE80\nuttRMJF6cQVwHf6HuZbpJIWp1dk8pk9TSh2SNKM0piyTlfXZn4wEgbfT+fguv/uF\ndOqsLmd3vOnY+o055W3VFri/Yz4+CBhYtxLInAA2R4iRr9kaHRsncHwbwohFbVVk\nVqGWoV3JAgMBAAECggEACxg3SsCyUYx/L3Xhs0JjITyaXuinhKhPpo2tvHlUXb1R\neVyFl1NddL0CZLeSvMnjb+B3yeq0gy/E27k+d1OTGwIF0ZozqcIGbnK9nKKb9B2B\n/GVFss9es2CvI/H81wz3qbdfda6MA4vVI2+TlW2VqTEEQ/l6GMkWuvdq0v82sr6I\n6YC2vhMNHC1ZSgEmgFpuchE06rdycNz6CbeC17WgmWlZhdvS+/gvKKoetfgQtEu4\nQDgEyo7aD+ielrvxVRtq7P9MINHhL2hYR5Y1qXxbXDV6dMPWllLflNoCrXVD46Ji\n7faz1ckN8YbkjsMiYr9LlhmG+LOo2mc4QHcZK1sg8QKBgQDuWGn7Tz5veffcY8r3\nfrzJNLaFdq5si7KksUUYrKqfo/B4lXMySYZl2uAzLqYgvOxoVHAVpbPCcSk9j4SN\n69THjR8DGoJfDvSRqLoeX5xa7qrrqEfqEmJDA9SBAKooRaFRf25HWqPVBbyTzhK9\nlAJWFETNIx+/3TaV+v8EEDQmZQKBgQDUgd7U5qS/bFsu719lnAFWM8F75xlJrhFV\n5eu5pCRmPKCHViZipypn0aS0jlvEu+H9Aybddfea14CpH1ZvK4cx8Vgttyr40RyW\nzC+rgrHk7eEdc1d/aFVoRs2j0xFSGAICYjEN/YvL/mYreJyKOLwULlR/y6lKzlSE\nOPlSQsQhlQKBgQCGSgBknRBjhMf3P66y5ZB+mRmhdu3tsIQVsN9qeJal3Zt2hVXj\nZnO33atmiwkE9w0H91MzjyoKCvIegkdAIzi+ui9X806zOlzn2LYMuPgCb+iTYDws\nkPEWKwlHKdW1XQ34OiErSNF4C4Rljr0WXVc3orHlFr4jvwKrXEDkzDBl1QKBgQCf\nINzuygNmAErLe54Q5WAu37SsBmJuRPVgQDpjGeHT2ORQU5eM2iar9VWDivJ3AEX6\ng0iwHy0ZevQyMHA18P9cy5+/I+D+zv+8gAvWP5jcl7Cxr/Q+SK9j1VkZquzWb3nZ\ntROMqWbsi4SQWtHFwzQ7XHIT/Dq59IVfOZahHbPmfQKBgQCXGGdyG5reBCDR9YPN\n+RBcvS/VdSEl5zueBNpDUZiXgsEFUM7bfAnfLhHwnGFM+wAEkXSWcHnf5VJ692Qr\nVqFK/YVOOfBCR62x7OjvQr1lalpHlamnkvxDNaSGAi6lqZVG47zESzhoHmdNq0vK\nesRTTRlKOE4/ZZuPj+FiGqVMuQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "external-bigtable-reader@esnet-netbeam.iam.gserviceaccount.com",
+  "client_id": "117871166999192099204",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/external-bigtable-reader%40esnet-netbeam.iam.gserviceaccount.com"
+}

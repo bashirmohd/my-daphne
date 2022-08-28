@@ -1,0 +1,888 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key attr.name="impedance" attr.type="double" for="edge" id="d5"/>
+<key attr.name="capacity" attr.type="double" for="edge" id="d4"/>
+<key attr.name="type" attr.type="string" for="node" id="d3"/>
+<key attr.name="bw" attr.type="double" for="node" id="d2"/>
+<key attr.name="PE" attr.type="double" for="node" id="d1"/>
+<key attr.name="SITE" attr.type="string" for="node" id="d0"/>
+<graph edgedefault="directed"><node id="SEAT">
+  <data key="d0">SEAT</data>
+  <data key="d1">0.4</data>
+  <data key="d2">0.8</data>
+  <data key="d3">C</data>
+</node>
+<node id="BOIS">
+  <data key="d0">BOIS</data>
+  <data key="d1">0.2</data>
+  <data key="d2">0.8</data>
+  <data key="d3">C</data>
+</node>
+<node id="SACR">
+  <data key="d0">SACR</data>
+  <data key="d1">0.1</data>
+  <data key="d2">1.9</data>
+  <data key="d3">C</data>
+</node>
+<node id="ANL-1">
+  <data key="d0">ANL-1</data>
+  <data key="d1">1.0</data>
+  <data key="d2">3.0</data>
+  <data key="d3">C</data>
+</node>
+<node id="FNAL-1">
+  <data key="d0">FNAL-1</data>
+  <data key="d1">2.0</data>
+  <data key="d2">3.0</data>
+  <data key="d3">C</data>
+</node>
+<node id="ANL-2">
+  <data key="d0">ANL-2</data>
+  <data key="d1">1.0</data>
+  <data key="d2">3.0</data>
+  <data key="d3">C</data>
+</node>
+<node id="STAR">
+  <data key="d0">STAR</data>
+  <data key="d1">0.5</data>
+  <data key="d2">7.800000000000001</data>
+  <data key="d3">C</data>
+</node>
+<node id="BOST">
+  <data key="d0">BOST</data>
+  <data key="d1">1.0</data>
+  <data key="d2">2.2</data>
+  <data key="d3">C</data>
+</node>
+<node id="CLEV">
+  <data key="d0">CLEV</data>
+  <data key="d1">0.0</data>
+  <data key="d2">4.4</data>
+  <data key="d3">C</data>
+</node>
+<node id="NEWY">
+  <data key="d0">NEWY</data>
+  <data key="d1">1.0</data>
+  <data key="d2">3.2</data>
+  <data key="d3">C</data>
+</node>
+<node id="FNAL-2">
+  <data key="d0">FNAL-2</data>
+  <data key="d1">2.0</data>
+  <data key="d2">3.0</data>
+  <data key="d3">C</data>
+</node>
+<node id="CHIC">
+  <data key="d0">CHIC</data>
+  <data key="d1">0.5</data>
+  <data key="d2">3.6</data>
+  <data key="d3">C</data>
+</node>
+<node id="KANS">
+  <data key="d0">KANS</data>
+  <data key="d1">0.1</data>
+  <data key="d2">1.7999999999999998</data>
+  <data key="d3">C</data>
+</node>
+<node id="HOUS">
+  <data key="d0">HOUS</data>
+  <data key="d1">0.1</data>
+  <data key="d2">1.7999999999999998</data>
+  <data key="d3">C</data>
+</node>
+<node id="DENV">
+  <data key="d0">DENV</data>
+  <data key="d1">0.1</data>
+  <data key="d2">1.7999999999999998</data>
+  <data key="d3">C</data>
+</node>
+<node id="EQCH">
+  <data key="d0">EQCH</data>
+  <data key="d1">0.3</data>
+  <data key="d2">4.300000000000001</data>
+  <data key="d3">C</data>
+</node>
+<node id="ASHB">
+  <data key="d0">ASHB</data>
+  <data key="d1">0.2</data>
+  <data key="d2">2.2</data>
+  <data key="d3">C</data>
+</node>
+<node id="WASH">
+  <data key="d0">WASH</data>
+  <data key="d1">1.0</data>
+  <data key="d2">4.5</data>
+  <data key="d3">C</data>
+</node>
+<node id="PHIL">
+  <data key="d0">PHIL</data>
+  <data key="d1">0.0</data>
+  <data key="d2">2.4000000000000004</data>
+  <data key="d3">C</data>
+</node>
+<node id="JLAB">
+  <data key="d0">JLAB</data>
+  <data key="d1">0.2</data>
+  <data key="d2">0.2</data>
+  <data key="d3">C</data>
+</node>
+<node id="ATLA">
+  <data key="d0">ATLA</data>
+  <data key="d1">0.2</data>
+  <data key="d2">5.1</data>
+  <data key="d3">C</data>
+</node>
+<node id="NASH">
+  <data key="d0">NASH</data>
+  <data key="d1">0.1</data>
+  <data key="d2">4.4</data>
+  <data key="d3">C</data>
+</node>
+<node id="PPPL">
+  <data key="d0">PPPL</data>
+  <data key="d1">0.2</data>
+  <data key="d2">0.2</data>
+  <data key="d3">C</data>
+</node>
+<node id="AOFA">
+  <data key="d0">AOFA</data>
+  <data key="d1">1.0</data>
+  <data key="d2">3.3000000000000003</data>
+  <data key="d3">C</data>
+</node>
+<node id="SALT">
+  <data key="d0">SALT</data>
+  <data key="d1">0.1</data>
+  <data key="d2">2.1</data>
+  <data key="d3">C</data>
+</node>
+<node id="LASV">
+  <data key="d0">LASV</data>
+  <data key="d1">0.1</data>
+  <data key="d2">1.2</data>
+  <data key="d3">C</data>
+</node>
+<node id="ALBQ">
+  <data key="d0">ALBQ</data>
+  <data key="d1">0.2</data>
+  <data key="d2">1.2</data>
+  <data key="d3">C</data>
+</node>
+<node id="BNL-1">
+  <data key="d0">BNL-1</data>
+  <data key="d1">1.0</data>
+  <data key="d2">2.0</data>
+  <data key="d3">C</data>
+</node>
+<node id="BNL-2">
+  <data key="d0">BNL-2</data>
+  <data key="d1">1.0</data>
+  <data key="d2">2.0</data>
+  <data key="d3">C</data>
+</node>
+<node id="SNLL">
+  <data key="d0">SNLL</data>
+  <data key="d1">0.4</data>
+  <data key="d2">0.5</data>
+  <data key="d3">C</data>
+</node>
+<node id="JGI">
+  <data key="d0">JGI</data>
+  <data key="d1">0.2</data>
+  <data key="d2">1.0</data>
+  <data key="d3">C</data>
+</node>
+<node id="LLNL">
+  <data key="d0">LLNL</data>
+  <data key="d1">0.4</data>
+  <data key="d2">0.5</data>
+  <data key="d3">C</data>
+</node>
+<node id="SUNN">
+  <data key="d0">SUNN</data>
+  <data key="d1">0.5</data>
+  <data key="d2">1.5</data>
+  <data key="d3">C</data>
+</node>
+<node id="LOSA">
+  <data key="d0">LOSA</data>
+  <data key="d1">0.1</data>
+  <data key="d2">1.7</data>
+  <data key="d3">C</data>
+</node>
+<node id="LBNL-1">
+  <data key="d0">LBNL-1</data>
+  <data key="d1">0.4</data>
+  <data key="d2">1.0</data>
+  <data key="d3">C</data>
+</node>
+<node id="LBNL-2">
+  <data key="d0">LBNL-2</data>
+  <data key="d1">0.6</data>
+  <data key="d2">1.0</data>
+  <data key="d3">C</data>
+</node>
+<node id="ORNL">
+  <data key="d0">ORNL</data>
+  <data key="d1">0.4</data>
+  <data key="d2">0.4</data>
+  <data key="d3">C</data>
+</node>
+<node id="CHAT">
+  <data key="d0">CHAT</data>
+  <data key="d1">0.0</data>
+  <data key="d2">4.6</data>
+  <data key="d3">C</data>
+</node>
+<node id="SLAC">
+  <data key="d0">SLAC</data>
+  <data key="d1">1.0</data>
+  <data key="d2">1.0</data>
+  <data key="d3">C</data>
+</node>
+<node id="EQSJ">
+  <data key="d0">EQSJ</data>
+  <data key="d1">0.2</data>
+  <data key="d2">1.0</data>
+  <data key="d3">C</data>
+</node>
+<node id="ELPA">
+  <data key="d0">ELPA</data>
+  <data key="d1">0.1</data>
+  <data key="d2">1.7999999999999998</data>
+  <data key="d3">C</data>
+</node>
+<node id="SAND">
+  <data key="d0">SAND</data>
+  <data key="d1">0.1</data>
+  <data key="d2">1.2</data>
+  <data key="d3">C</data>
+</node>
+<node id="CALT">
+  <data key="d0">CALT</data>
+  <data key="d1">0.5</data>
+  <data key="d2">0.5</data>
+  <data key="d3">S</data>
+</node>
+<node id="UFLO">
+  <data key="d0">UFLO</data>
+  <data key="d1">0.5</data>
+  <data key="d2">0.5</data>
+  <data key="d3">S</data>
+</node>
+<node id="UMCH">
+  <data key="d0">UMCH</data>
+  <data key="d1">0.5</data>
+  <data key="d2">0.5</data>
+  <data key="d3">S</data>
+</node>
+<node id="LBNL">
+  <data key="d0">LBNL</data>
+  <data key="d1">0.5</data>
+  <data key="d2">1.0</data>
+  <data key="d3">S</data>
+</node>
+<node id="UMIT">
+  <data key="d0">UMIT</data>
+  <data key="d1">0.5</data>
+  <data key="d2">0.5</data>
+  <data key="d3">S</data>
+</node>
+<node id="IU">
+  <data key="d0">IU</data>
+  <data key="d1">0.5</data>
+  <data key="d2">0.5</data>
+  <data key="d3">S</data>
+</node>
+<node id="UNEB">
+  <data key="d0">UNEB</data>
+  <data key="d1">0.5</data>
+  <data key="d2">0.5</data>
+  <data key="d3">S</data>
+</node>
+<node id="BU">
+  <data key="d0">BU</data>
+  <data key="d1">0.5</data>
+  <data key="d2">0.5</data>
+  <data key="d3">S</data>
+</node>
+<node id="HU">
+  <data key="d0">HU</data>
+  <data key="d1">0.5</data>
+  <data key="d2">0.5</data>
+  <data key="d3">S</data>
+</node>
+<node id="PURD">
+  <data key="d0">PURD</data>
+  <data key="d1">0.5</data>
+  <data key="d2">0.5</data>
+  <data key="d3">S</data>
+</node>
+<node id="OKLH">
+  <data key="d0">OKLH</data>
+  <data key="d1">0.5</data>
+  <data key="d2">0.5</data>
+  <data key="d3">S</data>
+</node>
+<node id="UTXA">
+  <data key="d0">UTXA</data>
+  <data key="d1">0.5</data>
+  <data key="d2">0.5</data>
+  <data key="d3">S</data>
+</node>
+<node id="UWIS">
+  <data key="d0">UWIS</data>
+  <data key="d1">0.5</data>
+  <data key="d2">0.5</data>
+  <data key="d3">S</data>
+</node>
+<node id="UCSD">
+  <data key="d0">UCSD</data>
+  <data key="d1">0.5</data>
+  <data key="d2">0.5</data>
+  <data key="d3">S</data>
+</node>
+<edge source="SEAT" target="BOIS">
+  <data key="d4">0.4</data>
+  <data key="d5">2.5</data>
+</edge>
+<edge source="SEAT" target="SACR">
+  <data key="d4">0.4</data>
+  <data key="d5">2.5</data>
+</edge>
+<edge source="BOIS" target="SEAT">
+  <data key="d4">0.4</data>
+  <data key="d5">2.5</data>
+</edge>
+<edge source="BOIS" target="SALT">
+  <data key="d4">0.4</data>
+  <data key="d5">2.5</data>
+</edge>
+<edge source="SACR" target="SEAT">
+  <data key="d4">0.4</data>
+  <data key="d5">2.5</data>
+</edge>
+<edge source="SACR" target="SALT">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="SACR" target="SNLL">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="SACR" target="JGI">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="ANL-1" target="FNAL-1">
+  <data key="d4">1.5</data>
+  <data key="d5">0.6666666666666666</data>
+</edge>
+<edge source="ANL-1" target="ANL-2">
+  <data key="d4">1.5</data>
+  <data key="d5">0.6666666666666666</data>
+</edge>
+<edge source="FNAL-1" target="ANL-1">
+  <data key="d4">1.5</data>
+  <data key="d5">0.6666666666666666</data>
+</edge>
+<edge source="FNAL-1" target="FNAL-2">
+  <data key="d4">1.5</data>
+  <data key="d5">0.6666666666666666</data>
+</edge>
+<edge source="ANL-2" target="ANL-1">
+  <data key="d4">1.5</data>
+  <data key="d5">0.6666666666666666</data>
+</edge>
+<edge source="ANL-2" target="STAR">
+  <data key="d4">2.1</data>
+  <data key="d5">0.47619047619047616</data>
+</edge>
+<edge source="STAR" target="ANL-2">
+  <data key="d4">2.1</data>
+  <data key="d5">0.47619047619047616</data>
+</edge>
+<edge source="STAR" target="CHIC">
+  <data key="d4">1.5</data>
+  <data key="d5">0.6666666666666666</data>
+</edge>
+<edge source="STAR" target="EQCH">
+  <data key="d4">2.1</data>
+  <data key="d5">0.47619047619047616</data>
+</edge>
+<edge source="STAR" target="NASH">
+  <data key="d4">2.1</data>
+  <data key="d5">0.47619047619047616</data>
+</edge>
+<edge source="STAR" target="UMCH">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="STAR" target="IU">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="STAR" target="PURD">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="STAR" target="UWIS">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="BOST" target="CLEV">
+  <data key="d4">1.1</data>
+  <data key="d5">0.9090909090909091</data>
+</edge>
+<edge source="BOST" target="NEWY">
+  <data key="d4">1.1</data>
+  <data key="d5">0.9090909090909091</data>
+</edge>
+<edge source="BOST" target="UMIT">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="BOST" target="BU">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="BOST" target="HU">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="CLEV" target="BOST">
+  <data key="d4">1.1</data>
+  <data key="d5">0.9090909090909091</data>
+</edge>
+<edge source="CLEV" target="EQCH">
+  <data key="d4">2.2</data>
+  <data key="d5">0.45454545454545453</data>
+</edge>
+<edge source="CLEV" target="ASHB">
+  <data key="d4">1.1</data>
+  <data key="d5">0.9090909090909091</data>
+</edge>
+<edge source="NEWY" target="BOST">
+  <data key="d4">1.1</data>
+  <data key="d5">0.9090909090909091</data>
+</edge>
+<edge source="NEWY" target="BNL-1">
+  <data key="d4">1.0</data>
+  <data key="d5">1.0</data>
+</edge>
+<edge source="NEWY" target="AOFA">
+  <data key="d4">1.1</data>
+  <data key="d5">0.9090909090909091</data>
+</edge>
+<edge source="FNAL-2" target="FNAL-1">
+  <data key="d4">1.5</data>
+  <data key="d5">0.6666666666666666</data>
+</edge>
+<edge source="FNAL-2" target="CHIC">
+  <data key="d4">1.5</data>
+  <data key="d5">0.6666666666666666</data>
+</edge>
+<edge source="CHIC" target="FNAL-2">
+  <data key="d4">1.5</data>
+  <data key="d5">0.6666666666666666</data>
+</edge>
+<edge source="CHIC" target="STAR">
+  <data key="d4">1.5</data>
+  <data key="d5">0.6666666666666666</data>
+</edge>
+<edge source="CHIC" target="KANS">
+  <data key="d4">0.6</data>
+  <data key="d5">1.6666666666666667</data>
+</edge>
+<edge source="KANS" target="CHIC">
+  <data key="d4">0.6</data>
+  <data key="d5">1.6666666666666667</data>
+</edge>
+<edge source="KANS" target="HOUS">
+  <data key="d4">0.6</data>
+  <data key="d5">1.6666666666666667</data>
+</edge>
+<edge source="KANS" target="DENV">
+  <data key="d4">0.6</data>
+  <data key="d5">1.6666666666666667</data>
+</edge>
+<edge source="KANS" target="UNEB">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="KANS" target="OKLH">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="HOUS" target="KANS">
+  <data key="d4">0.6</data>
+  <data key="d5">1.6666666666666667</data>
+</edge>
+<edge source="HOUS" target="ATLA">
+  <data key="d4">0.6</data>
+  <data key="d5">1.6666666666666667</data>
+</edge>
+<edge source="HOUS" target="ELPA">
+  <data key="d4">0.6</data>
+  <data key="d5">1.6666666666666667</data>
+</edge>
+<edge source="HOUS" target="UTXA">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="DENV" target="KANS">
+  <data key="d4">0.6</data>
+  <data key="d5">1.6666666666666667</data>
+</edge>
+<edge source="DENV" target="SALT">
+  <data key="d4">0.6</data>
+  <data key="d5">1.6666666666666667</data>
+</edge>
+<edge source="DENV" target="ALBQ">
+  <data key="d4">0.6</data>
+  <data key="d5">1.6666666666666667</data>
+</edge>
+<edge source="EQCH" target="STAR">
+  <data key="d4">2.1</data>
+  <data key="d5">0.47619047619047616</data>
+</edge>
+<edge source="EQCH" target="CLEV">
+  <data key="d4">2.2</data>
+  <data key="d5">0.45454545454545453</data>
+</edge>
+<edge source="ASHB" target="CLEV">
+  <data key="d4">1.1</data>
+  <data key="d5">0.9090909090909091</data>
+</edge>
+<edge source="ASHB" target="WASH">
+  <data key="d4">1.1</data>
+  <data key="d5">0.9090909090909091</data>
+</edge>
+<edge source="WASH" target="ASHB">
+  <data key="d4">1.1</data>
+  <data key="d5">0.9090909090909091</data>
+</edge>
+<edge source="WASH" target="PHIL">
+  <data key="d4">1.2</data>
+  <data key="d5">0.8333333333333334</data>
+</edge>
+<edge source="WASH" target="JLAB">
+  <data key="d4">0.1</data>
+  <data key="d5">10.0</data>
+</edge>
+<edge source="WASH" target="ATLA">
+  <data key="d4">2.1</data>
+  <data key="d5">0.47619047619047616</data>
+</edge>
+<edge source="PHIL" target="WASH">
+  <data key="d4">1.2</data>
+  <data key="d5">0.8333333333333334</data>
+</edge>
+<edge source="PHIL" target="PPPL">
+  <data key="d4">0.1</data>
+  <data key="d5">10.0</data>
+</edge>
+<edge source="PHIL" target="AOFA">
+  <data key="d4">1.1</data>
+  <data key="d5">0.9090909090909091</data>
+</edge>
+<edge source="JLAB" target="WASH">
+  <data key="d4">0.1</data>
+  <data key="d5">10.0</data>
+</edge>
+<edge source="JLAB" target="ATLA">
+  <data key="d4">0.1</data>
+  <data key="d5">10.0</data>
+</edge>
+<edge source="ATLA" target="WASH">
+  <data key="d4">2.1</data>
+  <data key="d5">0.47619047619047616</data>
+</edge>
+<edge source="ATLA" target="JLAB">
+  <data key="d4">0.1</data>
+  <data key="d5">10.0</data>
+</edge>
+<edge source="ATLA" target="CHAT">
+  <data key="d4">2.3</data>
+  <data key="d5">0.4347826086956522</data>
+</edge>
+<edge source="ATLA" target="HOUS">
+  <data key="d4">0.6</data>
+  <data key="d5">1.6666666666666667</data>
+</edge>
+<edge source="ATLA" target="UFLO">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="NASH" target="STAR">
+  <data key="d4">2.1</data>
+  <data key="d5">0.47619047619047616</data>
+</edge>
+<edge source="NASH" target="ORNL">
+  <data key="d4">0.2</data>
+  <data key="d5">5.0</data>
+</edge>
+<edge source="NASH" target="CHAT">
+  <data key="d4">2.1</data>
+  <data key="d5">0.47619047619047616</data>
+</edge>
+<edge source="PPPL" target="AOFA">
+  <data key="d4">0.1</data>
+  <data key="d5">10.0</data>
+</edge>
+<edge source="PPPL" target="PHIL">
+  <data key="d4">0.1</data>
+  <data key="d5">10.0</data>
+</edge>
+<edge source="AOFA" target="PPPL">
+  <data key="d4">0.1</data>
+  <data key="d5">10.0</data>
+</edge>
+<edge source="AOFA" target="NEWY">
+  <data key="d4">1.1</data>
+  <data key="d5">0.9090909090909091</data>
+</edge>
+<edge source="AOFA" target="BNL-2">
+  <data key="d4">1.0</data>
+  <data key="d5">1.0</data>
+</edge>
+<edge source="AOFA" target="PHIL">
+  <data key="d4">1.1</data>
+  <data key="d5">0.9090909090909091</data>
+</edge>
+<edge source="SALT" target="BOIS">
+  <data key="d4">0.4</data>
+  <data key="d5">2.5</data>
+</edge>
+<edge source="SALT" target="DENV">
+  <data key="d4">0.6</data>
+  <data key="d5">1.6666666666666667</data>
+</edge>
+<edge source="SALT" target="LASV">
+  <data key="d4">0.6</data>
+  <data key="d5">1.6666666666666667</data>
+</edge>
+<edge source="SALT" target="SACR">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="LASV" target="SALT">
+  <data key="d4">0.6</data>
+  <data key="d5">1.6666666666666667</data>
+</edge>
+<edge source="LASV" target="LOSA">
+  <data key="d4">0.6</data>
+  <data key="d5">1.6666666666666667</data>
+</edge>
+<edge source="ALBQ" target="DENV">
+  <data key="d4">0.6</data>
+  <data key="d5">1.6666666666666667</data>
+</edge>
+<edge source="ALBQ" target="ELPA">
+  <data key="d4">0.6</data>
+  <data key="d5">1.6666666666666667</data>
+</edge>
+<edge source="BNL-1" target="NEWY">
+  <data key="d4">1.0</data>
+  <data key="d5">1.0</data>
+</edge>
+<edge source="BNL-1" target="BNL-2">
+  <data key="d4">1.0</data>
+  <data key="d5">1.0</data>
+</edge>
+<edge source="BNL-2" target="BNL-1">
+  <data key="d4">1.0</data>
+  <data key="d5">1.0</data>
+</edge>
+<edge source="BNL-2" target="AOFA">
+  <data key="d4">1.0</data>
+  <data key="d5">1.0</data>
+</edge>
+<edge source="SNLL" target="SACR">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="JGI" target="SACR">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="JGI" target="LBNL-1">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="LLNL" target="SUNN">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="SUNN" target="LLNL">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="SUNN" target="SLAC">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="SUNN" target="EQSJ">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="LOSA" target="LASV">
+  <data key="d4">0.6</data>
+  <data key="d5">1.6666666666666667</data>
+</edge>
+<edge source="LOSA" target="EQSJ">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="LOSA" target="SAND">
+  <data key="d4">0.6</data>
+  <data key="d5">1.6666666666666667</data>
+</edge>
+<edge source="LOSA" target="CALT">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="LOSA" target="UCSD">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="LBNL-1" target="JGI">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="LBNL-1" target="LBNL-2">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="LBNL-1" target="LBNL">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="LBNL-2" target="LBNL-1">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="LBNL-2" target="SLAC">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="LBNL-2" target="LBNL">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="ORNL" target="NASH">
+  <data key="d4">0.2</data>
+  <data key="d5">5.0</data>
+</edge>
+<edge source="ORNL" target="CHAT">
+  <data key="d4">0.2</data>
+  <data key="d5">5.0</data>
+</edge>
+<edge source="CHAT" target="NASH">
+  <data key="d4">2.1</data>
+  <data key="d5">0.47619047619047616</data>
+</edge>
+<edge source="CHAT" target="ORNL">
+  <data key="d4">0.2</data>
+  <data key="d5">5.0</data>
+</edge>
+<edge source="CHAT" target="ATLA">
+  <data key="d4">2.3</data>
+  <data key="d5">0.4347826086956522</data>
+</edge>
+<edge source="SLAC" target="LBNL-2">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="SLAC" target="SUNN">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="EQSJ" target="SUNN">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="EQSJ" target="LOSA">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="ELPA" target="ALBQ">
+  <data key="d4">0.6</data>
+  <data key="d5">1.6666666666666667</data>
+</edge>
+<edge source="ELPA" target="SAND">
+  <data key="d4">0.6</data>
+  <data key="d5">1.6666666666666667</data>
+</edge>
+<edge source="ELPA" target="HOUS">
+  <data key="d4">0.6</data>
+  <data key="d5">1.6666666666666667</data>
+</edge>
+<edge source="SAND" target="LOSA">
+  <data key="d4">0.6</data>
+  <data key="d5">1.6666666666666667</data>
+</edge>
+<edge source="SAND" target="ELPA">
+  <data key="d4">0.6</data>
+  <data key="d5">1.6666666666666667</data>
+</edge>
+<edge source="CALT" target="LOSA">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="UFLO" target="ATLA">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="UMCH" target="STAR">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="LBNL" target="LBNL-1">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="LBNL" target="LBNL-2">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="UMIT" target="BOST">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="IU" target="STAR">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="UNEB" target="KANS">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="BU" target="BOST">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="HU" target="BOST">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="PURD" target="STAR">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="OKLH" target="KANS">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="UTXA" target="HOUS">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="UWIS" target="STAR">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+<edge source="UCSD" target="LOSA">
+  <data key="d4">0.5</data>
+  <data key="d5">2.0</data>
+</edge>
+</graph></graphml>

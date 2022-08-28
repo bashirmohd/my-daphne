@@ -1,0 +1,485 @@
+#########################################################################################################
+#                                            DNSANON                                                    #
+######################################################################################################### 
+
+dnsanon - extract DNS queries and responses from network trace file to text files with optional anonymization
+
+# SYNOPSIS
+
+dnsanon [-p *OPTION*] [-a *OPTION*] [-k *KEYFILE*] [--pass4 *BITS*] [--pass6 *BITS*]
+        [-i *PATH*] [-o *PATH*] [-f *PREFIX*] [-c *CMP*] [-t NUMBER] [-d NUMBER] [-l NUMBER]
+        [-v] [-x] [-q] [-T]
+
+# DESCRIPTION
+
+Dnsanon
+reads network trace files (any format accepted by libtrace, including pcap and ERF),
+extracts DNS traffic,
+and writes it to several plain-text tables (in Fsdb format).
+Optionally it anonymizes the IP addresses, query names, or both.
+
+About parsing:
+
+- Output format is tab-separated text with a one-line header.
+
+- Both UDP and TCP are supported.
+
+About anonymization:
+
+- One might hope to write anonymized queries back to pcap, but unfortunately one can't do that easily, because of label compression.
+
+- IP anonymization is done with the Cryptopan algorithm (prefix-preserving). Optionally, high bits of addresses can passed and low bits anonymized. Both IPv4 and IPv6 are supported.
+
+- query name anonymization is done component-by-component
+
+# OPTIONS
+
+`-p/--parse` *OPTION*
+: output format, available options are *mqreQR*: report DNS m)essages,
+  and q)uestion and r)esponses sections, each as separate tables.
+  Capital Q and R includes messages information to the question and response tables.
+  Default is mqr (all three, non-unified)
+
+  Note that these options select what *sections* are reported, and not the status of the QR bit.
+
+`-a/--anon` *OPTION*
+: anonymization, available options are id,addr,server-addr,client-addr,name,all (separated by comma)
+
+  id:   DNS id in packet header
+
+  name: query and response content
+
+  addr: server address (server-addr) and client address (client-addr).
+  Address with port 53 is identified as server address.
+  If both src and dst port are 53, both of the address are anonymized
+  (anonymized addresses are suffixed with *).
+
+  all:  all of the above
+
+`-k/--key` *KEYFILE*
+:   specify the key file. *KEYFILE* is created if it doesn't exist
+
+`--pass4` *BITS*
+:   preserve *BITS* high bits of IPv4 addrsss as un-anonymized;
+    default is 0, anonymizing all bits if anon is set
+
+`--pass6` *BITS*
+:   similar to --pass4, but for IPv6 address
+
+`-i/--input` *PATH*
+:   specify input file path; required
+
+`-o/--output-path` *PATH*
+:   specify output path which should be directory; default is current directory.  If given "-" and the output is only one file, it will go to standard output.
+    stdout (-) is incompatible with multi-file output.
+    With stdout, -p is required and you can only specify one option for -p
+
+`-c/--compressor` *COMP*
+:   compressor, default is '/usr/bin/xz', use "none" to disable
+
+`-f/--output-prefix` *PREFIX*
+:   prefix of the output file, default is timestamp of the first packet
+
+`-v/--verbose`
+:   verbose log; default is none
+
+`-x/--tcp-relax`
+:   optimistically try TCP reassembly even without seeing TCP SYN
+
+`-t/--tcp-timeout`  *NUMBER*
+:   specify timeout for idle TCP connections used in TCP reassembly, default is 60s. Longer idle TCP stream will be discarded. 0 for no timeout.
+
+`-l/--tcp-list-limit`  *NUMBER*
+:   specify the size limit of internal list to keep track of tcp states for TCP reassembly, used to control memory consumption
+
+`-T/--ip-ttl`
+:   output 'Time To Live' in IPv4 header or 'Hop Limit' in IPv6 header
+
+`-R/--rtt`
+:   output RTT calculated from the initial TCP handshake. RTT value is the same for all associated DNS messages in the same TCP connection. Output value is 0 if a handshake was not read or if the protocol is not TCP.
+
+`-d/--tcp-check-period` *NUMBER*
+:   specify the time period to clean up idle TCP connections, default is 60s
+
+`-q/--show-empty-query`
+:   show empty query as '-' in unified query message (option -Q); otherwise, messages with empty query won't show in the output
+
+# EXAMPLES
+
+Assume test.pcap contains one DNS query and one response for "www.isi.edu A".
+
+## Extracting Queries from a Trace to Text
+
+1. output query, responses and message sections (default)
+
+     >   ./dnsanon -i test.pcap
+
+    output files:
+
+        1461102303.357871.message.fsdb.xz
+        1461102303.357871.question.fsdb.xz
+        1461102303.357871.rr.fsdb.xz
+
+        1461102303.357871 is the timestamp for the first packet in the pcap file
+
+2. default output but with output file prefix and no compression
+
+     >   ./dnsanon -i ./test.pcap -c none -f test
+
+    output files:
+
+        test.message.fsdb
+        test.question.fsdb
+        test.rr.fsdb
+
+3. output only query sections
+
+       >  ./dnsanon -i ./test.pcap -c none -f test -p q
+
+    output file:
+
+      cat  test.question.fsdb
+
+    with content:
+
+        #fsdb -F t msgid id name type class
+        1	  10888	     www.isi.edu. A	IN
+        2	  10888	     www.isi.edu. A	IN
+        # ./dnsanon -i ./test.pcap -c none -f test -p q
+
+    output fsdb schema:
+
+        msgid: DNS message id in the network trace file
+        id: the id in DNS header
+        name: query name
+        type: query type
+        class: query class
+
+4. output only response sections
+
+       > ./dnsanon -i ./test.pcap -c none -f test -p r
+
+    output file:
+
+       cat  test.rr.fsdb
+
+    with content:
+
+        #fsdb -F t msgid id section_name name type class ttl rdf_num rdata
+        2     10888	 ANS		 www.isi.edu.	 A   IN	     1746	1	128.9.176.20
+        2     10888	 AUT		 isi.edu.	 NS  IN	     7143	1	nitro.isi.edu.
+        2     10888	 AUT		 isi.edu.	 NS  IN	     7143	1	vapor.isi.edu.
+        2     10888	 AUT		 isi.edu.	 NS  IN	     7143	1	ns.east.isi.edu.
+        2     10888	 AUT		 isi.edu.	 NS  IN	     7143	1	ns.isi.edu.
+        2     10888	 ADD		 ns.isi.edu.	 A   IN	     28434	1	128.9.128.127
+        2     10888	 ADD		 ns.east.isi.edu.    A	     IN		28434	1	65.114.168.20
+        2     10888	 ADD		 nitro.isi.edu.	     A	     IN		128236	1	128.9.208.207
+        2     10888	 ADD		 vapor.isi.edu.	     A	     IN		128236	1	128.9.64.64
+        # ./dnsanon -i ./test.pcap -c none -f test -p r
+
+
+    the schema of that output (the meanings of each field):
+
+        msgid: DNS message id in the pcap file
+        id: the id in DNS header
+        section_name: AUS=>ANSWER SECTION; AUT=>AUTHORITY SECTION; ADD=>ADDITIONAL SECTION
+        name: name of the resource records
+        type: type of the resource records
+        class: class of the resource records
+        ttl: ttl of the resource records
+        rdf_num: number of fields in rdata
+        rdata: specific data of the resource records
+
+5. output only message information
+
+       > ./dnsanon -i ./test.pcap -c none -f test -p m
+
+    output file:
+
+        test.message.fsdb
+
+    with content:
+
+        #fsdb -F t msgid time srcip srcport dstip dstport protocol id qr opcode aa tc rd ra z ad cd rcode qdcount ancount nscount arcount edns_present edns_udp_size edns_extended_rcode edns_version edns_z msglen
+        1     1461102303.357871     192.168.1.2   59008   192.168.1.1 53 udp	 10888 0  0  0 0  1  001   0	   0	   1	   0	   0		0	      1			  4096	       0      0	0	48
+        2     1461102303.362905     192.168.1.1   53	   192.168.1.2 59008	 udp   10888 1 0  0  0	   1	   100	   0	   0	   1		1	      4			  4	       1      4096	0	207
+    >  ./dnsanon -i ./test.pcap -c none -f test -p m
+
+    The schema here:
+
+        msgid: DNS message id in the pcap file
+        time: time of the message in seconds with fractoins since the Unix epoch
+        srcip: source IP address
+        srcport: source port
+        dstip: destination IP address
+        dstport: destination port
+        protocol:  the transport protocol: udp or tcp
+        id: the id in DNS header
+        qr: the query/repsonse bit from the DNS header, query is 0, response is 1
+        opcode: the opcode field from the DNS header, 0: standard query, 1: invers, 2: status
+        aa: the Authoritative Answer from the DNS header
+        tc: the TrunCation bit from the DNS header
+        rd: the Recursion Desired bit from the DNS header
+        ra: the Recursion Availablebit from the DNS header
+        z: the unused Z bit from the DNS header
+        ad: the ad bit from the DNS header
+        cd: the cd bit from the DNS header
+        rcode: respons code
+        qdcount: qd count from the DNS header
+        ancount: an count from the DNS header
+        nscount: ns count from the DNS header
+        arcount: ar count from the DNS header
+        edns_present: 1 if the packet has EDNS
+        edns_udp_size: edns udp size
+        edns_extended_rcode: edns extended rcode
+        edns_version: edns version
+        edns_z: edns z value
+        msglen: dns message size
+
+6. output query sections with combined message information
+
+      >  ./dnsanon -i ./test.pcap -c none -f test -p Q
+
+    output file:
+
+      > cat test.message_question.fsdb
+
+    with content:
+
+        #fsdb -F t msgid time srcip srcport dstip dstport protocol id qr opcode aa tc rd ra z ad cd rcode qdcount ancount nscount arcount edns_present edns_udp_size edns_extended_rcode edns_version edns_z msglen name type class
+        1	1461102303.357871	192.168.1.2	59008	192.168.1.1	53	udp	10888	0	4096	0	0	0	48	www.isi.edu.	A	IN
+        2	1461102303.362905	192.168.1.1	53	192.168.1.2	59008	udp	10888	1	4096	0	0	0	207	www.isi.edu.	A	IN
+        # ../dnsanon -i ./test.pcap -c none -f test -p Q
+
+## Anonymization
+
+7. anonymization
+
+        > ./dnsanon -i ./test.pcap -c none -f test -p m -a all -k keyfile
+
+    Full anonymization:
+
+    IP is prefix-preserve anonymized and suffixed with *.
+
+    ID in DNS header is encrpyted and output is base64 string.
+
+    Each part of the names in resource records is encrpyted and output is base64 string.
+
+    sample output files:
+
+    >  cat test.message.fsdb:
+
+        #fsdb -F s msgid time srcip srcport dstip dstport protocol id qr opcode aa tc rd ra z ad cd rcode qdcount ancount nscount arcount edns_present edns_udp_size edns_extended_rcode edns_version edns_z msglen
+        1 1461102303.357871 210.91.230.223* 59008 210.91.230.220* 53 udp GMgZKqG94x3W7FJ0yrcJZg== 0 0 0 0 1 0 0 1 0 0 1 0 0 0 1 4096 0 0 0 48
+        2 1461102303.362905 210.91.230.220* 53 210.91.230.223* 59008 udp GMgZKqG94x3W7FJ0yrcJZg== 1 0 0 0 1 1 0 0 0 0 1 1 4 4 1 4096 0 0 0 207
+        # ./dnsanon -i ./test.pcap -c none -f test -p m -a all -k keyfile
+
+    >  cat test.question.fsdb:
+
+        #fsdb -F s msgid id name type class
+        1 GMgZKqG94x3W7FJ0yrcJZg== hiALV6+e9T9ni1ZJyCD35Q==.kaWqOoja4H2SFZaeXVHdhg==.JkJ9ngv//NKYi1GIrfEY2A==. A IN
+        2 GMgZKqG94x3W7FJ0yrcJZg== hiALV6+e9T9ni1ZJyCD35Q==.kaWqOoja4H2SFZaeXVHdhg==.JkJ9ngv//NKYi1GIrfEY2A==. A IN
+        # ./dnsanon -i ./test.pcap -c none -f test -a all -k keyfile
+
+    >  cat test.rr.fsdb:
+
+        #fsdb -F s msgid id section_name name type class ttl rdf_num rdata
+        2 GMgZKqG94x3W7FJ0yrcJZg== ANS hiALV6+e9T9ni1ZJyCD35Q==.kaWqOoja4H2SFZaeXVHdhg==.JkJ9ngv//NKYi1GIrfEY2A==. A IN 1746 1 128.215.201.242*
+        2 GMgZKqG94x3W7FJ0yrcJZg== AUT kaWqOoja4H2SFZaeXVHdhg==.JkJ9ngv//NKYi1GIrfEY2A==. NS IN 7143 1 PoQD5IM57swzKjlFkC+OEw==.kaWqOoja4H2SFZaeXVHdhg==.JkJ9ngv//NKYi1GIrfEY2A==.
+        2 GMgZKqG94x3W7FJ0yrcJZg== AUT kaWqOoja4H2SFZaeXVHdhg==.JkJ9ngv//NKYi1GIrfEY2A==. NS IN 7143 1 Zw+bRwIuYctDLbA1SDVYGA==.kaWqOoja4H2SFZaeXVHdhg==.JkJ9ngv//NKYi1GIrfEY2A==.
+        2 GMgZKqG94x3W7FJ0yrcJZg== AUT kaWqOoja4H2SFZaeXVHdhg==.JkJ9ngv//NKYi1GIrfEY2A==. NS IN 7143 1 DswjzZnRq9/c5+jPctKr2Q==.ofRFtyXN6AeIHlBAb3SFCQ==.kaWqOoja4H2SFZaeXVHdhg==.JkJ9ngv//NKYi1GIrfEY2A==.
+        2 GMgZKqG94x3W7FJ0yrcJZg== AUT kaWqOoja4H2SFZaeXVHdhg==.JkJ9ngv//NKYi1GIrfEY2A==. NS IN 7143 1 DswjzZnRq9/c5+jPctKr2Q==.kaWqOoja4H2SFZaeXVHdhg==.JkJ9ngv//NKYi1GIrfEY2A==.
+        2 GMgZKqG94x3W7FJ0yrcJZg== ADD DswjzZnRq9/c5+jPctKr2Q==.kaWqOoja4H2SFZaeXVHdhg==.JkJ9ngv//NKYi1GIrfEY2A==. A IN 28434 1 128.215.225.32*
+        2 GMgZKqG94x3W7FJ0yrcJZg== ADD DswjzZnRq9/c5+jPctKr2Q==.ofRFtyXN6AeIHlBAb3SFCQ==.kaWqOoja4H2SFZaeXVHdhg==.JkJ9ngv//NKYi1GIrfEY2A==. A IN 28434 1 82.117.24.134*
+        2 GMgZKqG94x3W7FJ0yrcJZg== ADD PoQD5IM57swzKjlFkC+OEw==.kaWqOoja4H2SFZaeXVHdhg==.JkJ9ngv//NKYi1GIrfEY2A==. A IN 128236 1 128.215.190.161*
+        2 GMgZKqG94x3W7FJ0yrcJZg== ADD Zw+bRwIuYctDLbA1SDVYGA==.kaWqOoja4H2SFZaeXVHdhg==.JkJ9ngv//NKYi1GIrfEY2A==. A IN 128236 1 128.215.63.252*
+    
+
+
+     >  ./dnsanon -i ./test.pcap -c none -f test -a all -k keyfile
+
+
+
+
+
+
+
+
+
+        #############################################################
+        #           DEPENDENCIES & INSTALLTION REQUIREMENTS         #
+        #############################################################
+
+        Name: dnsanon
+        Version: 1.12
+        Release: 1%{?dist}
+        License: GPLv2
+
+        Summary: Tool to extract DNS traffic from pcap to text with optionally anonymization
+
+        URL: https://ant.isi.edu/software/dnsanon/
+        Source0: https://ant.isi.edu/software/dnsanon/dnsanon-%{version}.tar.gz
+
+        BuildRequires:  pandoc
+        BuildRequires:  ldns-devel
+        BuildRequires:  libtrace-devel
+        BuildRequires:  openssl-devel
+        BuildRequires:  libpcap-devel
+        BuildRequires:  libwandio-devel
+        BuildRequires:  xz-devel
+        BuildRequires:  bzip2-devel
+        BuildRequires:  lzo-devel
+        BuildRequires:  gcc-c++
+        Requires: ldns
+        Requires: libtrace
+        Requires: openssl-libs
+        Requires: libpcap
+        Requires: libwandio
+        Requires: xz
+        Requires: bzip2
+        Requires: lzo
+
+        %description
+        Dnsanon reads pcap files, extracts DNS traffic,
+        and writes it to several plain-text tables (in Fsdb format).
+        Optionally it anonymizes the IP addresses and queries.
+
+
+        %prep
+        %setup -q -n dnsanon-%{version}
+
+        %build
+        make dnsanon_static
+
+        %install
+        make install_static DESTDIR=$RPM_BUILD_ROOT
+
+        %files
+        %doc README COPYING
+        %{_bindir}/dnsanon
+        %{_mandir}/man1/*.1*
+
+
+
+
+
+#########################################################################################################
+#                                            DAG SCRUBBER                                               #
+#########################################################################################################
+
+Dag Scrubber is our tool for scrubbing packets of user data and optionally doing IP address anonymization. It supports both pcap and ERF format 
+
+DAG scrubber anonymizes network packet traces.
+
+Input formats are pcap and ERF (“dag”) format.
+
+It can do the following kinds of scrubbing:
+
+    remove payloads, leaving only network and transport headers
+    anonymize all or part of IP addresses (v4 and v6) using cryptopan (prefix-preserving)
+    anonymize VLAN tags and MAC addresses
+
+
+
+        #############################################################
+        #      USAGE DEPENDENCIES & INSTALLTION REQUIREMENTS        #
+        #############################################################
+
+To use it, first we generate a random key (used for any anonymization):
+
+        > ./dag_scrubber -m -s test.keyfile
+
+Then to process pcaps of DNS traffic (only), anonymization IP addresses and preserving payloads, do:
+        > ./dag_scrubber -P -m -s ./test.keyfile -n 'port 53' --pass4=24 --pass6=96
+
+Where the options are to specify pcap input (-P), scramble MAC addresses (-m), use the keyfile we just generated (-s ./test.keyfile), filter traffic for just dns (-n 'port 53'), and anonymize only the low 8 bits of IPv4 and low 32 bits of IPv6 (--pass4=24 --pass6=96).
+
+Network address translation:
+
+        > dag_scrubber -n "" --pnat '1.1.1.1-2.2.2.2,1::-2::' input.pcap output.pcap
+
+Will rewrite network addresses in input.pcap replacing all ips 1.1.1.1 with 2.2.2.2 and all ipv6 1:: with 2:: (Warning: ipv6 transport checksums (udp, tcp) may be wrong).
+
+
+
+
+
+#########################################################################################################
+#                                        CRYPTOPANT                                                     #
+#########################################################################################################
+
+CryptopANT library comes with an example binary that can be used for anonymization of text IP addresses called scramble_ips.
+
+
+Generating a new key
+
+A suggested extension to use for cryptopANT keys is .cryptopant.
+
+        > scramble_ips --newkey newkeyfile.cryptopant
+        > cat newkeyfile.cryptopant
+02:02:923bfe53012003783272c31110b45ddb:413ba3440ac228d4cfd3f6829d3c4ba08713c95ee78ad2a39c5843f112cc0136::13432cf54da10937dfad49794dd77463
+
+
+Optionally you can specify what crypto function to associate with the key:
+        > scramble_ips --newkey --type=aes newkeyfile-aes.cryptopant
+        > cat newkeyfile-aes.cryptopant
+03:03:afe9afebc68999cd5d0aa4fd34eccdfa:d2553c10d6ccae53fe923784c1ed0a4796c665292aee80ea33238acab9dfe1df::07510eac95901879a5fb893a7dc5bd8a
+
+
+Anonymizing text IPs one per line
+
+
+        > cat ips.txt
+1.2.3.4
+1.2.4.5
+fe80::21e:c9ff:feaa:bbbb
+fe80::21e:c9ff:feaa:0
+
+        > scramble_ips newkeyfile.cryptopant < ips.txt > ips.anon.txt
+        > cat ips.anon.txt
+45.228.100.2
+45.228.99.58
+b861:98b2:5154:21df:dd60:8d67:8896:2d03
+b861:98b2:5154:21df:dd60:8d67:8896:9cbd
+
+Un-anonymizing text IPs one per line
+
+
+        > scramble_ips -r newkeyfile.cryptopant < ips.anon.txt
+1.2.3.4
+1.2.4.5
+fe80::21e:c9ff:feaa:bbbb
+fe80::21e:c9ff:feaa:0
+
+
+Anonymizing text IPs in an arbitrary text file
+
+        > cat /tmp/text_with_ips.txt
+This is a text file
+with some ip addresses 1.2.3.4
+found in
+1. random places b861:98b2:5154:21df:dd60:8d67:8896:2d03
+2. this is a mac address 00:10:18:35:29:e0
+2.3.4 1.2.4.5
+
+        > scramble_ips -t newkeyfile.cryptopant < /tmp/text_with_ips.txt > /tmp/text_with_ips.anon.txt
+        
+        > cat /tmp/text_with_ips.anon.txt
+This is a text file
+with some ip addresses 45.228.100.2
+found in
+1. random places ec3f:1075:f0d4:88a3:2653:bb5b:d6e7:d556
+2. this is a mac address 00:10:18:35:29:e0
+2.3.4 45.228.99.
+
+
+
+Un-anonymizing text IPs from previous example
+        
+        > scramble_ips -r -t newkeyfile.cryptopant < /tmp/text_with_ips.anon.txt
+This is a text file
+with some ip addresses 1.2.3.4
+found in
+1. random places b861:98b2:5154:21df:dd60:8d67:8896:2d03
+2. this is a mac address 00:10:18:35:29:e0
+2.3.4 1.2.4.5

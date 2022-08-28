@@ -1,0 +1,45 @@
+base_dir: data/model
+data:
+  batch_size: 8
+  dataset_dir: data/
+  graph_pkl_filename: data/adj_mat.pkl
+  test_batch_size: 1
+  test_ratio: 0.2
+  val_batch_size: 1
+  validation_ratio: 0.1
+log_level: INFO
+model:
+  cl_decay_steps: 2000
+  filter_type: random_walk
+  horizon: 24
+  input_dim: 1
+  l1_decay: 0
+  max_diffusion_step: 3
+  num_nodes: 12
+  num_rnn_layers: 1
+  output_dim: 1
+  rnn_units: 32
+  seq_len: 24
+  use_curriculum_learning: true
+train:
+  base_lr: 0.001
+  dropout: 0
+  epoch: 5
+  epochs: 90
+  epsilon: 0.001
+  global_step: 4626
+  log_dir: data/model/dcrnn_R_3_h_24_32_lr_0.001_bs_8_0529231630/
+  lr_decay_ratio: 0.2
+  max_grad_norm: 9
+  max_to_keep: 100
+  min_learning_rate: 2.0e-06
+  model_filename: data/model/dcrnn_R_3_h_24_32_lr_0.001_bs_8_0529231630/models-0.0450-4626
+  optimizer: adam
+  patience: 50
+  steps:
+  - 20
+  - 30
+  - 40
+  - 50
+  test_every_n_epochs: 10
+  val_loss: 0.04497897997498512

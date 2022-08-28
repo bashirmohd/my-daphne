@@ -1,0 +1,66 @@
+﻿{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "i want to change the type of file",
+        "intent": "intent_modification",
+        "entities": [
+          {
+            "start": 21,
+            "end": 33,
+            "value": "type_file",
+            "entity": "modfication"
+          }
+        ]
+      },
+      {
+        "text": "i want to change the size of the file",
+        "intent": "intent_modification",
+        "entities": [
+          {
+            "start": 21,
+            "end": 37,
+            "value": "size_file",
+            "entity": "modfication"
+          }
+        ]
+      },
+      {
+        "text": "i want to change endpoints",
+        "intent": "intent_modification",
+        "entities": [
+          {
+            "start": 17,
+            "end": 26,
+            "value": "endpoint",
+            "entity": "modfication"
+          }
+        ]
+      },
+      {
+        "text": "i would like to change the output path",
+        "intent": "intent_modification",
+        "entities": [
+          {
+            "start": 27,
+            "end": 38,
+            "value": "output_path",
+            "entity": "modfication"
+          }
+        ]
+      },
+      {
+        "text": "i want to change the input path",
+        "intent": "intent_modification",
+        "entities": [
+          {
+            "start": 21,
+            "end": 31,
+            "value": "input_path",
+            "entity": "modfication"
+          }
+        ]
+      }
+    ]
+  }
+}

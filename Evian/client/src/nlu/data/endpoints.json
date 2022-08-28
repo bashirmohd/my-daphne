@@ -1,0 +1,198 @@
+﻿{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "from ames",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 5,
+            "end": 9,
+            "value": "ames",
+            "entity": "endpoint_input"
+          }
+        ]
+      },
+      {
+        "text": "from Ames Laboratory",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 5,
+            "end": 20,
+            "value": "ames",
+            "entity": "endpoint_input"
+          }
+        ]
+      },
+      {
+        "text": "to ames",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 3,
+            "end": 7,
+            "value": "ames",
+            "entity": "endpoint_output"
+          }
+        ]
+      },
+      {
+        "text": "to Ames Laboratory",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 3,
+            "end": 18,
+            "value": "ames",
+            "entity": "endpoint_output"
+          }
+        ]
+      },
+      {
+        "text": "from anl",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 5,
+            "end": 8,
+            "value": "anl",
+            "entity": "endpoint_input"
+          }
+        ]
+      },
+      {
+        "text": "from Argonne National Laboratory",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 5,
+            "end": 32,
+            "value": "anl",
+            "entity": "endpoint_output"
+          }
+        ]
+      },
+      {
+        "text": "to anl",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 3,
+            "end": 6,
+            "value": "anl",
+            "entity": "endpoint_output"
+          }
+        ]
+      },
+      {
+        "text": "to Argonne National Laboratory",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 3,
+            "end": 30,
+            "value": "anl",
+            "entity": "endpoint_output"
+          }
+        ]
+      },
+      {
+        "text": "from lbl",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 5,
+            "end": 8,
+            "value": "lbl",
+            "entity": "endpoint_input"
+          }
+        ]
+      },
+      {
+        "text": "from Lawrence Berkeley National Lab",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 5,
+            "end": 35,
+            "value": "lbl",
+            "entity": "endpoint_input"
+          }
+        ]
+      },
+      {
+        "text": "to lbl",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 3,
+            "end": 6,
+            "value": "lbl",
+            "entity": "endpoint_output"
+          }
+        ]
+      },
+      {
+        "text": "to Lawrence Berkeley National Lab",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 3,
+            "end": 33,
+            "value": "lbl",
+            "entity": "endpoint_output"
+          }
+        ]
+      },
+      {
+        "text": "from llnl",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 5,
+            "end": 9,
+            "value": "llnl",
+            "entity": "endpoint_input"
+          }
+        ]
+      },
+      {
+        "text": "from Lawrence Livermore National Laboratory",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 5,
+            "end": 43,
+            "value": "llnl",
+            "entity": "endpoint_input"
+          }
+        ]
+      },
+      {
+        "text": "to llnl",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 3,
+            "end": 7,
+            "value": "llnl",
+            "entity": "endpoint_output"
+          }
+        ]
+      },
+      {
+        "text": "to Lawrence Livermore National Laboratory",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 3,
+            "end": 41,
+            "value": "llnl",
+            "entity": "endpoint_output"
+          }
+        ]
+      }
+    ]
+  }
+}

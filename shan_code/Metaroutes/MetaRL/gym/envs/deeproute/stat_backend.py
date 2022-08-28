@@ -1,0 +1,261 @@
+import os
+import time
+import pylab
+import random
+import logging
+import matplotlib
+import numpy as np
+import networkx as nx
+import matplotlib.pyplot as plt
+import matplotlib.animation as animation
+import matplotlib.colors as mcolors
+
+
+
+class NODE(object):
+    def __init__(self, name, posx, posy):
+        self.name = name
+        # self.index = index
+        self.pos = (posx, posy)
+
+class LINK(object):
+    def __init__(self, name, bw, lat, node1, node2):
+        self.name = name
+        self.bw = bw
+        self.lat = lat 
+        self.node2 = node2
+        self.node1 = node1
+
+class FlowTraffic(object):
+    def __init__(self, bw, dur, destination):
+        self.bw = bw
+        self.lat = dur
+        self.flag = 0
+        self.counter = dur
+        self.to_link = None
+        self.local_lat = dur
+        self.to_node_name = None
+        self.destination = destination
+
+class StatBackEnd(object):
+
+    def __init__(self, flow_lambda, links, nodes, history, seed):
+        np.random.seed(seed)
+        self.nodes_queues = {}
+        self.active_packets = []
+        self._history = history
+        self.packet_loss = 0
+        self._delivered_packets = 0
+        self._generated_packets = 0
+        self.nodes_actions_history = {}
+        self.flow_lambda = flow_lambda
+        self.nodes = self.gen_nodes(nodes)
+        self.links = self.gen_edges(links)
+        self.ticks = [0] * len(self.nodes)
+        self.links_avail = self.gen_links_avail()
+        self._delivery_time_real = [0] * len(self.nodes)
+        self._delivered_packets_real = [0] * len(self.nodes)
+        self._delivery_time_local = [0] * len(self.nodes)
+        self._delivered_packets_local = [0] * len(self.nodes)
+        self.nodes_connected_links, self.nodes_connected_nodes = self.gen_nodes_connected_links()
+        
+    def gen_nodes_connected_links(self):
+        nodes_connected_links = {}
+        nodes_connected_nodes = {}
+        for index1, node in enumerate(self.nodes):
+            nodes_connected_links[node.name] = []
+            nodes_connected_nodes[index1] = []
+            for link in self.links:
+                if link.node1 == node.name or link.node2 == node.name:
+                    if link.node1 == node.name:
+                        nodes_connected_links[node.name].append((link, link.node2))
+                        for index2, connected_node in enumerate(self.nodes):
+                            if connected_node.name == link.node2:
+                                nodes_connected_nodes[index1].append(index2)
+                    else:
+                        nodes_connected_links[node.name].append((link, link.node1))
+                        for index2, connected_node in enumerate(self.nodes):
+                            if connected_node.name == link.node1:
+                                nodes_connected_nodes[index1].append(index2)
+        return nodes_connected_links, nodes_connected_nodes
+                    
+    def gen_edges(self,links):
+        edgelist = []
+        for e in links:
+            edge_detail = LINK(e["name"], e["BW"], e["Lat"], e["from"], e["to"])
+            edgelist.append(edge_detail)
+        return edgelist
+        
+    def gen_nodes(self, nodes):
+        nodeslist = []
+        for n in nodes:
+            node_detail = NODE(n["name"], n["posx"], n["posy"])
+            nodeslist.append(node_detail)
+        return nodeslist
+        
+    def gen_links_avail(self):
+        links_avail = {}
+        for link in self.links:
+            links_avail[link.name] = link.bw
+        return links_avail
+        
+    def generate_queues(self, node_index, node_name, reset = False, K = 1, Occur_pro = 1):
+
+        if reset:
+            self.nodes_queues[node_name] = []
+
+        if np.random.uniform(0,1) <= Occur_pro:
+            self.ticks[node_index] = 0
+            for _ in range(K):
+                self._generated_packets += 1
+                new_f_bw = np.random.poisson(self.flow_lambda[0])
+                new_f_lat = 0
+                new_f_destination = np.random.choice(self.nodes, 1, replace=False)
+                while new_f_destination[0].name == node_name:
+                    new_f_destination = np.random.choice(self.nodes, 1, replace=False)
+                self.nodes_queues[node_name].append(FlowTraffic(new_f_bw, new_f_lat, new_f_destination[0]))
+                
+    def cleanup(self):
+        pass
+    
+    def reset(self, links):
+        self.active_packets.clear()
+        self._delivery_time_real = [0] * len(self.nodes)
+        self._delivered_packets_real = [0] * len(self.nodes)
+        self._delivered_packets = 0
+        self._generated_packets = 0
+        self.packet_loss = 0
+        self._delivery_time_local = [0] * len(self.nodes)
+        self._delivered_packets_local = [0] * len(self.nodes)
+       
+        self.links = self.gen_edges(links)
+        self.links_avail = self.gen_links_avail()
+        
+        for index, node in enumerate(self.nodes):
+            
+            self.generate_queues(index, node.name, reset=True, K=3)
+        
+        for node in self.nodes:
+            if node.name not in self.nodes_actions_history:
+                self.nodes_actions_history[node.name] = [] 
+            for index in range(self._history):
+                new_f_bw = np.random.poisson(self.flow_lambda[0])
+                new_f_lat = np.random.randint(1, 4)
+                new_f_destination = np.random.choice(self.nodes, 1, replace=False)
+                action = np.random.choice(np.arange(len(self.nodes_connected_links[node.name])), 1)
+                self.nodes_actions_history[node.name].append(action[0])
+                to_link, to_node_name = self.nodes_connected_links[node.name][action[0]]
+                current_packet = FlowTraffic(new_f_bw, new_f_lat, new_f_destination[0])
+                current_packet.counter = index + 1
+                if self.links_avail[to_link.name] > new_f_bw:
+                    self.links_avail[to_link.name] -= new_f_bw
+                    current_packet.to_link = to_link
+                    current_packet.lat += to_link.lat
+                    current_packet.to_node_name = to_node_name
+                    self.active_packets.append(current_packet)
+            while len(self.nodes_actions_history[node.name]) < self._history:
+                self.nodes_actions_history[node.name].append(-1)
+  
+
+    def take_actions(self, actions):
+        
+        for index in range(len(self.ticks)):
+            self.ticks[index] += 1
+        
+        for packet in self.active_packets:
+            packet.counter -= 1
+        
+        for node in self.nodes:
+            for packet in self.nodes_queues[node.name]:
+                packet.lat += 1
+        
+        for index, node in enumerate(self.nodes):
+            occur_pro = 1 - np.exp(- self.ticks[index] * self.flow_lambda[1]) ### 1 - exp(- lambda t)
+            # print(occur_pro)
+            self.generate_queues(index, node.name, Occur_pro = occur_pro)
+
+        for index, node in enumerate(self.nodes):
+            
+            if len(self.nodes_queues[node.name]) > 0:
+                current_packet = self.nodes_queues[node.name][0]
+                to_link, to_node_name = self.nodes_connected_links[node.name][actions[index]] 
+                self.nodes_queues[node.name].remove(current_packet)
+                self.nodes_actions_history[node.name].append(actions[index])
+                if self.links_avail[to_link.name] > current_packet.bw:
+                    current_packet.counter += to_link.lat
+                    current_packet.lat += to_link.lat
+                    current_packet.to_link = to_link
+                    current_packet.to_node_name = to_node_name
+                    self.links_avail[to_link.name] -= current_packet.bw
+                    self.active_packets.append(current_packet)
+                else:
+                    self.packet_loss += 1
+                    current_packet.flag = 1
+                    current_packet.counter += to_link.lat
+                    current_packet.lat += 50
+                    current_packet.to_link = to_link
+                    current_packet.to_node_name = to_node_name
+                    self.active_packets.append(current_packet)
+                    
+            while len(self.nodes_actions_history[node.name]) > self._history:
+                self.nodes_actions_history[node.name].pop(0)
+        
+        for packet in self.active_packets:
+            if packet.counter <= 0.1:
+                self.active_packets.remove(packet)
+                if self.links_avail[packet.to_link.name] > 0:
+                    self.links_avail[packet.to_link.name] += packet.bw
+                if packet.to_node_name != packet.destination.name:
+                    self.nodes_queues[packet.to_node_name].append(packet)
+                else:
+                    for index, node in enumerate(self.nodes):
+                        if packet.to_node_name == node.name:
+                            self._delivered_packets_local[index] += 1
+                            self._delivery_time_local[index] += packet.lat
+                            if packet.flag == 0:
+                                self._delivery_time_real[index] += packet.lat
+                                self._delivered_packets_real[index] += 1
+                            break
+
+    
+    def render(self):
+        # Network Figure
+        fig = plt.figure()
+
+        G = nx.Graph()
+        for node in self.nodes:
+            G.add_node(node.name)
+            G.nodes[node.name]["pos"] = node.pos
+            
+        for link in self.links:
+            G.add_edge(link.node1,link.node2)
+
+        pos=nx.get_node_attributes(G,'pos')
+        # pos = nx.spring_layout(G)
+        nodes_labels = {}
+        for node in G.nodes():
+            nodes_labels[node] = node
+
+        nodes = nx.draw_networkx_nodes(G, pos, node_size=800)
+        edges = nx.draw_networkx_edges(G, pos, width=3)
+        labels = nx.draw_networkx_labels(G, pos, labels=nodes_labels, font_size=18)
+        nx.draw(G,pos)
+        plt.savefig('topo.pdf')
+
+        plt.show()
+ 
+ 
+
+        
+
+
+        
+        
+        
+        
+        
+
+
+                    
+
+ 

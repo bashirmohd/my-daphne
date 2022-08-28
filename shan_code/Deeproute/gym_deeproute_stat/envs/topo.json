@@ -1,0 +1,134 @@
+{
+  "data": {
+    "mapTopology": {
+      "nodes": [
+        {
+          "name": "SRC"
+        },
+        {
+          "name": "node1"
+        },
+        {
+          "name": "node2"
+        },
+        {
+          "name": "node3"
+        },
+        {
+          "name": "node4"
+        },
+        {
+          "name": "node5"
+        },
+        {
+          "name": "node6"
+        },
+        {
+          "name": "DST"
+        }
+        ]
+        , 
+        "edges":[
+          {
+            "name":"edge1",
+            "from":"SRC",
+            "to":"node1",
+            "BW":30,
+            "Lat":3
+          },
+          {
+            "name":"edge2",
+            "from":"SRC",
+            "to":"node2",
+            "BW":10,
+            "Lat":3
+          },
+          {
+            "name":"edge3",
+            "from":"node2",
+            "to":"node1",
+            "BW":20,
+            "Lat": 3
+          },
+          {
+            "name":"edge4",
+            "from":"node3",
+            "to":"node1",
+            "BW":20,
+            "Lat":3
+          },
+          {
+            "name":"edge5",
+            "from":"node2",
+            "to":"node3",
+            "BW":30,
+            "Lat":3
+          },
+          {
+            "name":"edge6",
+            "from":"node2",
+            "to":"node4",
+            "BW":20,
+            "Lat": 3
+          },
+          {
+            "name":"edge7",
+            "from":"node2",
+            "to":"node5",
+            "BW":20,
+            "Lat":3
+          },
+          {
+            "name":"edge8",
+            "from":"node4",
+            "to":"node5",
+            "BW":30,
+            "Lat": 3
+          },
+          {
+            "name":"edge9",
+            "from":"node3",
+            "to":"node5",
+            "BW":10,
+            "Lat":3
+          },
+          {
+            "name":"edge10",
+            "from":"node3",
+            "to":"node6",
+            "BW":30,
+            "Lat":3
+          },
+          {
+            "name":"edge11",
+            "from":"node5",
+            "to":"node6",
+            "BW":20,
+            "Lat":3
+          },
+          {
+            "name":"edge12",
+            "from":"DST",
+            "to":"node5",
+            "BW":10,
+            "Lat":3
+          },
+          {
+            "name":"edge13",
+            "from":"node6",
+            "to":"node1",
+            "BW":10,
+            "Lat":3
+          },
+          {
+            "name":"edge14",
+            "from":"DST",
+            "to":"node6",
+            "BW":30,
+            "Lat":3
+          }
+          ]
+    }
+  
+  }
+}

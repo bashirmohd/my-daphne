@@ -1,0 +1,68 @@
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(400, 300)
+        self.centralWidget = QtWidgets.QWidget(MainWindow)
+        self.centralWidget.setObjectName("centralWidget")
+        self.groupBox = QtWidgets.QGroupBox(self.centralWidget)
+        self.groupBox.setGeometry(QtCore.QRect(20, 90, 251, 141))
+        self.groupBox.setObjectName("groupBox")
+        self.radioButton = QtWidgets.QRadioButton(self.groupBox)
+        self.radioButton.setGeometry(QtCore.QRect(10, 60, 100, 20))
+        self.radioButton.setObjectName("radioButton")
+        self.radioButton_2 = QtWidgets.QRadioButton(self.groupBox)
+        self.radioButton_2.setGeometry(QtCore.QRect(10, 80, 100, 20))
+        self.radioButton_2.setObjectName("radioButton_2")
+        self.radioButton_3 = QtWidgets.QRadioButton(self.groupBox)
+        self.radioButton_3.setGeometry(QtCore.QRect(10, 100, 100, 20))
+        self.radioButton_3.setObjectName("radioButton_3")
+        self.pushButton = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton.setGeometry(QtCore.QRect(120, 100, 80, 22))
+        self.pushButton.setObjectName("pushButton")
+        self.checkBox = QtWidgets.QCheckBox(self.groupBox)
+        self.checkBox.setGeometry(QtCore.QRect(10, 30, 85, 20))
+        self.checkBox.setObjectName("checkBox")
+        self.checkBox_2 = QtWidgets.QCheckBox(self.groupBox)
+        self.checkBox_2.setGeometry(QtCore.QRect(120, 30, 85, 20))
+        self.checkBox_2.setObjectName("checkBox_2")
+        self.label = QtWidgets.QLabel(self.centralWidget)
+        self.label.setGeometry(QtCore.QRect(50, 30, 241, 16))
+        self.label.setObjectName("label")
+        MainWindow.setCentralWidget(self.centralWidget)
+        self.menuBar = QtWidgets.QMenuBar(MainWindow)
+        self.menuBar.setGeometry(QtCore.QRect(0, 0, 400, 19))
+        self.menuBar.setObjectName("menuBar")
+        MainWindow.setMenuBar(self.menuBar)
+        self.mainToolBar = QtWidgets.QToolBar(MainWindow)
+        self.mainToolBar.setObjectName("mainToolBar")
+        MainWindow.addToolBar(QtCore.Qt.TopToolBarArea, self.mainToolBar)
+        self.statusBar = QtWidgets.QStatusBar(MainWindow)
+        self.statusBar.setObjectName("statusBar")
+        MainWindow.setStatusBar(self.statusBar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.groupBox.setTitle(_translate("MainWindow", "GroupBox"))
+        self.radioButton.setText(_translate("MainWindow", "Good"))
+        self.radioButton_2.setText(_translate("MainWindow", "Bad"))
+        self.radioButton_3.setText(_translate("MainWindow", "OK"))
+        self.pushButton.setText(_translate("MainWindow", "Submit"))
+        self.checkBox.setText(_translate("MainWindow", "Yes"))
+        self.checkBox_2.setText(_translate("MainWindow", "No"))
+        self.label.setText(_translate("MainWindow", "TextLabel"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())

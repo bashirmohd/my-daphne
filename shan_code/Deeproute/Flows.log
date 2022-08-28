@@ -1,0 +1,560 @@
+INFO:root:DeeprouteEnv - Version 0.1.0
+INFO:root:Reset environment
+INFO:root:Link name: edge1, link available utilization: 29
+INFO:root:Link name: edge2, link available utilization: 9
+INFO:root:Link name: edge3, link available utilization: 16
+INFO:root:Link name: edge4, link available utilization: 15
+INFO:root:Link name: edge5, link available utilization: 24
+INFO:root:Link name: edge6, link available utilization: 16
+INFO:root:Link name: edge7, link available utilization: 16
+INFO:root:Link name: edge8, link available utilization: 27
+INFO:root:Link name: edge9, link available utilization: 5
+INFO:root:Link name: edge10, link available utilization: 25
+INFO:root:Link name: edge11, link available utilization: 19
+INFO:root:Link name: edge12, link available utilization: 5
+INFO:root:Link name: edge13, link available utilization: 8
+INFO:root:Link name: edge14, link available utilization: 28
+INFO:root:Current step:0
+INFO:root:Node name: SRC, current waiting flow size: 4.173619767163862
+INFO:root:Node name: node1, current waiting flow size: 2.7413128782003002
+INFO:root:Node name: node2, current waiting flow size: 2.7016418149693466
+INFO:root:Node name: node3, current waiting flow size: 5.923683428049246
+INFO:root:Node name: node4, current waiting flow size: 3.1435827616274588
+INFO:root:Node name: node5, current waiting flow size: 3.505009817189452
+INFO:root:Node name: node6, current waiting flow size: 2.6944320069608203
+INFO:root:Node name: DST, current waiting flow size: 0
+INFO:root:Node name:SRC, to link: edge1, to node: node1
+INFO:root:Node name:node1, to link: edge1, to node: SRC
+INFO:root:Node name:node2, to link: edge2, to node: SRC
+INFO:root:Node name:node3, to link: edge4, to node: node1
+INFO:root:Node name:node4, to link: edge6, to node: node2
+INFO:root:Node name:node5, to link: edge7, to node: node2
+INFO:root:Node name:node6, to link: edge11, to node: node5
+INFO:root:Node name:DST, to link: edge12, to node: node5
+INFO:root:Take actions
+INFO:root:Link name: edge1, link available utilization: 22.085067354635836
+INFO:root:Link name: edge2, link available utilization: 6.298358185030653
+INFO:root:Link name: edge3, link available utilization: 16
+INFO:root:Link name: edge4, link available utilization: 9.076316571950754
+INFO:root:Link name: edge5, link available utilization: 24
+INFO:root:Link name: edge6, link available utilization: 12.856417238372542
+INFO:root:Link name: edge7, link available utilization: 12.494990182810549
+INFO:root:Link name: edge8, link available utilization: 27
+INFO:root:Link name: edge9, link available utilization: 5
+INFO:root:Link name: edge10, link available utilization: 25
+INFO:root:Link name: edge11, link available utilization: 16.30556799303918
+INFO:root:Link name: edge12, link available utilization: 5
+INFO:root:Link name: edge13, link available utilization: 8
+INFO:root:Link name: edge14, link available utilization: 28
+INFO:root:Current reward: 0.06666666666666667
+INFO:root:current active flow size: 4.173619767163862, latency: 1.5567387701875923, to link: edge1, to node: node1, counter: 4.556738770187592
+INFO:root:current active flow size: 2.7413128782003002, latency: 1.2167537809285103, to link: edge1, to node: SRC, counter: 4.21675378092851
+INFO:root:current active flow size: 2.7016418149693466, latency: 1.7456640925798463, to link: edge2, to node: SRC, counter: 4.745664092579847
+INFO:root:current active flow size: 5.923683428049246, latency: 1.1198839776360745, to link: edge4, to node: node1, counter: 4.119883977636075
+INFO:root:current active flow size: 3.1435827616274588, latency: 2.7047901756826125, to link: edge6, to node: node2, counter: 5.7047901756826125
+INFO:root:current active flow size: 3.505009817189452, latency: 2.185610801951773, to link: edge7, to node: node2, counter: 5.185610801951773
+INFO:root:current active flow size: 2.6944320069608203, latency: 2.9332193889746474, to link: edge11, to node: node5, counter: 5.933219388974647
+INFO:root:Current step:1
+INFO:root:Node name: SRC, current waiting flow size: 3.6980703629965324
+INFO:root:Node name: node1, current waiting flow size: 2.8787899704999687
+INFO:root:Node name: node2, current waiting flow size: 2.0227540294102937
+INFO:root:Node name: node3, current waiting flow size: 5.562183778914017
+INFO:root:Node name: node4, current waiting flow size: 5.900025974426351
+INFO:root:Node name: node5, current waiting flow size: 4.519767502349989
+INFO:root:Node name: node6, current waiting flow size: 5.8280504014111925
+INFO:root:Node name: DST, current waiting flow size: 0
+INFO:root:Node name:SRC, to link: edge1, to node: node1
+INFO:root:Node name:node1, to link: edge1, to node: SRC
+INFO:root:Node name:node2, to link: edge2, to node: SRC
+INFO:root:Node name:node3, to link: edge5, to node: node2
+INFO:root:Node name:node4, to link: edge6, to node: node2
+INFO:root:Node name:node5, to link: edge9, to node: node3
+INFO:root:Node name:node6, to link: edge13, to node: node1
+INFO:root:Node name:DST, to link: edge12, to node: node5
+INFO:root:Take actions
+INFO:root:Link name: edge1, link available utilization: 15.508207021139334
+INFO:root:Link name: edge2, link available utilization: 4.27560415562036
+INFO:root:Link name: edge3, link available utilization: 16
+INFO:root:Link name: edge4, link available utilization: 9.076316571950754
+INFO:root:Link name: edge5, link available utilization: 18.43781622108598
+INFO:root:Link name: edge6, link available utilization: 6.956391263946191
+INFO:root:Link name: edge7, link available utilization: 12.494990182810549
+INFO:root:Link name: edge8, link available utilization: 27
+INFO:root:Link name: edge9, link available utilization: 0.48023249765001097
+INFO:root:Link name: edge10, link available utilization: 25
+INFO:root:Link name: edge11, link available utilization: 16.30556799303918
+INFO:root:Link name: edge12, link available utilization: 5
+INFO:root:Link name: edge13, link available utilization: 2.1719495985888075
+INFO:root:Link name: edge14, link available utilization: 28
+INFO:root:Current reward: 0.06666666666666667
+INFO:root:current active flow size: 4.173619767163862, latency: 1.5567387701875923, to link: edge1, to node: node1, counter: 3.556738770187592
+INFO:root:current active flow size: 2.7413128782003002, latency: 1.2167537809285103, to link: edge1, to node: SRC, counter: 3.21675378092851
+INFO:root:current active flow size: 2.7016418149693466, latency: 1.7456640925798463, to link: edge2, to node: SRC, counter: 3.7456640925798466
+INFO:root:current active flow size: 5.923683428049246, latency: 1.1198839776360745, to link: edge4, to node: node1, counter: 3.119883977636075
+INFO:root:current active flow size: 3.1435827616274588, latency: 2.7047901756826125, to link: edge6, to node: node2, counter: 4.7047901756826125
+INFO:root:current active flow size: 3.505009817189452, latency: 2.185610801951773, to link: edge7, to node: node2, counter: 4.185610801951773
+INFO:root:current active flow size: 2.6944320069608203, latency: 2.9332193889746474, to link: edge11, to node: node5, counter: 4.933219388974647
+INFO:root:current active flow size: 3.6980703629965324, latency: 2.6895522646398073, to link: edge1, to node: node1, counter: 5.689552264639808
+INFO:root:current active flow size: 2.8787899704999687, latency: 2.957247569414739, to link: edge1, to node: SRC, counter: 5.957247569414739
+INFO:root:current active flow size: 2.0227540294102937, latency: 1.5048527068896809, to link: edge2, to node: SRC, counter: 4.504852706889681
+INFO:root:current active flow size: 5.562183778914017, latency: 2.1538029988000655, to link: edge5, to node: node2, counter: 5.1538029988000655
+INFO:root:current active flow size: 5.900025974426351, latency: 2.769706586982211, to link: edge6, to node: node2, counter: 5.7697065869822115
+INFO:root:current active flow size: 4.519767502349989, latency: 1.285200628892567, to link: edge9, to node: node3, counter: 4.285200628892567
+INFO:root:current active flow size: 5.8280504014111925, latency: 2.1959473686578415, to link: edge13, to node: node1, counter: 5.1959473686578415
+INFO:root:Current step:2
+INFO:root:Node name: SRC, current waiting flow size: 2.0188754247638903
+INFO:root:Node name: node1, current waiting flow size: 5.246732596357293
+INFO:root:Node name: node2, current waiting flow size: 5.182650033893149
+INFO:root:Node name: node3, current waiting flow size: 4.969918756391909
+INFO:root:Node name: node4, current waiting flow size: 3.438031375747609
+INFO:root:Node name: node5, current waiting flow size: 5.735365197865676
+INFO:root:Node name: node6, current waiting flow size: 4.92520301223969
+INFO:root:Node name: DST, current waiting flow size: 0
+INFO:root:Node name:SRC, to link: edge1, to node: node1
+INFO:root:Node name:node1, to link: edge4, to node: node3
+INFO:root:Node name:node2, to link: edge2, to node: SRC
+INFO:root:Node name:node3, to link: edge9, to node: node5
+INFO:root:Node name:node4, to link: edge6, to node: node2
+INFO:root:Node name:node5, to link: edge7, to node: node2
+INFO:root:Node name:node6, to link: edge13, to node: node1
+INFO:root:Node name:DST, to link: edge12, to node: node5
+INFO:root:Take actions
+INFO:root:Link name: edge1, link available utilization: 13.489331596375443
+INFO:root:Link name: edge2, link available utilization: 4.27560415562036
+INFO:root:Link name: edge3, link available utilization: 16
+INFO:root:Link name: edge4, link available utilization: 3.8295839755934606
+INFO:root:Link name: edge5, link available utilization: 18.43781622108598
+INFO:root:Link name: edge6, link available utilization: 3.518359888198582
+INFO:root:Link name: edge7, link available utilization: 6.759624984944873
+INFO:root:Link name: edge8, link available utilization: 27
+INFO:root:Link name: edge9, link available utilization: 0.48023249765001097
+INFO:root:Link name: edge10, link available utilization: 25
+INFO:root:Link name: edge11, link available utilization: 16.30556799303918
+INFO:root:Link name: edge12, link available utilization: 5
+INFO:root:Link name: edge13, link available utilization: 2.1719495985888075
+INFO:root:Link name: edge14, link available utilization: 28
+INFO:root:Current reward: 0.06666666666666667
+INFO:root:current active flow size: 4.173619767163862, latency: 1.5567387701875923, to link: edge1, to node: node1, counter: 2.556738770187592
+INFO:root:current active flow size: 2.7413128782003002, latency: 1.2167537809285103, to link: edge1, to node: SRC, counter: 2.21675378092851
+INFO:root:current active flow size: 2.7016418149693466, latency: 1.7456640925798463, to link: edge2, to node: SRC, counter: 2.7456640925798466
+INFO:root:current active flow size: 5.923683428049246, latency: 1.1198839776360745, to link: edge4, to node: node1, counter: 2.119883977636075
+INFO:root:current active flow size: 3.1435827616274588, latency: 2.7047901756826125, to link: edge6, to node: node2, counter: 3.7047901756826125
+INFO:root:current active flow size: 3.505009817189452, latency: 2.185610801951773, to link: edge7, to node: node2, counter: 3.185610801951773
+INFO:root:current active flow size: 2.6944320069608203, latency: 2.9332193889746474, to link: edge11, to node: node5, counter: 3.9332193889746474
+INFO:root:current active flow size: 3.6980703629965324, latency: 2.6895522646398073, to link: edge1, to node: node1, counter: 4.689552264639808
+INFO:root:current active flow size: 2.8787899704999687, latency: 2.957247569414739, to link: edge1, to node: SRC, counter: 4.957247569414739
+INFO:root:current active flow size: 2.0227540294102937, latency: 1.5048527068896809, to link: edge2, to node: SRC, counter: 3.5048527068896806
+INFO:root:current active flow size: 5.562183778914017, latency: 2.1538029988000655, to link: edge5, to node: node2, counter: 4.1538029988000655
+INFO:root:current active flow size: 5.900025974426351, latency: 2.769706586982211, to link: edge6, to node: node2, counter: 4.7697065869822115
+INFO:root:current active flow size: 4.519767502349989, latency: 1.285200628892567, to link: edge9, to node: node3, counter: 3.285200628892567
+INFO:root:current active flow size: 5.8280504014111925, latency: 2.1959473686578415, to link: edge13, to node: node1, counter: 4.1959473686578415
+INFO:root:current active flow size: 2.0188754247638903, latency: 1.2431382415662284, to link: edge1, to node: node1, counter: 4.243138241566228
+INFO:root:current active flow size: 5.246732596357293, latency: 1.3438820254651884, to link: edge4, to node: node3, counter: 4.343882025465188
+INFO:root:current active flow size: 3.438031375747609, latency: 2.1977178917514943, to link: edge6, to node: node2, counter: 5.197717891751495
+INFO:root:current active flow size: 5.735365197865676, latency: 2.8927597616182026, to link: edge7, to node: node2, counter: 5.892759761618203
+INFO:root:Current step:3
+INFO:root:Node name: SRC, current waiting flow size: 4.682996338907115
+INFO:root:Node name: node1, current waiting flow size: 5.26489899490336
+INFO:root:Node name: node2, current waiting flow size: 5.182650033893149
+INFO:root:Node name: node3, current waiting flow size: 4.969918756391909
+INFO:root:Node name: node4, current waiting flow size: 3.419182446629199
+INFO:root:Node name: node5, current waiting flow size: 4.409186630923463
+INFO:root:Node name: node6, current waiting flow size: 4.92520301223969
+INFO:root:Node name: DST, current waiting flow size: 0
+INFO:root:Node name:SRC, to link: edge1, to node: node1
+INFO:root:Node name:node1, to link: edge1, to node: SRC
+INFO:root:Node name:node2, to link: edge2, to node: SRC
+INFO:root:Node name:node3, to link: edge4, to node: node1
+INFO:root:Node name:node4, to link: edge6, to node: node2
+INFO:root:Node name:node5, to link: edge9, to node: node3
+INFO:root:Node name:node6, to link: edge11, to node: node5
+INFO:root:Node name:DST, to link: edge12, to node: node5
+INFO:root:Take actions
+INFO:root:Link name: edge1, link available utilization: 3.541436262564968
+INFO:root:Link name: edge2, link available utilization: 4.27560415562036
+INFO:root:Link name: edge3, link available utilization: 16
+INFO:root:Link name: edge4, link available utilization: 3.8295839755934606
+INFO:root:Link name: edge5, link available utilization: 18.43781622108598
+INFO:root:Link name: edge6, link available utilization: 0.09917744156938291
+INFO:root:Link name: edge7, link available utilization: 6.759624984944873
+INFO:root:Link name: edge8, link available utilization: 27
+INFO:root:Link name: edge9, link available utilization: 0.48023249765001097
+INFO:root:Link name: edge10, link available utilization: 25
+INFO:root:Link name: edge11, link available utilization: 11.38036498079949
+INFO:root:Link name: edge12, link available utilization: 5
+INFO:root:Link name: edge13, link available utilization: 2.1719495985888075
+INFO:root:Link name: edge14, link available utilization: 28
+INFO:root:Current reward: 0.06666666666666667
+INFO:root:current active flow size: 4.173619767163862, latency: 1.5567387701875923, to link: edge1, to node: node1, counter: 1.556738770187592
+INFO:root:current active flow size: 2.7413128782003002, latency: 1.2167537809285103, to link: edge1, to node: SRC, counter: 1.21675378092851
+INFO:root:current active flow size: 2.7016418149693466, latency: 1.7456640925798463, to link: edge2, to node: SRC, counter: 1.7456640925798466
+INFO:root:current active flow size: 5.923683428049246, latency: 1.1198839776360745, to link: edge4, to node: node1, counter: 1.119883977636075
+INFO:root:current active flow size: 3.1435827616274588, latency: 2.7047901756826125, to link: edge6, to node: node2, counter: 2.7047901756826125
+INFO:root:current active flow size: 3.505009817189452, latency: 2.185610801951773, to link: edge7, to node: node2, counter: 2.185610801951773
+INFO:root:current active flow size: 2.6944320069608203, latency: 2.9332193889746474, to link: edge11, to node: node5, counter: 2.9332193889746474
+INFO:root:current active flow size: 3.6980703629965324, latency: 2.6895522646398073, to link: edge1, to node: node1, counter: 3.689552264639808
+INFO:root:current active flow size: 2.8787899704999687, latency: 2.957247569414739, to link: edge1, to node: SRC, counter: 3.957247569414739
+INFO:root:current active flow size: 2.0227540294102937, latency: 1.5048527068896809, to link: edge2, to node: SRC, counter: 2.5048527068896806
+INFO:root:current active flow size: 5.562183778914017, latency: 2.1538029988000655, to link: edge5, to node: node2, counter: 3.1538029988000655
+INFO:root:current active flow size: 5.900025974426351, latency: 2.769706586982211, to link: edge6, to node: node2, counter: 3.7697065869822115
+INFO:root:current active flow size: 4.519767502349989, latency: 1.285200628892567, to link: edge9, to node: node3, counter: 2.285200628892567
+INFO:root:current active flow size: 5.8280504014111925, latency: 2.1959473686578415, to link: edge13, to node: node1, counter: 3.1959473686578415
+INFO:root:current active flow size: 2.0188754247638903, latency: 1.2431382415662284, to link: edge1, to node: node1, counter: 3.2431382415662284
+INFO:root:current active flow size: 5.246732596357293, latency: 1.3438820254651884, to link: edge4, to node: node3, counter: 3.343882025465188
+INFO:root:current active flow size: 3.438031375747609, latency: 2.1977178917514943, to link: edge6, to node: node2, counter: 4.197717891751495
+INFO:root:current active flow size: 5.735365197865676, latency: 2.8927597616182026, to link: edge7, to node: node2, counter: 4.892759761618203
+INFO:root:current active flow size: 4.682996338907115, latency: 2.6517055102100953, to link: edge1, to node: node1, counter: 5.651705510210095
+INFO:root:current active flow size: 5.26489899490336, latency: 1.5481474940833984, to link: edge1, to node: SRC, counter: 4.548147494083398
+INFO:root:current active flow size: 3.419182446629199, latency: 1.6803804307412915, to link: edge6, to node: node2, counter: 4.680380430741291
+INFO:root:current active flow size: 4.92520301223969, latency: 1.6807704456748722, to link: edge11, to node: node5, counter: 4.680770445674872
+INFO:root:Current step:4
+INFO:root:Node name: SRC, current waiting flow size: 2.546826358739812
+INFO:root:Node name: node1, current waiting flow size: 3.7268167346524868
+INFO:root:Node name: node2, current waiting flow size: 5.182650033893149
+INFO:root:Node name: node3, current waiting flow size: 4.969918756391909
+INFO:root:Node name: node4, current waiting flow size: 2.7123239580232195
+INFO:root:Node name: node5, current waiting flow size: 4.409186630923463
+INFO:root:Node name: node6, current waiting flow size: 2.3682224135089545
+INFO:root:Node name: DST, current waiting flow size: 0
+INFO:root:Node name:SRC, to link: edge1, to node: node1
+INFO:root:Node name:node1, to link: edge3, to node: node2
+INFO:root:Node name:node2, to link: edge6, to node: node4
+INFO:root:Node name:node3, to link: edge5, to node: node2
+INFO:root:Node name:node4, to link: edge6, to node: node2
+INFO:root:Node name:node5, to link: edge11, to node: node6
+INFO:root:Node name:node6, to link: edge11, to node: node5
+INFO:root:Node name:DST, to link: edge12, to node: node5
+INFO:root:Take actions
+INFO:root:Link name: edge1, link available utilization: 0.9946099038251561
+INFO:root:Link name: edge2, link available utilization: 4.27560415562036
+INFO:root:Link name: edge3, link available utilization: 12.273183265347512
+INFO:root:Link name: edge4, link available utilization: 3.8295839755934606
+INFO:root:Link name: edge5, link available utilization: 13.467897464694072
+INFO:root:Link name: edge6, link available utilization: 0.09917744156938291
+INFO:root:Link name: edge7, link available utilization: 6.759624984944873
+INFO:root:Link name: edge8, link available utilization: 27
+INFO:root:Link name: edge9, link available utilization: 0.48023249765001097
+INFO:root:Link name: edge10, link available utilization: 25
+INFO:root:Link name: edge11, link available utilization: 4.6029559363670725
+INFO:root:Link name: edge12, link available utilization: 5
+INFO:root:Link name: edge13, link available utilization: 2.1719495985888075
+INFO:root:Link name: edge14, link available utilization: 28
+INFO:root:Current reward: 0.06666666666666667
+INFO:root:current active flow size: 4.173619767163862, latency: 1.5567387701875923, to link: edge1, to node: node1, counter: 0.5567387701875921
+INFO:root:current active flow size: 2.7413128782003002, latency: 1.2167537809285103, to link: edge1, to node: SRC, counter: 0.21675378092851005
+INFO:root:current active flow size: 2.7016418149693466, latency: 1.7456640925798463, to link: edge2, to node: SRC, counter: 0.7456640925798466
+INFO:root:current active flow size: 5.923683428049246, latency: 1.1198839776360745, to link: edge4, to node: node1, counter: 0.11988397763607495
+INFO:root:current active flow size: 3.1435827616274588, latency: 2.7047901756826125, to link: edge6, to node: node2, counter: 1.7047901756826125
+INFO:root:current active flow size: 3.505009817189452, latency: 2.185610801951773, to link: edge7, to node: node2, counter: 1.185610801951773
+INFO:root:current active flow size: 2.6944320069608203, latency: 2.9332193889746474, to link: edge11, to node: node5, counter: 1.9332193889746474
+INFO:root:current active flow size: 3.6980703629965324, latency: 2.6895522646398073, to link: edge1, to node: node1, counter: 2.689552264639808
+INFO:root:current active flow size: 2.8787899704999687, latency: 2.957247569414739, to link: edge1, to node: SRC, counter: 2.957247569414739
+INFO:root:current active flow size: 2.0227540294102937, latency: 1.5048527068896809, to link: edge2, to node: SRC, counter: 1.5048527068896806
+INFO:root:current active flow size: 5.562183778914017, latency: 2.1538029988000655, to link: edge5, to node: node2, counter: 2.1538029988000655
+INFO:root:current active flow size: 5.900025974426351, latency: 2.769706586982211, to link: edge6, to node: node2, counter: 2.7697065869822115
+INFO:root:current active flow size: 4.519767502349989, latency: 1.285200628892567, to link: edge9, to node: node3, counter: 1.285200628892567
+INFO:root:current active flow size: 5.8280504014111925, latency: 2.1959473686578415, to link: edge13, to node: node1, counter: 2.1959473686578415
+INFO:root:current active flow size: 2.0188754247638903, latency: 1.2431382415662284, to link: edge1, to node: node1, counter: 2.2431382415662284
+INFO:root:current active flow size: 5.246732596357293, latency: 1.3438820254651884, to link: edge4, to node: node3, counter: 2.343882025465188
+INFO:root:current active flow size: 3.438031375747609, latency: 2.1977178917514943, to link: edge6, to node: node2, counter: 3.197717891751495
+INFO:root:current active flow size: 5.735365197865676, latency: 2.8927597616182026, to link: edge7, to node: node2, counter: 3.892759761618203
+INFO:root:current active flow size: 4.682996338907115, latency: 2.6517055102100953, to link: edge1, to node: node1, counter: 4.651705510210095
+INFO:root:current active flow size: 5.26489899490336, latency: 1.5481474940833984, to link: edge1, to node: SRC, counter: 3.5481474940833984
+INFO:root:current active flow size: 3.419182446629199, latency: 1.6803804307412915, to link: edge6, to node: node2, counter: 3.680380430741291
+INFO:root:current active flow size: 4.92520301223969, latency: 1.6807704456748722, to link: edge11, to node: node5, counter: 3.680770445674872
+INFO:root:current active flow size: 2.546826358739812, latency: 2.1501866588545, to link: edge1, to node: node1, counter: 5.1501866588544996
+INFO:root:current active flow size: 3.7268167346524868, latency: 2.8800596392447493, to link: edge3, to node: node2, counter: 5.880059639244749
+INFO:root:current active flow size: 4.969918756391909, latency: 2.260367872950752, to link: edge5, to node: node2, counter: 5.260367872950752
+INFO:root:current active flow size: 4.409186630923463, latency: 1.7755325606532615, to link: edge11, to node: node6, counter: 4.775532560653262
+INFO:root:current active flow size: 2.3682224135089545, latency: 1.9269960378742954, to link: edge11, to node: node5, counter: 4.926996037874296
+INFO:root:Current step:5
+INFO:root:Node name: SRC, current waiting flow size: 5.565287817249056
+INFO:root:Node name: node1, current waiting flow size: 5.2705975151069095
+INFO:root:Node name: node2, current waiting flow size: 5.182650033893149
+INFO:root:Node name: node3, current waiting flow size: 4.327368769595111
+INFO:root:Node name: node4, current waiting flow size: 2.7123239580232195
+INFO:root:Node name: node5, current waiting flow size: 3.4527520164373993
+INFO:root:Node name: node6, current waiting flow size: 4.034795572952776
+INFO:root:Node name: DST, current waiting flow size: 0
+INFO:root:Node name:SRC, to link: edge1, to node: node1
+INFO:root:Node name:node1, to link: edge4, to node: node3
+INFO:root:Node name:node2, to link: edge5, to node: node3
+INFO:root:Node name:node3, to link: edge5, to node: node2
+INFO:root:Node name:node4, to link: edge6, to node: node2
+INFO:root:Node name:node5, to link: edge8, to node: node4
+INFO:root:Node name:node6, to link: edge13, to node: node1
+INFO:root:Node name:DST, to link: edge12, to node: node5
+INFO:root:Take actions
+INFO:root:Link name: edge1, link available utilization: 5.168229670989017
+INFO:root:Link name: edge2, link available utilization: 6.977245970589706
+INFO:root:Link name: edge3, link available utilization: 12.273183265347512
+INFO:root:Link name: edge4, link available utilization: 3.8295839755934606
+INFO:root:Link name: edge5, link available utilization: 3.957878661205811
+INFO:root:Link name: edge6, link available utilization: 0.09917744156938291
+INFO:root:Link name: edge7, link available utilization: 6.759624984944873
+INFO:root:Link name: edge8, link available utilization: 23.5472479835626
+INFO:root:Link name: edge9, link available utilization: 0.48023249765001097
+INFO:root:Link name: edge10, link available utilization: 25
+INFO:root:Link name: edge11, link available utilization: 4.6029559363670725
+INFO:root:Link name: edge12, link available utilization: 5
+INFO:root:Link name: edge13, link available utilization: 2.1719495985888075
+INFO:root:Link name: edge14, link available utilization: 28
+INFO:root:Current reward: 0.06666666666666667
+INFO:root:current active flow size: 2.7413128782003002, latency: 1.2167537809285103, to link: edge1, to node: SRC, counter: -0.78324621907149
+INFO:root:current active flow size: 5.923683428049246, latency: 1.1198839776360745, to link: edge4, to node: node1, counter: -0.880116022363925
+INFO:root:current active flow size: 3.1435827616274588, latency: 2.7047901756826125, to link: edge6, to node: node2, counter: 0.7047901756826125
+INFO:root:current active flow size: 3.505009817189452, latency: 2.185610801951773, to link: edge7, to node: node2, counter: 0.18561080195177304
+INFO:root:current active flow size: 2.6944320069608203, latency: 2.9332193889746474, to link: edge11, to node: node5, counter: 0.9332193889746474
+INFO:root:current active flow size: 3.6980703629965324, latency: 2.6895522646398073, to link: edge1, to node: node1, counter: 1.6895522646398078
+INFO:root:current active flow size: 2.8787899704999687, latency: 2.957247569414739, to link: edge1, to node: SRC, counter: 1.957247569414739
+INFO:root:current active flow size: 2.0227540294102937, latency: 1.5048527068896809, to link: edge2, to node: SRC, counter: 0.5048527068896806
+INFO:root:current active flow size: 5.562183778914017, latency: 2.1538029988000655, to link: edge5, to node: node2, counter: 1.1538029988000655
+INFO:root:current active flow size: 5.900025974426351, latency: 2.769706586982211, to link: edge6, to node: node2, counter: 1.7697065869822115
+INFO:root:current active flow size: 4.519767502349989, latency: 1.285200628892567, to link: edge9, to node: node3, counter: 0.28520062889256703
+INFO:root:current active flow size: 5.8280504014111925, latency: 2.1959473686578415, to link: edge13, to node: node1, counter: 1.1959473686578415
+INFO:root:current active flow size: 2.0188754247638903, latency: 1.2431382415662284, to link: edge1, to node: node1, counter: 1.2431382415662284
+INFO:root:current active flow size: 5.246732596357293, latency: 1.3438820254651884, to link: edge4, to node: node3, counter: 1.343882025465188
+INFO:root:current active flow size: 3.438031375747609, latency: 2.1977178917514943, to link: edge6, to node: node2, counter: 2.197717891751495
+INFO:root:current active flow size: 5.735365197865676, latency: 2.8927597616182026, to link: edge7, to node: node2, counter: 2.892759761618203
+INFO:root:current active flow size: 4.682996338907115, latency: 2.6517055102100953, to link: edge1, to node: node1, counter: 3.6517055102100953
+INFO:root:current active flow size: 5.26489899490336, latency: 1.5481474940833984, to link: edge1, to node: SRC, counter: 2.5481474940833984
+INFO:root:current active flow size: 3.419182446629199, latency: 1.6803804307412915, to link: edge6, to node: node2, counter: 2.680380430741291
+INFO:root:current active flow size: 4.92520301223969, latency: 1.6807704456748722, to link: edge11, to node: node5, counter: 2.680770445674872
+INFO:root:current active flow size: 2.546826358739812, latency: 2.1501866588545, to link: edge1, to node: node1, counter: 4.1501866588544996
+INFO:root:current active flow size: 3.7268167346524868, latency: 2.8800596392447493, to link: edge3, to node: node2, counter: 4.880059639244749
+INFO:root:current active flow size: 4.969918756391909, latency: 2.260367872950752, to link: edge5, to node: node2, counter: 4.260367872950752
+INFO:root:current active flow size: 4.409186630923463, latency: 1.7755325606532615, to link: edge11, to node: node6, counter: 3.7755325606532617
+INFO:root:current active flow size: 2.3682224135089545, latency: 1.9269960378742954, to link: edge11, to node: node5, counter: 3.9269960378742956
+INFO:root:current active flow size: 5.182650033893149, latency: 1.030509942492678, to link: edge5, to node: node3, counter: 4.030509942492678
+INFO:root:current active flow size: 4.327368769595111, latency: 1.0408782640538463, to link: edge5, to node: node2, counter: 4.0408782640538465
+INFO:root:current active flow size: 3.4527520164373993, latency: 1.4086905537372885, to link: edge8, to node: node4, counter: 4.408690553737289
+INFO:root:Current step:6
+INFO:root:Node name: SRC, current waiting flow size: 5.565287817249056
+INFO:root:Node name: node1, current waiting flow size: 5.2705975151069095
+INFO:root:Node name: node2, current waiting flow size: 4.3953735077139715
+INFO:root:Node name: node3, current waiting flow size: 2.8401063106914424
+INFO:root:Node name: node4, current waiting flow size: 2.7123239580232195
+INFO:root:Node name: node5, current waiting flow size: 3.1070602455853407
+INFO:root:Node name: node6, current waiting flow size: 4.034795572952776
+INFO:root:Node name: DST, current waiting flow size: 0
+INFO:root:Node name:SRC, to link: edge1, to node: node1
+INFO:root:Node name:node1, to link: edge4, to node: node3
+INFO:root:Node name:node2, to link: edge5, to node: node3
+INFO:root:Node name:node3, to link: edge9, to node: node5
+INFO:root:Node name:node4, to link: edge6, to node: node2
+INFO:root:Node name:node5, to link: edge8, to node: node4
+INFO:root:Node name:node6, to link: edge10, to node: node3
+INFO:root:Node name:DST, to link: edge12, to node: node5
+INFO:root:Take actions
+INFO:root:Link name: edge1, link available utilization: 7.909542549189318
+INFO:root:Link name: edge2, link available utilization: 9.0
+INFO:root:Link name: edge3, link available utilization: 12.273183265347512
+INFO:root:Link name: edge4, link available utilization: 3.8295839755934606
+INFO:root:Link name: edge5, link available utilization: 3.957878661205811
+INFO:root:Link name: edge6, link available utilization: 3.2427602031968417
+INFO:root:Link name: edge7, link available utilization: 6.759624984944873
+INFO:root:Link name: edge8, link available utilization: 20.440187737977258
+INFO:root:Link name: edge9, link available utilization: 5.0
+INFO:root:Link name: edge10, link available utilization: 20.965204427047226
+INFO:root:Link name: edge11, link available utilization: 7.297387943327893
+INFO:root:Link name: edge12, link available utilization: 5
+INFO:root:Link name: edge13, link available utilization: 2.1719495985888075
+INFO:root:Link name: edge14, link available utilization: 28
+INFO:root:Current reward: 0.06666666666666667
+INFO:root:current active flow size: 5.923683428049246, latency: 1.1198839776360745, to link: edge4, to node: node1, counter: -1.880116022363925
+INFO:root:current active flow size: 3.505009817189452, latency: 2.185610801951773, to link: edge7, to node: node2, counter: -0.814389198048227
+INFO:root:current active flow size: 3.6980703629965324, latency: 2.6895522646398073, to link: edge1, to node: node1, counter: 0.6895522646398078
+INFO:root:current active flow size: 2.8787899704999687, latency: 2.957247569414739, to link: edge1, to node: SRC, counter: 0.9572475694147391
+INFO:root:current active flow size: 5.562183778914017, latency: 2.1538029988000655, to link: edge5, to node: node2, counter: 0.15380299880006554
+INFO:root:current active flow size: 5.900025974426351, latency: 2.769706586982211, to link: edge6, to node: node2, counter: 0.7697065869822115
+INFO:root:current active flow size: 5.8280504014111925, latency: 2.1959473686578415, to link: edge13, to node: node1, counter: 0.19594736865784146
+INFO:root:current active flow size: 2.0188754247638903, latency: 1.2431382415662284, to link: edge1, to node: node1, counter: 0.24313824156622843
+INFO:root:current active flow size: 5.246732596357293, latency: 1.3438820254651884, to link: edge4, to node: node3, counter: 0.343882025465188
+INFO:root:current active flow size: 3.438031375747609, latency: 2.1977178917514943, to link: edge6, to node: node2, counter: 1.1977178917514948
+INFO:root:current active flow size: 5.735365197865676, latency: 2.8927597616182026, to link: edge7, to node: node2, counter: 1.892759761618203
+INFO:root:current active flow size: 4.682996338907115, latency: 2.6517055102100953, to link: edge1, to node: node1, counter: 2.6517055102100953
+INFO:root:current active flow size: 5.26489899490336, latency: 1.5481474940833984, to link: edge1, to node: SRC, counter: 1.5481474940833984
+INFO:root:current active flow size: 3.419182446629199, latency: 1.6803804307412915, to link: edge6, to node: node2, counter: 1.680380430741291
+INFO:root:current active flow size: 4.92520301223969, latency: 1.6807704456748722, to link: edge11, to node: node5, counter: 1.680770445674872
+INFO:root:current active flow size: 2.546826358739812, latency: 2.1501866588545, to link: edge1, to node: node1, counter: 3.1501866588544996
+INFO:root:current active flow size: 3.7268167346524868, latency: 2.8800596392447493, to link: edge3, to node: node2, counter: 3.880059639244749
+INFO:root:current active flow size: 4.969918756391909, latency: 2.260367872950752, to link: edge5, to node: node2, counter: 3.260367872950752
+INFO:root:current active flow size: 4.409186630923463, latency: 1.7755325606532615, to link: edge11, to node: node6, counter: 2.7755325606532617
+INFO:root:current active flow size: 2.3682224135089545, latency: 1.9269960378742954, to link: edge11, to node: node5, counter: 2.9269960378742956
+INFO:root:current active flow size: 5.182650033893149, latency: 1.030509942492678, to link: edge5, to node: node3, counter: 3.030509942492678
+INFO:root:current active flow size: 4.327368769595111, latency: 1.0408782640538463, to link: edge5, to node: node2, counter: 3.0408782640538465
+INFO:root:current active flow size: 3.4527520164373993, latency: 1.4086905537372885, to link: edge8, to node: node4, counter: 3.408690553737289
+INFO:root:current active flow size: 3.1070602455853407, latency: 1.4930717624070993, to link: edge8, to node: node4, counter: 4.4930717624071
+INFO:root:current active flow size: 4.034795572952776, latency: 1.1769203460057815, to link: edge10, to node: node3, counter: 4.176920346005781
+INFO:root:Current step:7
+INFO:root:Node name: SRC, current waiting flow size: 5.565287817249056
+INFO:root:Node name: node1, current waiting flow size: 5.2705975151069095
+INFO:root:Node name: node2, current waiting flow size: 4.3953735077139715
+INFO:root:Node name: node3, current waiting flow size: 2.8401063106914424
+INFO:root:Node name: node4, current waiting flow size: 2.7123239580232195
+INFO:root:Node name: node5, current waiting flow size: 2.6944320069608203
+INFO:root:Node name: node6, current waiting flow size: 4.11214089327219
+INFO:root:Node name: DST, current waiting flow size: 0
+INFO:root:Node name:SRC, to link: edge1, to node: node1
+INFO:root:Node name:node1, to link: edge3, to node: node2
+INFO:root:Node name:node2, to link: edge6, to node: node4
+INFO:root:Node name:node3, to link: edge4, to node: node1
+INFO:root:Node name:node4, to link: edge6, to node: node2
+INFO:root:Node name:node5, to link: edge9, to node: node3
+INFO:root:Node name:node6, to link: edge13, to node: node1
+INFO:root:Node name:DST, to link: edge12, to node: node5
+INFO:root:Take actions
+INFO:root:Link name: edge1, link available utilization: 6.042325094936794
+INFO:root:Link name: edge2, link available utilization: 9.0
+INFO:root:Link name: edge3, link available utilization: 7.002585750240603
+INFO:root:Link name: edge4, link available utilization: 12.159893689308557
+INFO:root:Link name: edge5, link available utilization: 9.520062440119828
+INFO:root:Link name: edge6, link available utilization: 0.5304362451736222
+INFO:root:Link name: edge7, link available utilization: 6.759624984944873
+INFO:root:Link name: edge8, link available utilization: 20.440187737977258
+INFO:root:Link name: edge9, link available utilization: 2.3055679930391797
+INFO:root:Link name: edge10, link available utilization: 20.965204427047226
+INFO:root:Link name: edge11, link available utilization: 7.297387943327893
+INFO:root:Link name: edge12, link available utilization: 5
+INFO:root:Link name: edge13, link available utilization: 8.0
+INFO:root:Link name: edge14, link available utilization: 28
+INFO:root:Current reward: 0.06666666666666667
+INFO:root:current active flow size: 3.505009817189452, latency: 2.185610801951773, to link: edge7, to node: node2, counter: -1.814389198048227
+INFO:root:current active flow size: 2.8787899704999687, latency: 2.957247569414739, to link: edge1, to node: SRC, counter: -0.0427524305852609
+INFO:root:current active flow size: 5.900025974426351, latency: 2.769706586982211, to link: edge6, to node: node2, counter: -0.2302934130177885
+INFO:root:current active flow size: 2.0188754247638903, latency: 1.2431382415662284, to link: edge1, to node: node1, counter: -0.7568617584337716
+INFO:root:current active flow size: 3.438031375747609, latency: 2.1977178917514943, to link: edge6, to node: node2, counter: 0.1977178917514948
+INFO:root:current active flow size: 5.735365197865676, latency: 2.8927597616182026, to link: edge7, to node: node2, counter: 0.892759761618203
+INFO:root:current active flow size: 4.682996338907115, latency: 2.6517055102100953, to link: edge1, to node: node1, counter: 1.6517055102100953
+INFO:root:current active flow size: 5.26489899490336, latency: 1.5481474940833984, to link: edge1, to node: SRC, counter: 0.5481474940833984
+INFO:root:current active flow size: 3.419182446629199, latency: 1.6803804307412915, to link: edge6, to node: node2, counter: 0.6803804307412911
+INFO:root:current active flow size: 4.92520301223969, latency: 1.6807704456748722, to link: edge11, to node: node5, counter: 0.680770445674872
+INFO:root:current active flow size: 2.546826358739812, latency: 2.1501866588545, to link: edge1, to node: node1, counter: 2.1501866588544996
+INFO:root:current active flow size: 3.7268167346524868, latency: 2.8800596392447493, to link: edge3, to node: node2, counter: 2.880059639244749
+INFO:root:current active flow size: 4.969918756391909, latency: 2.260367872950752, to link: edge5, to node: node2, counter: 2.260367872950752
+INFO:root:current active flow size: 4.409186630923463, latency: 1.7755325606532615, to link: edge11, to node: node6, counter: 1.7755325606532617
+INFO:root:current active flow size: 2.3682224135089545, latency: 1.9269960378742954, to link: edge11, to node: node5, counter: 1.9269960378742956
+INFO:root:current active flow size: 5.182650033893149, latency: 1.030509942492678, to link: edge5, to node: node3, counter: 2.030509942492678
+INFO:root:current active flow size: 4.327368769595111, latency: 1.0408782640538463, to link: edge5, to node: node2, counter: 2.0408782640538465
+INFO:root:current active flow size: 3.4527520164373993, latency: 1.4086905537372885, to link: edge8, to node: node4, counter: 2.408690553737289
+INFO:root:current active flow size: 3.1070602455853407, latency: 1.4930717624070993, to link: edge8, to node: node4, counter: 3.4930717624070997
+INFO:root:current active flow size: 4.034795572952776, latency: 1.1769203460057815, to link: edge10, to node: node3, counter: 3.1769203460057813
+INFO:root:current active flow size: 5.565287817249056, latency: 1.4184042442343792, to link: edge1, to node: node1, counter: 4.418404244234379
+INFO:root:current active flow size: 5.2705975151069095, latency: 1.6722239002417973, to link: edge3, to node: node2, counter: 4.672223900241797
+INFO:root:current active flow size: 2.8401063106914424, latency: 2.089369756357295, to link: edge4, to node: node1, counter: 5.089369756357295
+INFO:root:current active flow size: 2.7123239580232195, latency: 1.4753884172481009, to link: edge6, to node: node2, counter: 4.475388417248101
+INFO:root:current active flow size: 2.6944320069608203, latency: 2.9332193889746474, to link: edge9, to node: node3, counter: 2.9332193889746474
+INFO:root:Current step:8
+INFO:root:Node name: SRC, current waiting flow size: 3.5801437270329184
+INFO:root:Node name: node1, current waiting flow size: 4.173619767163862
+INFO:root:Node name: node2, current waiting flow size: 4.3953735077139715
+INFO:root:Node name: node3, current waiting flow size: 5.076460684422607
+INFO:root:Node name: node4, current waiting flow size: 2.179449129843101
+INFO:root:Node name: node5, current waiting flow size: 0
+INFO:root:Node name: node6, current waiting flow size: 4.11214089327219
+INFO:root:Node name: DST, current waiting flow size: 0
+INFO:root:Node name:SRC, to link: edge1, to node: node1
+INFO:root:Node name:node1, to link: edge4, to node: node3
+INFO:root:Node name:node2, to link: edge5, to node: node3
+INFO:root:Node name:node3, to link: edge9, to node: node5
+INFO:root:Node name:node4, to link: edge6, to node: node2
+INFO:root:Node name:node5, to link: edge7, to node: node2
+INFO:root:Node name:node6, to link: edge11, to node: node5
+INFO:root:Node name:DST, to link: edge12, to node: node5
+INFO:root:Take actions
+INFO:root:Link name: edge1, link available utilization: 7.727080362807236
+INFO:root:Link name: edge2, link available utilization: 9.0
+INFO:root:Link name: edge3, link available utilization: 7.002585750240603
+INFO:root:Link name: edge4, link available utilization: 7.9862739221446954
+INFO:root:Link name: edge5, link available utilization: 5.124688932405856
+INFO:root:Link name: edge6, link available utilization: 9.868493595347582
+INFO:root:Link name: edge7, link available utilization: 10.264634802134324
+INFO:root:Link name: edge8, link available utilization: 20.440187737977258
+INFO:root:Link name: edge9, link available utilization: 2.3055679930391797
+INFO:root:Link name: edge10, link available utilization: 20.965204427047226
+INFO:root:Link name: edge11, link available utilization: 8.110450062295392
+INFO:root:Link name: edge12, link available utilization: 5
+INFO:root:Link name: edge13, link available utilization: 8.0
+INFO:root:Link name: edge14, link available utilization: 28
+INFO:root:Current reward: 0.06666666666666667
+INFO:root:current active flow size: 2.8787899704999687, latency: 2.957247569414739, to link: edge1, to node: SRC, counter: -1.042752430585261
+INFO:root:current active flow size: 2.0188754247638903, latency: 1.2431382415662284, to link: edge1, to node: node1, counter: -1.7568617584337716
+INFO:root:current active flow size: 5.735365197865676, latency: 2.8927597616182026, to link: edge7, to node: node2, counter: -0.10724023838179697
+INFO:root:current active flow size: 4.682996338907115, latency: 2.6517055102100953, to link: edge1, to node: node1, counter: 0.6517055102100953
+INFO:root:current active flow size: 3.419182446629199, latency: 1.6803804307412915, to link: edge6, to node: node2, counter: -0.31961956925870894
+INFO:root:current active flow size: 2.546826358739812, latency: 2.1501866588545, to link: edge1, to node: node1, counter: 1.1501866588544996
+INFO:root:current active flow size: 3.7268167346524868, latency: 2.8800596392447493, to link: edge3, to node: node2, counter: 1.8800596392447488
+INFO:root:current active flow size: 4.969918756391909, latency: 2.260367872950752, to link: edge5, to node: node2, counter: 1.2603678729507521
+INFO:root:current active flow size: 4.409186630923463, latency: 1.7755325606532615, to link: edge11, to node: node6, counter: 0.7755325606532617
+INFO:root:current active flow size: 2.3682224135089545, latency: 1.9269960378742954, to link: edge11, to node: node5, counter: 0.9269960378742956
+INFO:root:current active flow size: 5.182650033893149, latency: 1.030509942492678, to link: edge5, to node: node3, counter: 1.030509942492678
+INFO:root:current active flow size: 4.327368769595111, latency: 1.0408782640538463, to link: edge5, to node: node2, counter: 1.0408782640538465
+INFO:root:current active flow size: 3.4527520164373993, latency: 1.4086905537372885, to link: edge8, to node: node4, counter: 1.408690553737289
+INFO:root:current active flow size: 3.1070602455853407, latency: 1.4930717624070993, to link: edge8, to node: node4, counter: 2.4930717624070997
+INFO:root:current active flow size: 4.034795572952776, latency: 1.1769203460057815, to link: edge10, to node: node3, counter: 2.1769203460057813
+INFO:root:current active flow size: 5.565287817249056, latency: 1.4184042442343792, to link: edge1, to node: node1, counter: 3.418404244234379
+INFO:root:current active flow size: 5.2705975151069095, latency: 1.6722239002417973, to link: edge3, to node: node2, counter: 3.6722239002417973
+INFO:root:current active flow size: 2.8401063106914424, latency: 2.089369756357295, to link: edge4, to node: node1, counter: 4.089369756357295
+INFO:root:current active flow size: 2.7123239580232195, latency: 1.4753884172481009, to link: edge6, to node: node2, counter: 3.4753884172481007
+INFO:root:current active flow size: 2.6944320069608203, latency: 2.9332193889746474, to link: edge9, to node: node3, counter: 1.9332193889746474
+INFO:root:current active flow size: 3.5801437270329184, latency: 1.6711928834371366, to link: edge1, to node: node1, counter: 4.671192883437136
+INFO:root:current active flow size: 4.173619767163862, latency: 1.5567387701875923, to link: edge4, to node: node3, counter: 2.556738770187592
+INFO:root:current active flow size: 4.3953735077139715, latency: 2.2076090780857074, to link: edge5, to node: node3, counter: 5.207609078085707
+INFO:root:current active flow size: 4.11214089327219, latency: 2.9843160730210565, to link: edge11, to node: node5, counter: 5.9843160730210565
+INFO:root:Current step:9
+INFO:root:Node name: SRC, current waiting flow size: 5.221802149317119
+INFO:root:Node name: node1, current waiting flow size: 5.923683428049246
+INFO:root:Node name: node2, current waiting flow size: 2.4205907416482253
+INFO:root:Node name: node3, current waiting flow size: 5.076460684422607
+INFO:root:Node name: node4, current waiting flow size: 2.179449129843101
+INFO:root:Node name: node5, current waiting flow size: 4.92520301223969
+INFO:root:Node name: node6, current waiting flow size: 0
+INFO:root:Node name: DST, current waiting flow size: 0
+INFO:root:Node name:SRC, to link: edge1, to node: node1
+INFO:root:Node name:node1, to link: edge3, to node: node2
+INFO:root:Node name:node2, to link: edge3, to node: node1
+INFO:root:Node name:node3, to link: edge9, to node: node5
+INFO:root:Node name:node4, to link: edge6, to node: node2
+INFO:root:Node name:node5, to link: edge7, to node: node2
+INFO:root:Node name:node6, to link: edge11, to node: node5
+INFO:root:Node name:DST, to link: edge12, to node: node5
+INFO:root:Take actions
+INFO:root:Link name: edge1, link available utilization: 5.3840681839900855
+INFO:root:Link name: edge2, link available utilization: 9.0
+INFO:root:Link name: edge3, link available utilization: 1.0789023221913565
+INFO:root:Link name: edge4, link available utilization: 7.9862739221446954
+INFO:root:Link name: edge5, link available utilization: 5.124688932405856
+INFO:root:Link name: edge6, link available utilization: 11.108226912133679
+INFO:root:Link name: edge7, link available utilization: 11.07479698776031
+INFO:root:Link name: edge8, link available utilization: 20.440187737977258
+INFO:root:Link name: edge9, link available utilization: 2.3055679930391797
+INFO:root:Link name: edge10, link available utilization: 20.965204427047226
+INFO:root:Link name: edge11, link available utilization: 12.519636693218855
+INFO:root:Link name: edge12, link available utilization: 5
+INFO:root:Link name: edge13, link available utilization: 8.0
+INFO:root:Link name: edge14, link available utilization: 28
+INFO:root:Current reward: 0.06666666666666667
+INFO:root:current active flow size: 2.0188754247638903, latency: 1.2431382415662284, to link: edge1, to node: node1, counter: -2.7568617584337716
+INFO:root:current active flow size: 4.682996338907115, latency: 2.6517055102100953, to link: edge1, to node: node1, counter: -0.34829448978990474
+INFO:root:current active flow size: 2.546826358739812, latency: 2.1501866588545, to link: edge1, to node: node1, counter: 0.15018665885449956
+INFO:root:current active flow size: 3.7268167346524868, latency: 2.8800596392447493, to link: edge3, to node: node2, counter: 0.8800596392447488
+INFO:root:current active flow size: 4.969918756391909, latency: 2.260367872950752, to link: edge5, to node: node2, counter: 0.26036787295075214
+INFO:root:current active flow size: 2.3682224135089545, latency: 1.9269960378742954, to link: edge11, to node: node5, counter: -0.07300396212570437
+INFO:root:current active flow size: 5.182650033893149, latency: 1.030509942492678, to link: edge5, to node: node3, counter: 0.03050994249267802
+INFO:root:current active flow size: 4.327368769595111, latency: 1.0408782640538463, to link: edge5, to node: node2, counter: 0.040878264053846536
+INFO:root:current active flow size: 3.4527520164373993, latency: 1.4086905537372885, to link: edge8, to node: node4, counter: 0.4086905537372889
+INFO:root:current active flow size: 3.1070602455853407, latency: 1.4930717624070993, to link: edge8, to node: node4, counter: 1.4930717624070997
+INFO:root:current active flow size: 4.034795572952776, latency: 1.1769203460057815, to link: edge10, to node: node3, counter: 1.1769203460057813
+INFO:root:current active flow size: 5.565287817249056, latency: 1.4184042442343792, to link: edge1, to node: node1, counter: 2.418404244234379
+INFO:root:current active flow size: 5.2705975151069095, latency: 1.6722239002417973, to link: edge3, to node: node2, counter: 2.6722239002417973
+INFO:root:current active flow size: 2.8401063106914424, latency: 2.089369756357295, to link: edge4, to node: node1, counter: 3.0893697563572946
+INFO:root:current active flow size: 2.7123239580232195, latency: 1.4753884172481009, to link: edge6, to node: node2, counter: 2.4753884172481007
+INFO:root:current active flow size: 2.6944320069608203, latency: 2.9332193889746474, to link: edge9, to node: node3, counter: 0.9332193889746474
+INFO:root:current active flow size: 3.5801437270329184, latency: 1.6711928834371366, to link: edge1, to node: node1, counter: 3.6711928834371363
+INFO:root:current active flow size: 4.173619767163862, latency: 1.5567387701875923, to link: edge4, to node: node3, counter: 1.556738770187592
+INFO:root:current active flow size: 4.3953735077139715, latency: 2.2076090780857074, to link: edge5, to node: node3, counter: 4.207609078085707
+INFO:root:current active flow size: 4.11214089327219, latency: 2.9843160730210565, to link: edge11, to node: node5, counter: 4.9843160730210565
+INFO:root:current active flow size: 5.221802149317119, latency: 2.508697989164707, to link: edge1, to node: node1, counter: 5.508697989164707
+INFO:root:current active flow size: 5.923683428049246, latency: 1.1198839776360745, to link: edge3, to node: node2, counter: 0.11988397763607495
+INFO:root:current active flow size: 2.179449129843101, latency: 2.0108628592715787, to link: edge6, to node: node2, counter: 5.010862859271579
+INFO:root:current active flow size: 4.92520301223969, latency: 1.6807704456748722, to link: edge7, to node: node2, counter: 2.680770445674872

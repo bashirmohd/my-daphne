@@ -1,0 +1,31 @@
+﻿{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "i want to set a connection",
+        "intent": "intent_connection",
+        "entities": []
+      },
+      {
+        "text": "i would like to be connected with a scientist",
+        "intent": "intent_connection",
+        "entities": []
+      },
+      {
+        "text": "Connection please",
+        "intent": "intent_connection",
+        "entities": []
+      },
+      {
+        "text": "Can you set a connection please ?",
+        "intent": "intent_connection",
+        "entities": []
+      },
+      {
+        "text": "i want to be connected with another scientific site",
+        "intent": "intent_connection",
+        "entities": []
+      }
+    ]
+  }
+}

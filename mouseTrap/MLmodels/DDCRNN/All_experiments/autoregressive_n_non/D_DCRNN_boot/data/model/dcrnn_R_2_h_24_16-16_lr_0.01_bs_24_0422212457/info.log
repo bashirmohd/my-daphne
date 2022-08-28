@@ -1,0 +1,20 @@
+2020-04-22 21:24:57,033 - model.dcrnn_supervisor - INFO - Log directory: data/model/dcrnn_R_2_h_24_16-16_lr_0.01_bs_24_0422212457/
+2020-04-22 21:24:57,034 - model.dcrnn_supervisor - INFO - {'base_dir': 'data/model', 'log_level': 'INFO', 'data': {'batch_size': 24, 'dataset_dir': 'data/', 'val_batch_size': 1, 'test_batch_size': 1, 'validation_ratio': 0.1, 'test_ratio': 0.2, 'graph_pkl_filename': 'data/adj_mat.pkl'}, 'model': {'cl_decay_steps': 2000, 'filter_type': 'random_walk', 'horizon': 24, 'input_dim': 1, 'l1_decay': 0, 'max_diffusion_step': 2, 'num_nodes': 12, 'num_rnn_layers': 2, 'output_dim': 1, 'rnn_units': 16, 'seq_len': 42, 'use_curriculum_learning': True}, 'train': {'base_lr': 0.01, 'dropout': 0, 'epoch': 0, 'epochs': 10, 'epsilon': 0.001, 'global_step': 0, 'lr_decay_ratio': 0.1, 'max_grad_norm': 5, 'max_to_keep': 100, 'min_learning_rate': 2e-06, 'optimizer': 'adam', 'patience': 50, 'steps': [20, 30, 40, 50], 'test_every_n_epochs': 10}}
+2020-04-22 21:25:21,435 - model.dcrnn_supervisor - INFO - Total number of trainable parameters: 14320
+2020-04-22 21:25:23,143 - model.dcrnn_supervisor - INFO - Start training ...
+2020-04-22 21:26:06,819 - model.dcrnn_supervisor - INFO - Epoch [0/10]  train_mae: 0.0212, val_mae: 0.0536 lr:0.010000 43.0s
+2020-04-22 21:26:08,060 - model.dcrnn_supervisor - INFO - Val loss decrease from inf to 0.0536, saving to data/model/dcrnn_R_2_h_24_16-16_lr_0.01_bs_24_0422212457/models-0.0536-207
+2020-04-22 21:26:33,292 - model.dcrnn_supervisor - INFO - Epoch [1/10]  train_mae: 0.0147, val_mae: 0.0502 lr:0.010000 25.2s
+2020-04-22 21:26:33,300 - model.dcrnn_supervisor - INFO - Val loss decrease from 0.0536 to 0.0502, saving to data/model/dcrnn_R_2_h_24_16-16_lr_0.01_bs_24_0422212457/models-0.0502-414
+2020-04-22 21:26:57,303 - model.dcrnn_supervisor - INFO - Epoch [2/10]  train_mae: 0.0135, val_mae: 0.0494 lr:0.010000 24.0s
+2020-04-22 21:26:57,309 - model.dcrnn_supervisor - INFO - Val loss decrease from 0.0502 to 0.0494, saving to data/model/dcrnn_R_2_h_24_16-16_lr_0.01_bs_24_0422212457/models-0.0494-621
+2020-04-22 21:27:23,233 - model.dcrnn_supervisor - INFO - Epoch [3/10]  train_mae: 0.0130, val_mae: 0.0461 lr:0.010000 25.9s
+2020-04-22 21:27:23,242 - model.dcrnn_supervisor - INFO - Val loss decrease from 0.0494 to 0.0461, saving to data/model/dcrnn_R_2_h_24_16-16_lr_0.01_bs_24_0422212457/models-0.0461-828
+2020-04-22 21:27:48,518 - model.dcrnn_supervisor - INFO - Epoch [4/10]  train_mae: 0.0128, val_mae: 0.0471 lr:0.010000 25.3s
+2020-04-22 21:28:13,977 - model.dcrnn_supervisor - INFO - Epoch [5/10]  train_mae: 0.0128, val_mae: 0.0431 lr:0.010000 25.5s
+2020-04-22 21:28:13,983 - model.dcrnn_supervisor - INFO - Val loss decrease from 0.0461 to 0.0431, saving to data/model/dcrnn_R_2_h_24_16-16_lr_0.01_bs_24_0422212457/models-0.0431-1242
+2020-04-22 21:28:38,991 - model.dcrnn_supervisor - INFO - Epoch [6/10]  train_mae: 0.0128, val_mae: 0.0522 lr:0.010000 25.0s
+2020-04-22 21:29:04,120 - model.dcrnn_supervisor - INFO - Epoch [7/10]  train_mae: 0.0127, val_mae: 0.0494 lr:0.010000 25.1s
+2020-04-22 21:29:29,103 - model.dcrnn_supervisor - INFO - Epoch [8/10]  train_mae: 0.0127, val_mae: 0.0451 lr:0.010000 25.0s
+2020-04-22 21:29:54,202 - model.dcrnn_supervisor - INFO - Epoch [9/10]  train_mae: 0.0127, val_mae: 0.0436 lr:0.010000 25.1s
+2020-04-22 21:30:18,734 - model.dcrnn_supervisor - INFO - Epoch [10/10]  train_mae: 0.0127, val_mae: 0.0437 lr:0.010000 24.5s

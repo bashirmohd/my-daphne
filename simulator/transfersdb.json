@@ -1,0 +1,21 @@
+{
+  "transfers": [
+    { "src": "STAR",
+      "dest": "SUNN",
+      "starttime": 2,
+      "duration": 2
+    },
+    { "src": "DENV",
+      "dest": "NASH",
+      "starttime": 2,
+      "duration": 10
+    },
+    { "src": "WASH",
+      "dest": "STAR",
+      "starttime": 6,
+      "duration": 5
+    }
+  ]
+} 
+
+

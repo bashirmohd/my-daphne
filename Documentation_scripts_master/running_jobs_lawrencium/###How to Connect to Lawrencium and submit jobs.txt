@@ -1,0 +1,90 @@
+#########How to Connect to Lawrencium and Submit a Job#################
+##Open YourTerminal
+$ssh bmohammed@lrc-login.lbl.gov
+$password:PIN+OTP
+#######Copy the destination path from
+Lawrencium##########
+######Go back to you local PC to transfer files to
+Lawrencium using scp#######
+######Run the following on your local
+PC#####################
+$scp simpleLSTM_predict1step_5min.py bmohammed@lrclogin.
+lbl.gov:/global/home/users/bmohammed/
+####Return back to Lawrencium##################
+####To Check the Modules available ##################
+$module avail
+$module list
+##### Create a test.sh file using vim
+##################
+$vi test.sh
+##### Copy and paste the following in the test.sh file
+############
+
+#####START COPYING FROM HERE######
+#!/bin/bash
+## Job name:
+#SBATCH --job-name=test
+#
+# Partition:
+#SBATCH --partition=cf1
+#
+# Wall clock limit:
+#SBATCH --time=0:0:30
+### how to see what partition,qos and account you have access to
+### run this command - sacctmgr show association user=bmohammed
+## Account name
+#SBATCH --account=pc_daphne
+## QOS
+#SBATCH --qos=cf_normal
+# Command
+## Load the module first
+## to see what modules are available run - module load
+avail
+module load python/3.6
+## Now run your command, this is your code which you
+have copied to your Lawrencium Directory.
+python simpleLSTM_predict1step_5min.py
+#####END COPYING HERE######
+
+######To (save) and quit
+:wq or :x
+#####Then using the Simple Linux Utility for Resource
+Management (SLURM) , Submit the job######
+$sbatch test.sh
+#####Check the Status of the Job in Cue using the job number######
+$squeue -j 23445921
+#####Check to view all the current jobs in Cue and which node is Free/Idle######
+$sinfo --partition=lr3
+$sinfo --partition=lr2
+$sinfo --partition=lr4
+$sinfo --partition=lr5
+$sinfo --partition=lr6
+$sinfo --partition=cm1
+$sinfo --partition=cf1
+#####To check the status of the current jobs you are running########
+$squeue --user=bmohammed
+#######Create a srun.sh to execute the Job#######
+$vi srun.sh
+#######Copy and paste the following in the srun.sh file
+specifying all your requirements######
+$srun --pty -p lr5 -a pc_daphne -t 00:30:00 -qos
+lr_normal bash
+######To (save) and quit
+:wq or :x
+######To view the content of the srun.sh
+file#############
+$more srun.sh
+#######Execute the srun.sh file#########
+$sh srun.sh
+ls - ltr
+#####Check the view the Jobs you are
+running.################
+squeue --user=bmohammed
+###########Please click on the link below for more
+commands############
+https://sites.google.com/a/lbl.gov/high-performance-computing-services-group/getting-started/
+sl6-module-farm-guide
+############For additianal SLURM commands click on the
+link below###########
+https://sites.google.com/a/lbl.gov/high-performance-computing-services-group/scheduler/slurmusage-
+instructions

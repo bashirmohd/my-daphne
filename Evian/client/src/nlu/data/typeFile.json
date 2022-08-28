@@ -1,0 +1,30 @@
+﻿{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "Human Genotype",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 14,
+            "value": "Human Genotype",
+            "entity": "type_file"
+          }
+        ]
+      },
+      {
+        "text": "Climate",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Climate",
+            "entity": "type_file"
+          }
+        ]
+      }
+    ]
+  }
+}

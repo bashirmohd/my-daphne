@@ -1,0 +1,26 @@
+﻿{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "What are the endpoints available ?",
+        "intent": "get_endpoints",
+        "entities": []
+      },
+      {
+        "text": "From where can I send this file ?",
+        "intent": "get_endpoints",
+        "entities": []
+      },
+      {
+        "text": "To where can I send this file ?",
+        "intent": "get_endpoints",
+        "entities": []
+      },
+      {
+        "text": "What are the endpoints ?",
+        "intent": "get_endpoints",
+        "entities": []
+      }
+    ]
+  }
+}

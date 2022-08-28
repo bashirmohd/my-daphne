@@ -1,0 +1,35 @@
+DDCRNN model:
+
+- daphne/mouseTrap/MLmodels/DDCRNN/
+
+Nandini: Explore the DDCRNN model:
+Read the paper or arxiv https://arxiv.org/abs/2008.12767
+Train the DDCRNN model and save the h5 model
+Load the h5 model and predict upto 7 days of data (7*24 values)
+- How much current data do we need to predict ahead?
+- there is moving window in the model
+*Paper: Realtime GNN for network data
+
+
+Sarima model:
+to plot out the error bounds in real time get_lasthour_predictions
+*Paper: Real-time error bounds using Sarima and Deep learning
+
+
+
+Google functions:
+
+- google API: predict24values  -> in git: daphne/mouseTrap/mt_code_deployments/get_24paths.py
+
+-Sarima function: train_save_24sarima.py
+
+plot last hour errors:
+- get_lasthour_predictions.py
+- netpredictdashboard.html
+
+Deployed ML model:
+- simpleLSTM_5min_predicting24values.py
+
+*Paper: mouseTrap and Netpredict
+
+GUI update:

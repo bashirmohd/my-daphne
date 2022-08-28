@@ -1,0 +1,43 @@
+{
+  "action_fingerprints": {
+    "utter_help": {
+      "slots": []
+    }, 
+    "utter_goodbye": {
+      "slots": []
+    }, 
+    "action_transfer": {
+      "slots": [
+        "endpoint_input", 
+        "requested_slot", 
+        "endpoint_output", 
+        "type_file", 
+        "size_file", 
+        "path_output", 
+        "path_input"
+      ]
+    }, 
+    "action_listen": {
+      "slots": [
+        "intent", 
+        "endpoint_input", 
+        "unit_size_file", 
+        "endpoint_output", 
+        "size_file"
+      ]
+    }, 
+    "action_show": {
+      "slots": []
+    }
+  }, 
+  "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy", 
+    "rasa_core.policies.keras_policy.KerasPolicy"
+  ], 
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble", 
+  "max_histories": [
+    2, 
+    5
+  ], 
+  "rasa_core": "0.10.0"
+}

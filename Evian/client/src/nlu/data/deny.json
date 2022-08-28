@@ -1,0 +1,16 @@
+﻿{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "No",
+        "intent": "intent_deny",
+        "entities": []
+      },
+      {
+        "text": "Nop",
+        "intent": "intent_deny",
+        "entities": []
+      }
+    ]
+  }
+}

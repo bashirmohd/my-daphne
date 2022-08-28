@@ -1,0 +1,88 @@
+
+slots:
+  intent:
+    type: categorical
+    values:
+    - transfer
+    - connection
+    - show
+  type_file:
+    type: text
+  endpoint_input:
+    type: text
+  endpoint_output:
+    type: text
+  path_output:
+    type: text
+  path_input:
+    type: text
+  size_file:
+    type: float
+  unit_size_file:
+    type: categorical
+    values:
+    - KB
+    - MB
+    - TB
+    - PB
+  exact_time:
+    type: text
+  begin_time:
+    type: text
+  requested_slot:
+    type: text
+
+entities:
+- intent
+- type_file
+- endpoint_input
+- endpoint_output
+- path_output
+- path_input
+- size_file
+- unit_size_file
+- exact_time
+- begin_time
+
+
+intents:
+- greet
+- goodbye
+- inform
+- intent_transfer
+- intent_connection
+- intent_show
+
+templates:
+  utter_greet:
+    - "Hi there !"
+  utter_help:
+    - "How can i help you ?"
+  utter_default:
+    - "Sorry, i did not understand :("
+  utter_ask_intent:
+    - "What is your intent ?"
+  utter_ask_type_file:
+    - "Which scientific field your file is related to ?"
+  utter_ask_endpoint_input:
+    - "From where ?" 
+  utter_ask_endpoint_output:
+    - "To where ?"
+  utter_ask_size_file:
+    - "What is the size of file ?"
+  utter_ask_path_output:
+    - "What is the path in the output endpoint ?"
+  utter_ask_path_input:
+    - "What is the path in the input endpoint ?"
+  utter_ask_begin_time:
+    - "When do you want to start your transfer ?"
+  utter_goodbye:
+    - "Good bye !"
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_default
+  - utter_help
+  - actions.ActionTransfer
+  - actions.ActionShow

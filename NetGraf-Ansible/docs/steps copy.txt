@@ -1,0 +1,7 @@
+# Define file structure (Best Practice)
+
+# Step-1: Inventory ---- First define your VM details, this will tell Ansible, how to login to VM over SSH.
+
+# Step-2: Group Variable -------
+
+# Step-3: Roles ----  This is the place where you define your automation e.g files, tasks(plays).

@@ -1,0 +1,114 @@
+﻿{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "100 MB",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 4,
+            "end": 6,
+            "value": "MB",
+            "entity": "unit_size_file"
+          },
+          {
+            "start": 0,
+            "end": 3,
+            "value": "100",
+            "entity": "size_file"
+          }
+        ]
+      },
+      {
+        "text": "100 KB",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 4,
+            "end": 6,
+            "value": "KB",
+            "entity": "unit_size_file"
+          },
+          {
+            "start": 0,
+            "end": 3,
+            "value": "100",
+            "entity": "size_file"
+          }
+        ]
+      },
+      {
+        "text": "100 GB",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 4,
+            "end": 6,
+            "value": "GB",
+            "entity": "unit_size_file"
+          },
+          {
+            "start": 0,
+            "end": 3,
+            "value": "100",
+            "entity": "size_file"
+          }
+        ]
+      },
+      {
+        "text": "100 TB",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 4,
+            "end": 6,
+            "value": "TB",
+            "entity": "unit_size_file"
+          },
+          {
+            "start": 0,
+            "end": 3,
+            "value": "100",
+            "entity": "size_file"
+          }
+        ]
+      },
+      {
+        "text": "100 PB",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 4,
+            "end": 6,
+            "value": "PB",
+            "entity": "unit_size_file"
+          },
+          {
+            "start": 0,
+            "end": 3,
+            "value": "100",
+            "entity": "size_file"
+          }
+        ]
+      },
+      {
+        "text": "10.4 TB",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "10.4",
+            "entity": "size_file"
+          },
+          {
+            "start": 5,
+            "end": 7,
+            "value": "TB",
+            "entity": "unit_size_file"
+          }
+        ]
+      }
+    ]
+  }
+}

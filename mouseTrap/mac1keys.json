@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "esnet-mousetrap",
+  "private_key_id": "df39a155ac919317e7d08cce293382b1153baef7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCbfGeECHzC0d9J\nNQrdEmKCSnEu9dhwG2/211UKn7w0NSJQh8Nl3kvjDgaUgwvgi40VVoGH+6QSjXFL\nNgM/J+Wdamt0J1GKnPgKrjipOWWSRcM+JccbK6Yza7/7qbPxSDZlSA5XorkOXPA3\n3UHstnsa6W5OOUU/i2OUOwqD54y/R90ae5hkTfN8+V1y2jfZRRQo4hpD8Vy+YGCv\nqPQAPngxmfrNCq/HW13PmWtWv6JczphaZP/ox7vKDVObWOHdCyYasC5Y8uJ9yZqF\nei4mfjkBrYW4XXXnQ1Gecfr1Bjsr4c7Hc49pIarAOtvpMjML8CrlcTu7nPta26or\nkMv+tvRNAgMBAAECggEABA9+JpEQLQhNE/zaIUbbIrrt9MN/2QGmbWRXOLVONXDT\nyhWZkT36bl4N5u/7LeyHDTEapeH4+XEPLd8lu47/rJo8Xyattvh9c83z9dtlXyoK\nPMPAzOFZcEtWkqxuYhU4MnHsyfYabhkYPuU81QE4+s1wz4MoX031FkhqcGJqJw6f\nbBJC7tqAoSD6CzSRHAHfoGRulf5jn8m9mKaH7lDBmrBdumPjG3Z9+pKzffcs+rcV\ndJ1TX5Wmt4jwtaY3UGjKpxvkGbIv/gYSGiWEpUrOqJAkhbdTASRhIjMK5g8IEdwl\nYKsgv9TVyaEqB6NRRqOh9PVRMKBNZXr69A+en+wi4wKBgQDbozsvt3xdWT904Heh\npkzcZGbLUl4oC2lgWs1FMLUVtt7ykNPutuSSatzwKI4vCEtZj4UPLpOELmSqHE3R\njB+nIrrqQIIz5DG7xafY/RSgdSzwcmpsZGMeBtuvCiNV/GA6SCXd8dwf74sHQhsV\nlCTPJtKHc7hvwjlaXJ3Nq/1yqwKBgQC1OkWRkSgedXQuGPzAvhQE3ywcZd/Ym7nX\ng26hJb1MuWhULoKqIHQvhnBWSPE3N3xDsuaGBJ1TBwf7AINA/AT9TPxW7de2RYWa\nXEKyE7sfVik3u/zzdCjt4LQfVB+tyKPfUC+kApbk3Y7AHZPf7HpGCtzn5KZkltuI\n3ZjFZy105wKBgQCi1500Pag5VchUkXBhK3llFhOYv9MLgZp5VBlJKVm5ZcJaucJI\nBNXnMM/qR0dT26RyHJScsv2wTO1Zqm6P5II7WuaWc4mVi6TMATn3CXzXksjk5Q++\nmZdbVd5fIvcb82gtDfz1VzLLgsDjesG1+AZqh/AjeUrPoYMAWhatvMzGzQKBgDSp\nbjXSnHndX5lVoXzQvzh7MXI/GED1X5eElc02DkARUIPF0Cpnq9tzkYlBQPbupKl3\nfw1KofzSejsx9vIXScvhZyJLkvdgVGZ6kNb2bNW6T9fmRKbqBkq5lR3VcC8rspLd\n1joulnKC/0xMTAAx04Yu+epYwxFP1RN8cTxLsyXZAoGAJpWy3beNKUdosfLi0sQ4\ntFsIS+majvsZHtwUTrKVW+RM+5irw7GRwGRqhpuoUp0OB7glYnMswsZXOGmbRlL8\nVNWzpMhR6UMo0HVGcnzCQdMsz6evZ8J+tUm+uvq1Zwoh6azWghLD6SlFxsl4jNs0\nyc/b6A9/evGNnCxaFa810ks=\n-----END PRIVATE KEY-----\n",
+  "client_email": "mac-12-gcp@esnet-mousetrap.iam.gserviceaccount.com",
+  "client_id": "109535398843631737503",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mac-12-gcp%40esnet-mousetrap.iam.gserviceaccount.com"
+}

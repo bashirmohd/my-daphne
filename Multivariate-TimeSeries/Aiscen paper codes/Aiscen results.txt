@@ -1,0 +1,209 @@
+### aofa_lond_in########################################
+
+Possible Parameter combinations for Seasonal ARIMA...
+SARIMAX: (0, 0, 1) x (0, 0, 1, 12)
+SARIMAX: (0, 0, 1) x (0, 1, 0, 12)
+SARIMAX: (0, 1, 0) x (0, 1, 1, 12)
+SARIMAX: (0, 1, 0) x (1, 0, 0, 12)
+
+
+seasonal_pdq
+
+[(0, 0, 0, 12),
+ (0, 0, 1, 12),
+ (0, 1, 0, 12),
+ (0, 1, 1, 12),
+ (1, 0, 0, 12),
+ (1, 0, 1, 12),
+ (1, 1, 0, 12),
+ (1, 1, 1, 12)]
+ 
+
+ARIMA(1, 1, 1)x(1, 1, 1, 12)12 - AIC:710.9212277647297
+
+
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ar.L1          0.2908      0.195      1.490      0.136      -0.092       0.673
+ma.L1         -0.7302      0.136     -5.356      0.000      -0.997      -0.463
+ar.S.L12       0.0086      0.044      0.194      0.846      -0.078       0.096
+ma.S.L12      -1.0000      0.151     -6.607      0.000      -1.297      -0.703
+sigma2      3122.8323   4.85e-05   6.44e+07      0.000    3122.832    3122.832
+==============================================================================
+
+
+
+
+#### aofa_lond_out########################################
+
+ARIMA(1, 1, 1)x(0, 1, 1, 12)12 - AIC:724.5303729269774
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ar.L1          0.3296      0.164      2.016      0.044       0.009       0.650
+ma.L1         -0.8750      0.097     -9.051      0.000      -1.064      -0.686
+ar.S.L12      -0.0034      0.084     -0.040      0.968      -0.167       0.161
+ma.S.L12      -1.0000      0.192     -5.209      0.000      -1.376      -0.624
+sigma2      3971.6246   4.83e-05   8.22e+07      0.000    3971.625    3971.625
+==============================================================================
+
+
+
+
+
+########Multi Variate Results##################
+#############Test for Stationarity
+
+Augmented Dickey-Fuller Test: 
+ADF test statistic        -2.922002
+p-value                    0.042849
+# lags used               25.000000
+# observations          2134.000000
+critical value (1%)       -3.433418
+critical value (5%)       -2.862895
+critical value (10%)      -2.567492
+Strong evidence against the null hypothesis
+Reject the null hypothesis
+Data has no unit root and is stationary
+Augmented Dickey-Fuller Test: 
+ADF test statistic     -8.288254e+00
+p-value                 4.331419e-13
+# lags used             5.000000e+00
+# observations          2.154000e+03
+critical value (1%)    -3.433390e+00
+critical value (5%)    -2.862883e+00
+critical value (10%)   -2.567485e+00
+Strong evidence against the null hypothesis
+Reject the null hypothesis
+Data has no unit root and is stationary
+Augmented Dickey-Fuller Test: 
+ADF test statistic        -4.566038
+p-value                    0.000149
+# lags used               11.000000
+# observations          2148.000000
+critical value (1%)       -3.433398
+critical value (5%)       -2.862886
+critical value (10%)      -2.567487
+Strong evidence against the null hypothesis
+Reject the null hypothesis
+Data has no unit root and is stationary
+Augmented Dickey-Fuller Test: 
+ADF test statistic        -4.575110
+p-value                    0.000144
+# lags used               20.000000
+# observations          2139.000000
+critical value (1%)       -3.433411
+critical value (5%)       -2.862892
+critical value (10%)      -2.567490
+Strong evidence against the null hypothesis
+Reject the null hypothesis
+Data has no unit root and is stationary
+Augmented Dickey-Fuller Test: 
+ADF test statistic        -3.463463
+p-value                    0.008977
+# lags used               21.000000
+# observations          2138.000000
+critical value (1%)       -3.433412
+critical value (5%)       -2.862893
+critical value (10%)      -2.567490
+Strong evidence against the null hypothesis
+Reject the null hypothesis
+Data has no unit root and is stationary
+Augmented Dickey-Fuller Test: 
+ADF test statistic        -3.436511
+p-value                    0.009775
+# lags used               19.000000
+# observations          2140.000000
+critical value (1%)       -3.433409
+critical value (5%)       -2.862892
+critical value (10%)      -2.567489
+Strong evidence against the null hypothesis
+Reject the null hypothesis
+Data has no unit root and is stationary
+Augmented Dickey-Fuller Test: 
+ADF test statistic     -1.152567e+01
+p-value                 3.941843e-21
+# lags used             0.000000e+00
+# observations          2.159000e+03
+critical value (1%)    -3.433382e+00
+critical value (5%)    -2.862880e+00
+critical value (10%)   -2.567483e+00
+Strong evidence against the null hypothesis
+Reject the null hypothesis
+Data has no unit root and is stationary
+Augmented Dickey-Fuller Test: 
+ADF test statistic        -5.513179
+p-value                    0.000002
+# lags used               25.000000
+# observations          2134.000000
+critical value (1%)       -3.433418
+critical value (5%)       -2.862895
+critical value (10%)      -2.567492
+Strong evidence against the null hypothesis
+Reject the null hypothesis
+Data has no unit root and is stationary
+
+
+
+###############Checking for order of P
+
+
+Order = 1
+AIC:  77.97012372267646
+BIC:  80.37867577548393
+
+Order = 2
+AIC:  78.51593334552769
+BIC:  83.10355989766698
+
+Order = 3
+AIC:  78.89606823555488
+BIC:  85.69967054155974
+
+Order = 4
+AIC:  78.37298424032393
+BIC:  87.43045968632238
+
+Order = 5
+AIC:  76.10180321372988
+BIC:  87.4520757948585
+
+Order = 6
+AIC:  69.95038440139673
+BIC:  83.63343554124779
+
+
+
+
+  Summary of Regression Results   
+==================================
+Model:                         VAR
+Method:                        OLS
+Date:           Wed, 05, Jun, 2019
+Time:                     11:49:31
+--------------------------------------------------------------------
+No. of Equations:         8.00000    BIC:                    83.6334
+Nobs:                     60.0000    HQIC:                   75.3026
+Log likelihood:          -2387.60    FPE:                4.70495e+32
+AIC:                      69.9504    Det(Omega_mle):     3.96600e+30
+--------------------------------------------------------------------
+
+
+
+
+
+Correlation matrix of residuals
+                       aofa_lon_In_speed  aofa_lon_out_speed  cern_wash_in_speed  cern_wash_out_speed  lond_newy_in_speed  lond_newy_out_speed  amst_bost_in_speed  amst_bost_out_speed
+aofa_lon_In_speed               1.000000            0.675121            0.603410            -0.171764           -0.126853            -0.513157           -0.601638            -0.273966
+aofa_lon_out_speed              0.675121            1.000000            0.478976            -0.031675           -0.061031            -0.120398           -0.198816             0.008590
+cern_wash_in_speed              0.603410            0.478976            1.000000             0.263116            0.022295            -0.446176           -0.252849            -0.360359
+cern_wash_out_speed            -0.171764           -0.031675            0.263116             1.000000           -0.230215            -0.471761            0.374190            -0.478107
+lond_newy_in_speed             -0.126853           -0.061031            0.022295            -0.230215            1.000000             0.171677           -0.161181             0.359305
+lond_newy_out_speed            -0.513157           -0.120398           -0.446176            -0.471761            0.171677             1.000000            0.009843             0.413267
+amst_bost_in_speed             -0.601638           -0.198816           -0.252849             0.374190           -0.161181             0.009843            1.000000             0.311916
+amst_bost_out_speed            -0.273966            0.008590           -0.360359            -0.478107            0.359305             0.413267            0.311916             1.000000
+
+
+
+

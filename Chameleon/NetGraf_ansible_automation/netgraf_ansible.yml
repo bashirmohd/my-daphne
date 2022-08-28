@@ -1,0 +1,240 @@
+---
+
+- name: Network Getting Started First Playbook Extended
+  connection: ansible.netcommon.network_cli
+  gather_facts: false
+  hosts: all
+  tasks:
+
+    - name: Get config for VyOS devices
+      vyos.vyos.vyos_facts:
+        gather_subset: all
+
+    - name: Display the config
+      debug:
+        msg: "The hostname is {{ ansible_net_hostname }} and the OS is {{ ansible_net_version }}"
+
+    - name: Update the hostname
+      vyos.vyos.vyos_config:
+        backup: yes
+        lines:
+          - set system host-name vyos-changed
+
+    - name: Get changed config for VyOS devices
+      vyos.vyos.vyos_facts:
+        gather_subset: all
+
+    - name: Display the changed config
+      debug:
+        msg: "The new hostname is {{ ansible_net_hostname }} and the OS is {{ ansible_net_version }}"
+
+--- 
+- hosts: all 
+  remote_user: cc-user
+  become: true
+  become_method: sudo
+  tasks: 
+    - name: Install Single Package using package module 
+      package:
+        name: vim
+        state: present
+
+    - name: Install Multiple packages using package module
+      package:
+        name: ['vim','wget','bash-completion','curl']
+        state: present
+
+    - name: Install package for Specific distro - apache on Debian or Ubuntu
+      package:
+        name: apache2
+        state: present
+      when: ansible_os_family == "Debian"
+
+    - name: Install package for Specific distro - apache on CentOS / RHEL / Fedora
+      package:
+        name: httpd
+        state: present
+      when: ansible_os_family == "RedHat"
+
+
+
+"network_resources": {
+      "interfaces": [
+          {
+              "description": "test-interface",
+              "enabled": true,
+              "mtu": "512",
+              "name": "Ethernet1"
+          },
+          {
+              "enabled": true,
+              "mtu": "3000",
+              "name": "Ethernet2"
+          },
+          {
+              "enabled": true,
+              "name": "Ethernet3"
+          },
+          {
+              "enabled": true,
+              "name": "Ethernet4"
+          },
+          {
+              "enabled": true,
+              "name": "Ethernet5"
+          },
+          {
+              "enabled": true,
+              "name": "Ethernet6"
+          },
+      ]
+  }
+
+
+
+************************************************************************************************************************************
+
+
+$ ansible-playbook -i vyos.example.net, -u ansible -k -e ansible_network_os=vyos.vyos.vyos first_playbook_ext.yml
+
+
+---
+  - name: install basic packages 
+    hosts: chameleonnodes
+    tasks:
+      - name: "Installing Vim"
+        apt: pkg=vim
+
+      - name: "Installing DNS Utils"
+        apt: pkg=dnsutils
+
+      - name: "Installing Git"                     #e.g To use the apt module. Two attributes are required, name of task(Installing Git) and module name(pkg=Git)
+        apt: pkg=Git                               # To apply this playbook. $ ansible-playbook netgraf_ansible.yml
+
+
+PLAY [install basics] ********************************************************************************************************************
+
+
+TASK [Gathering Facts] *******************************************************************************************************************
+ok: <ip-address-of-chameleonnodes>
+
+
+TASK [Installing Vim] ********************************************************************************************************************
+changed: <ip-address-of-chameleonnodes>
+
+
+TASK [Installing DNS Utils] **************************************************************************************************************
+changed: <ip-address-of-chameleonnodes>
+
+
+TASK [Installing Git] *********************************************************************************************************************
+changed: <ip-address-of-chameleonnodes>
+
+
+PLAY RECAP ********************************************************************************************************************************
+<ip-address-of-chameleonnodes>             : ok=1    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+
+
+
+- hosts: all
+  tasks:
+  - name: Setting up Prometheus
+    yum_repository:
+     name: Prometheus
+     description: Prometheus YUM repo
+     file: Prometheus_repo
+     baseurl: https://github.com/prometheus/prometheus/releases/download/v2.19.2/prometheus-2.19.2.linux-amd64.tar.gz
+     enabled: 1
+     gpgcheck: 1
+    
+  - name: Installing Prometheus
+    command: sudo wget https://github.com/prometheus/prometheus/releases/download/v2.19.2/prometheus-2.19.2.linux-amd64.tar.gz
+    command: tar -xzf prometheus-2.19.2.linux-amd64.tar.gz
+    command: ./prometheus
+
+
+  tasks:
+  - name: Setting up NodeExporter
+    yum_repository:
+     name: NodeExporter
+     description: NodeExporter YUM repo
+     file: NodeExporter_repo
+     baseurl: https://github.com/prometheus/node_exporter/releases/download/v0.17.0/node_exporter-0.17.0.linux-amd64.tar.gz
+     enabled: 1
+     gpgcheck: 1
+    
+  - name: Installing NodeExporter
+    command: sudo wget https://github.com/prometheus/prometheus/releases/download/v2.19.2/prometheus-2.19.2.linux-amd64.tar.gz
+    command: tar -xzf  node_exporter-0.17.0.linux-amd64.tar.gz
+    command: ./node_exporter 
+
+
+  tasks:
+  - name: Setting up Zabbix
+    yum_repository:
+     name: Zabbix
+     description: Zabbix YUM repo
+     file: Zabbix_repo
+     baseurl: https://www.zabbix.com/download?zabbix=4.4&os_distribution=ubuntu&os_version=18.04_bionic&db=mysql&ws=apache
+     enabled: 1
+     gpgcheck: 1
+    
+  - name: Installing Zabbix
+    command: sudo wget https://repo.zabbix.com/zabbix/5.2/ubuntu/pool/main/z/zabbix-release/zabbix-release_5.2-1+ubuntu18.04_all.deb
+    command: dpkg -i zabbix-release_5.2-1+ubuntu18.04_all.deb
+    command: apt update
+    command: apt install zabbix-server-mysql
+    command: apt install zabbix-frontend-php
+    command: apt install zabbix-server-mysql zabbix-frontend-php zabbix-agent 
+    command: zcat /usr/share/doc/zabbix-server-mysql/create.sql.gz | mysql -uzabbix -p zabbix 
+    command: sudo vim /etc/zabbix/zabbix_server.conf 
+    command: sudo service zabbix-server start
+    command: sudo update-rc.d zabbix-server enable
+    command: sudo vim /etc/apache2/conf-enabled/zabbix.conf
+    command: sudo service apache2 restart
+    command: sudo apt-get install mysql-server 
+    command: mysql -uroot -p
+    command: create database zabbix character set utf8 collate utf8_bin;
+    command: create database zabbix character set utf8 collate utf8_bin;
+    command: grant all privileges on zabbix.* to zabbix@localhost identified by 'zabbix';
+    command: show databases;
+
+
+  tasks:
+  - name: Setting up Netdata
+    yum_repository:
+     name: Netdata
+     description: Netdata YUM repo
+     file: Netdata_repo
+     baseurl: https://github.com/firehol/netdata.git --depth=1 ~/netdata
+     enabled: 1
+     gpgcheck: 1
+   
+  - name: Installing Netdata
+    command: sudo apt-get install zlib1g-dev uuid-dev libmnl-dev pkg-config curl gcc make autoconf autoconf-archive autogen automake python python-yaml python-mysqldb nodejs lm-sensors python-psycopg2 netcat git -y
+    command: $ sudo git clone https://github.com/firehol/netdata.git --depth=1 ~/netdata
+    command: ls
+    command: cd netdata/
+    command: sudo ./netdata-installer.sh
+    command: sudo apt-get update
+    command: sudo apt-get upgrade
+
+
+  tasks:
+  - name: Setting up ntopng
+    yum_repository:
+     name: ntopng
+     description: ntopng YUM repo
+     file: ntopng_repo
+     baseurl: https://websiteforstudents.com/install-ntopng-ntop-network-monitor-on-ubuntu-18-04-16-04/
+     enabled: 1
+     gpgcheck: 1
+    
+  - name: Installing ntopng
+    command: sudo apt-get install ntopng
+
+
+
+
+
+

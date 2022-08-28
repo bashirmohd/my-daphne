@@ -1,0 +1,4077 @@
+{
+  "CPH7" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3606
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3606
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7018, 7019 ],
+	  "wash-cr5" : [ 7010, 7011 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/1/1", "chic-cr5:2/1/1", "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1539716408,
+	"end" : 1539716964,
+	"description" : "deltaId+15b409b3-756b-499f-a161-236d9eda413a:uuid+d530cad5-a55b-41b2-8407-f87450df480f"
+  },
+  "FRC9" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3615
+	}, {
+	  "router" : "sunn-cr5",
+	  "port" : "2/1/1",
+	  "vlan" : 3615
+	} ],
+	"sdps" : {
+	  "sunn-cr5" : [ 7003, 7002 ],
+	  "wash-cr5" : [ 7009, 7008 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5", "chic-cr5:3/1/1", "kans-cr5:1/1/1", "kans-cr5", "kans-cr5:2/1/1", "denv-cr5:1/1/1", "denv-cr5", "denv-cr5:2/1/1", "sacr-cr5:2/1/1", "sacr-cr5", "sacr-cr5:1/1/1", "sunn-cr5:1/1/1", "sunn-cr5" ] ],
+	"start" : 1540245566,
+	"end" : 1540405288,
+	"description" : "deltaId+f5c2f74b-ca9c-49eb-acdc-230708966d68:uuid+9237a781-eb8b-44f1-b91a-e60cd815ae29"
+  },
+  "C9ZZ" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3409
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3409
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7004, 7005 ],
+	  "wash-cr5" : [ 7000, 7001 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:5/1/1", "chic-cr5:6/2/1", "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1535741800,
+	"end" : 1567277770,
+	"description" : "deltaId+90a601a8-6f0a-4a47-a09a-9c1cfc6d3d03:uuid+a49b9951-4b15-47a9-b554-35fb5ebd454a"
+  },
+  "JMN6" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3611
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3611
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7019, 7018 ],
+	  "wash-cr5" : [ 7010, 7011 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5", "chic-cr5:2/1/1", "star-cr5:4/1/1", "star-cr5" ] ],
+	"start" : 1540492299,
+	"end" : 1540492436,
+	"description" : "deltaId+2a8a5c63-5068-4786-a5ff-b06e2e5fff32:uuid+f8cb92ae-e0a5-47af-86c7-ad9a06e36b70"
+  },
+  "DW2J" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "lag-1",
+	  "vlan" : 3500
+	}, {
+	  "router" : "cern-513-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 3500
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7007, 7010 ],
+	  "cern-513-cr5" : [ 7005, 7002 ]
+	},
+	"eros" : [ [ "cern-513-cr5", "cern-513-cr5:5/1/1", "amst-cr5:1/1/1", "amst-cr5", "amst-cr5:5/1/1", "bost-cr5:3/1/1", "bost-cr5", "bost-cr5:2/1/1", "star-cr5:1/1/1", "star-cr5" ] ],
+	"start" : 1535654245,
+	"end" : 1544554816,
+	"description" : "FNAL Primary LHCOPN VLAN 3500"
+  },
+  "MT2G" : {
+	"endpoints" : [ {
+	  "router" : "sunn-cr5",
+	  "port" : "2/1/1",
+	  "vlan" : 3618
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3616
+	} ],
+	"sdps" : {
+	  "sunn-cr5" : [ 7004, 7005 ],
+	  "chic-cr5" : [ 7012, 7013 ]
+	},
+	"eros" : [ [ "sunn-cr5", "sunn-cr5:1/1/1", "sacr-cr5:1/1/1", "sacr-cr5", "sacr-cr5:2/1/1", "denv-cr5:2/1/1", "denv-cr5", "denv-cr5:1/1/1", "kans-cr5:2/1/1", "kans-cr5", "kans-cr5:1/1/1", "chic-cr5:3/1/1", "chic-cr5" ] ],
+	"start" : 1540245911,
+	"end" : 1540402737,
+	"description" : "deltaId+951cfafa-1bf9-4595-9a1c-74f2b30830b9:uuid+ea439ffd-d66c-4244-8b90-4c22361b6b7a"
+  },
+  "es.net-6808" : {
+	"endpoints" : [ {
+	  "router" : "lsvn-cr1",
+	  "port" : "xe-2/1/0",
+	  "vlan" : 3602
+	}, {
+	  "router" : "ga-rt2",
+	  "port" : "xe-0/3/0",
+	  "vlan" : 3602
+	} ],
+	"sdps" : { },
+	"eros" : [ [ "lsvn-cr1", "lsvn-cr1:ge-1/1/5", "ga-rt2:ge-1/1/3", "ga-rt2" ] ],
+	"start" : 1518649680,
+	"end" : 1834183380,
+	"description" : "LSVN-GA_bw"
+  },
+  "YHGK" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3614
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3614
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7017 ],
+	  "wash-cr5" : [ 7008 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:2/1/1", "aofa-cr5:1/1/1", "aofa-cr5", "aofa-cr5:5/1/1", "star-cr5:4/2/1", "star-cr5" ] ],
+	"start" : 1541519549,
+	"end" : 1541531543,
+	"description" : "dbef5cda-7c52-40da-ab8d-6febfb5a23ad"
+  },
+  "XG7Z" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "lag-1",
+	  "vlan" : 3506
+	}, {
+	  "router" : "cern-513-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 3506
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7009, 7008 ],
+	  "cern-513-cr5" : [ 7004, 7003 ]
+	},
+	"eros" : [ [ "cern-513-cr5", "cern-513-cr5:1/1/1", "wash-cr5:5/1/1", "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5", "chic-cr5:2/1/1", "star-cr5:4/1/1", "star-cr5" ] ],
+	"start" : 1535654470,
+	"end" : 1544727619,
+	"description" : "FNAL Secondary LHCOPN"
+  },
+  "P24X" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3616
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3616
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3610
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7005, 7004 ],
+	  "wash-cr5" : [ 7002, 7001 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5", "chic-cr5:6/2/1", "star-cr5:5/1/1", "star-cr5" ], [ "star-cr5", "star-cr5:4/2/1", "aofa-cr5:5/1/1", "aofa-cr5", "aofa-cr5:6/2/1", "wash-cr5:4/1/1", "wash-cr5" ] ],
+	"start" : 1541794186,
+	"end" : 1541795097,
+	"description" : "bd1945a1-36a3-4017-a871-d352ec9d10ed"
+  },
+  "NW3K" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3606
+	}, {
+	  "router" : "sunn-cr5",
+	  "port" : "2/1/1",
+	  "vlan" : 3606
+	} ],
+	"sdps" : {
+	  "sunn-cr5" : [ 7003 ],
+	  "chic-cr5" : [ 7008 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:3/1/1", "kans-cr5:1/1/1", "kans-cr5", "kans-cr5:2/1/1", "denv-cr5:1/1/1", "denv-cr5", "denv-cr5:2/1/1", "sacr-cr5:2/1/1", "sacr-cr5", "sacr-cr5:1/1/1", "sunn-cr5:1/1/1", "sunn-cr5" ] ],
+	"start" : 1541531732,
+	"end" : 1541546154,
+	"description" : "eca68f9a-5633-4aef-8891-fcbecd338465"
+  },
+  "PWNJ" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3619
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3619
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7004 ],
+	  "wash-cr5" : [ 7003 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1542060761,
+	"end" : 1542665381,
+	"description" : "0dbd6a89-ac53-49fb-a5e7-1ffb0b8ac3c8"
+  },
+  "EJ4W" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3606
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3606
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7017 ],
+	  "wash-cr5" : [ 7008 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5", "chic-cr5:2/1/1", "star-cr5:4/1/1", "star-cr5" ] ],
+	"start" : 1541546926,
+	"end" : 1541550252,
+	"description" : "1eed882a-eec3-4042-9e59-659b55f245f0"
+  },
+  "es.net-5262" : {
+	"endpoints" : [ {
+	  "router" : "lbl-mr2",
+	  "port" : "xe-2/0/0",
+	  "vlan" : 516
+	}, {
+	  "router" : "lbl-mr2",
+	  "port" : "xe-2/2/0",
+	  "vlan" : 516
+	} ],
+	"sdps" : { },
+	"eros" : [ ],
+	"start" : 1417029300,
+	"end" : 1732649400,
+	"description" : "JGI - LBL, VLAN 516, 9Gbps"
+  },
+  "KTH2" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3606
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3606
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7017 ],
+	  "wash-cr5" : [ 7009 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/1/1", "chic-cr5:2/1/1", "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1540499264,
+	"end" : 1543350164,
+	"description" : "5b2330ee-87bc-4385-8503-b7e3f8585016"
+  },
+  "TCKR" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3615
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3615
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7018 ],
+	  "wash-cr5" : [ 7011 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:2/1/1", "aofa-cr5:1/1/1", "aofa-cr5", "aofa-cr5:5/1/1", "star-cr5:4/2/1", "star-cr5" ] ],
+	"start" : 1541524573,
+	"end" : 1541546134,
+	"description" : "f8feec7e-9515-4641-b1db-f40ce2e1a7ca"
+  },
+  "JY3W" : {
+	"endpoints" : [ {
+	  "router" : "srs-rt3",
+	  "port" : "ge-0/0/0",
+	  "vlan" : 2190
+	}, {
+	  "router" : "ornl-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 2190
+	} ],
+	"sdps" : {
+	  "ornl-cr5" : [ 7000, 7001 ]
+	},
+	"eros" : [ [ "ornl-cr5", "ornl-cr5:6/1/1", "atla-cr5:3/1/1", "atla-cr5", "atla-cr5:10/1/3", "srs-rt3:ge-0/1/0", "srs-rt3" ] ],
+	"start" : 1541089920,
+	"end" : 1543259336,
+	"description" : "SRNL ICN to ORNL"
+  },
+  "XGWX" : {
+	"endpoints" : [ {
+	  "router" : "sunn-cr5",
+	  "port" : "2/1/1",
+	  "vlan" : 3612
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3610
+	} ],
+	"sdps" : {
+	  "sunn-cr5" : [ 7004, 7005 ],
+	  "chic-cr5" : [ 7012, 7013 ]
+	},
+	"eros" : [ [ "sunn-cr5", "sunn-cr5:1/1/1", "sacr-cr5:1/1/1", "sacr-cr5", "sacr-cr5:2/1/1", "denv-cr5:2/1/1", "denv-cr5", "denv-cr5:1/1/1", "kans-cr5:2/1/1", "kans-cr5", "kans-cr5:1/1/1", "chic-cr5:3/1/1", "chic-cr5" ] ],
+	"start" : 1540402846,
+	"end" : 1540403079,
+	"description" : "deltaId+13547284-5375-436c-841e-f15cc14f3406:uuid+3bf67cb8-a628-4ba7-83c2-97888a34a87d"
+  },
+  "H4CY" : {
+	"endpoints" : [ {
+	  "router" : "sunn-cr5",
+	  "port" : "10/1/6",
+	  "vlan" : 1001
+	}, {
+	  "router" : "lbl-mr2",
+	  "port" : "xe-2/1/0",
+	  "vlan" : 1001
+	} ],
+	"sdps" : {
+	  "sunn-cr5" : [ 7000, 7001 ]
+	},
+	"eros" : [ [ "lbl-mr2", "lbl-mr2:xe-1/3/0", "sunn-cr5:9/1/2", "sunn-cr5" ] ],
+	"start" : 1534354146,
+	"end" : 1534354199,
+	"description" : "1.0 testing - alu-junos"
+  },
+  "P7RK" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3608
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3608
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7015, 7014 ],
+	  "wash-cr5" : [ 7006, 7007 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5", "chic-cr5:2/1/1", "star-cr5:4/1/1", "star-cr5" ] ],
+	"start" : 1539109173,
+	"end" : 1539138395,
+	"description" : "deltaId+bc637a0f-9332-4c93-b901-73cdfac8255c:uuid+d8dc8304-8bcc-4375-acbc-6732f184ba78"
+  },
+  "es.net-6260" : {
+	"endpoints" : [ {
+	  "router" : "sunn-cr5",
+	  "port" : "8/2/1",
+	  "vlan" : 1700
+	}, {
+	  "router" : "atla-cr5",
+	  "port" : "10/1/8",
+	  "vlan" : 1700
+	} ],
+	"sdps" : {
+	  "sunn-cr5" : [ 6084 ],
+	  "atla-cr5" : [ 6084 ]
+	},
+	"eros" : [ [ "sunn-cr5", "sunn-cr5:5/1/1", "elpa-cr5:3/1/1", "elpa-cr5", "elpa-cr5:1/1/1", "hous-cr5:1/1/1", "hous-cr5", "hous-cr5:3/1/1", "nash-cr5:3/1/1", "nash-cr5", "nash-cr5:2/1/1", "atla-cr5:2/1/1", "atla-cr5" ] ],
+	"start" : 1475691600,
+	"end" : 1546646400,
+	"description" : "SLAC latency loop - 1 of 2 - OVERRIDE - VLAN 1700"
+  },
+  "KPRR" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3614
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3614
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7005, 7004 ],
+	  "chic-cr5" : [ 7007, 7006 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:5/1/1", "chic-cr5:6/2/1", "chic-cr5" ] ],
+	"start" : 1538488327,
+	"end" : 1541780625,
+	"description" : "deltaId+1ecf6fb5-935f-4b55-afa0-0a9d5e0e3b0d:uuid+42c3a1e9-05db-42bd-8eba-fe289b3cf56f"
+  },
+  "es.net-6261" : {
+	"endpoints" : [ {
+	  "router" : "sunn-cr5",
+	  "port" : "8/2/1",
+	  "vlan" : 1701
+	}, {
+	  "router" : "atla-cr5",
+	  "port" : "10/1/8",
+	  "vlan" : 1701
+	} ],
+	"sdps" : {
+	  "sunn-cr5" : [ 6120 ],
+	  "atla-cr5" : [ 6120 ]
+	},
+	"eros" : [ [ "sunn-cr5", "sunn-cr5:5/1/1", "elpa-cr5:3/1/1", "elpa-cr5", "elpa-cr5:1/1/1", "hous-cr5:1/1/1", "hous-cr5", "hous-cr5:3/1/1", "nash-cr5:3/1/1", "nash-cr5", "nash-cr5:2/1/1", "atla-cr5:2/1/1", "atla-cr5" ] ],
+	"start" : 1475691600,
+	"end" : 1546646400,
+	"description" : "SLAC latency loop - 2 of 2 - OVERRIDE - VLAN 1701"
+  },
+  "JHF3" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3619
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3619
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7005 ],
+	  "wash-cr5" : [ 7004 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5" ] ],
+	"start" : 1542061185,
+	"end" : 1542061452,
+	"description" : "8c59b745-0858-41bb-a1a4-00f31e9348be"
+  },
+  "es.net-7116" : {
+	"endpoints" : [ {
+	  "router" : "newy-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 3514
+	}, {
+	  "router" : "cern-513-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 3514
+	} ],
+	"sdps" : {
+	  "newy-cr5" : [ 6000, 6072 ],
+	  "cern-513-cr5" : [ 6006, 6072 ]
+	},
+	"eros" : [ [ "newy-cr5", "newy-cr5:4/2/1", "bost-cr5:1/1/1", "bost-cr5", "bost-cr5:3/1/1", "amst-cr5:5/1/1", "amst-cr5", "amst-cr5:1/1/1", "cern-513-cr5:5/1/1", "cern-513-cr5" ] ],
+	"start" : 1528226280,
+	"end" : 1718134380,
+	"description" : "BNL Tertiary LHCOPN"
+  },
+  "NH9J" : {
+	"endpoints" : [ {
+	  "router" : "sacr-cr5",
+	  "port" : "4/1/1",
+	  "vlan" : 2205
+	}, {
+	  "router" : "sacr-cr5",
+	  "port" : "5/1/1",
+	  "vlan" : 2205
+	} ],
+	"sdps" : { },
+	"eros" : [ ],
+	"start" : 1534392139,
+	"end" : 1534392388,
+	"description" : "deltaId+92027111-b026-4cbb-ab66-43440d8b072f:uuid+fa59d4dc-d3df-464c-a789-a0565cc348d4"
+  },
+  "K27C" : {
+	"endpoints" : [ {
+	  "router" : "sunn-cr5",
+	  "port" : "8/1/1",
+	  "vlan" : 3615
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3615
+	} ],
+	"sdps" : {
+	  "sunn-cr5" : [ 7004 ],
+	  "wash-cr5" : [ 7008 ]
+	},
+	"eros" : [ [ "sunn-cr5", "sunn-cr5:5/1/1", "elpa-cr5:3/1/1", "elpa-cr5", "elpa-cr5:1/1/1", "hous-cr5:1/1/1", "hous-cr5", "hous-cr5:3/1/1", "nash-cr5:3/1/1", "nash-cr5", "nash-cr5:4/2/1", "wash-cr5:5/2/1", "wash-cr5" ] ],
+	"start" : 1541551354,
+	"end" : 1541614422,
+	"description" : "e6538e9d-1363-4fdf-b9f5-82f21f1d9507"
+  },
+  "RCTX" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3619
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3617
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7017, 7016 ],
+	  "wash-cr5" : [ 7009, 7008 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5", "chic-cr5:2/1/1", "star-cr5:4/1/1", "star-cr5" ] ],
+	"start" : 1540492186,
+	"end" : 1540492460,
+	"description" : "deltaId+b1a79789-85ed-4943-907a-99125aed42dc:uuid+2d6807d1-baa5-418e-89c6-dcf120af04b5"
+  },
+  "ZP62" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3604
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3604
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7011 ],
+	  "wash-cr5" : [ 7004 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/2/1", "aofa-cr5:5/1/1", "aofa-cr5", "aofa-cr5:6/2/1", "wash-cr5:4/1/1", "wash-cr5" ] ],
+	"start" : 1542061665,
+	"end" : 1542666285,
+	"description" : "f80b4bdb-fcde-4857-9fbc-bbe9bb5ff6ef"
+  },
+  "XJPT" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3608
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3608
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7008 ],
+	  "wash-cr5" : [ 7006 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5" ] ],
+	"start" : 1542231607,
+	"end" : 1542321056,
+	"description" : "f704b3d5-80e2-4445-b538-945b959bc941"
+  },
+  "H4T3" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3604
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3604
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7007 ],
+	  "wash-cr5" : [ 7005 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1542216902,
+	"end" : 1542217781,
+	"description" : "1689f447-d267-4188-be41-ce469f12a2ef"
+  },
+  "KDZJ" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3602
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3602
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7005 ],
+	  "wash-cr5" : [ 7003 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1542240031,
+	"end" : 1542243629,
+	"description" : "35202bdf-c111-4f33-ae38-618fb1af0352"
+  },
+  "es.net-4765" : {
+	"endpoints" : [ {
+	  "router" : "kans-cr5",
+	  "port" : "10/1/5",
+	  "vlan" : 3025
+	}, {
+	  "router" : "sunn-cr5",
+	  "port" : "9/1/5",
+	  "vlan" : 3025
+	} ],
+	"sdps" : {
+	  "sunn-cr5" : [ 6045 ],
+	  "kans-cr5" : [ 6045 ]
+	},
+	"eros" : [ [ "kans-cr5", "kans-cr5:2/1/1", "denv-cr5:1/1/1", "denv-cr5", "denv-cr5:2/1/1", "sacr-cr5:2/1/1", "sacr-cr5", "sacr-cr5:1/1/1", "sunn-cr5:1/1/1", "sunn-cr5" ] ],
+	"start" : 1407502200,
+	"end" : 1659963900,
+	"description" : "GPN - NASA, VLAN 3025, 200M"
+  },
+  "es.net-6378" : {
+	"endpoints" : [ {
+	  "router" : "lsvn-cr1",
+	  "port" : "ge-1/0/1",
+	  "vlan" : 3601
+	}, {
+	  "router" : "ga-rt2",
+	  "port" : "ge-1/0/3",
+	  "vlan" : 3601
+	} ],
+	"sdps" : { },
+	"eros" : [ [ "lsvn-cr1", "lsvn-cr1:ge-1/1/5", "ga-rt2:ge-1/1/3", "ga-rt2" ] ],
+	"start" : 1478817180,
+	"end" : 2078347680,
+	"description" : "LSVN-GA_owamp"
+  },
+  "es.net-7228" : {
+	"endpoints" : [ {
+	  "router" : "eqx-chi-cr5",
+	  "port" : "10/2/6",
+	  "vlan" : 3738
+	}, {
+	  "router" : "amst-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 3738
+	} ],
+	"sdps" : {
+	  "eqx-chi-cr5" : [ 6082 ],
+	  "amst-cr5" : [ 6082 ]
+	},
+	"eros" : [ [ "eqx-chi-cr5", "eqx-chi-cr5:2/1/1", "eqx-ash-cr5:2/1/1", "eqx-ash-cr5", "eqx-ash-cr5:1/1/1", "wash-cr5:4/2/1", "wash-cr5", "wash-cr5:2/1/1", "aofa-cr5:1/1/1", "aofa-cr5", "aofa-cr5:2/1/1", "lond-cr5:2/2/1", "lond-cr5", "lond-cr5:2/1/1", "amst-cr5:2/1/1", "amst-cr5" ] ],
+	"start" : 1532989260,
+	"end" : 1564612560,
+	"description" : "UvA to SJ via ECX (Cees de Laat research project)"
+  },
+  "ZRYY" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3601
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3601
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7008 ],
+	  "wash-cr5" : [ 7008 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1540586594,
+	"end" : 1543523894,
+	"description" : "e73f231c-da70-4ae3-8111-062ca1cee22f"
+  },
+  "D6CZ" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3619
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3619
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7016, 7017 ],
+	  "chic-cr5" : [ 7009, 7008 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:5/1/1", "chic-cr5:6/2/1", "chic-cr5" ] ],
+	"start" : 1540413978,
+	"end" : 1540414482,
+	"description" : "deltaId+bbfafcfa-8d1e-47ea-b679-836029f34ebd:uuid+979a088c-7baf-4fed-b01d-549403380c54"
+  },
+  "GXN3" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3612
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3612
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7005 ],
+	  "wash-cr5" : [ 7003 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5" ] ],
+	"start" : 1542326431,
+	"end" : 1542330024,
+	"description" : "608f4d6e-c157-4eb7-8f27-0e7cd9550e81"
+  },
+  "YKNM" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3616
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3616
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7006 ],
+	  "wash-cr5" : [ 7000 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/2/1", "aofa-cr5:5/1/1", "aofa-cr5", "aofa-cr5:6/2/1", "wash-cr5:4/1/1", "wash-cr5" ] ],
+	"start" : 1542059915,
+	"end" : 1542061924,
+	"description" : "5f6e3089-115d-441f-b9be-060d08723498"
+  },
+  "JYZ2" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3604
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3604
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7016, 7017 ],
+	  "wash-cr5" : [ 7009, 7008 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/1/1", "chic-cr5:2/1/1", "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1539713085,
+	"end" : 1540242477,
+	"description" : "deltaId+f015727d-dcb4-4e99-bcd1-dd90382ca76c:uuid+8dab2c39-58b0-4a3d-ba18-f39983aad17e"
+  },
+  "NN79" : {
+	"endpoints" : [ {
+	  "router" : "aofa-cr5",
+	  "port" : "4/2/1",
+	  "vlan" : 3592
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3592
+	} ],
+	"sdps" : {
+	  "aofa-cr5" : [ 7000, 7001 ],
+	  "star-cr5" : [ 7018, 7017 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/2/1", "aofa-cr5:5/1/1", "aofa-cr5" ] ],
+	"start" : 1541104844,
+	"end" : 1541106711,
+	"description" : "ANL-BNL vlan 3592"
+  },
+  "R7NX" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3619
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3619
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7005 ],
+	  "wash-cr5" : [ 7000 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5" ] ],
+	"start" : 1542062465,
+	"end" : 1542062595,
+	"description" : "110c45a2-d926-4888-bdbf-510af002f14d"
+  },
+  "es.net-6442" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 3290
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3290
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6085 ]
+	},
+	"eros" : [ ],
+	"start" : 1488396960,
+	"end" : 1803930660,
+	"description" : "Research collaboration between UChicago-Chameleon and RENCI-ExoGENI ESNET-20170227-008"
+  },
+  "DXZ2" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3409
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3409
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7005, 7004 ],
+	  "wash-cr5" : [ 7001, 7000 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:5/1/1", "chic-cr5:6/2/1", "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1536117508,
+	"end" : 1536259083,
+	"description" : "deltaId+e69ad682-80d7-41c8-a158-3e44e78ce184:uuid+0d9ee9e2-a5cb-484c-a191-c32c50e188e2"
+  },
+  "C4TT" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 1662
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 1662
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7001, 7002 ],
+	  "chic-cr5" : [ 7001, 7002 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/1/1", "chic-cr5:2/1/1", "chic-cr5" ] ],
+	"start" : 1534359639,
+	"end" : 1535454661,
+	"description" : "user=Wenji;vlan=1662;bw=20000Mbps"
+  },
+  "KPDR" : {
+	"endpoints" : [ {
+	  "router" : "sacr-cr5",
+	  "port" : "4/1/1",
+	  "vlan" : 2205
+	}, {
+	  "router" : "sacr-cr5",
+	  "port" : "5/1/1",
+	  "vlan" : 2205
+	} ],
+	"sdps" : { },
+	"eros" : [ ],
+	"start" : 1539898127,
+	"end" : 1571434096,
+	"description" : "deltaId+6e648aff-174d-4c25-bb97-b9a48afe0057:uuid+4ce5a995-5234-4a24-87de-5cde2d18535d"
+  },
+  "EW43" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3616
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3616
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7007 ],
+	  "wash-cr5" : [ 7005 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5" ] ],
+	"start" : 1541826648,
+	"end" : 1541827498,
+	"description" : "026ef136-96f6-4a45-a370-e204f9f296e5"
+  },
+  "es.net-6447" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 3295
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3295
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6125 ]
+	},
+	"eros" : [ ],
+	"start" : 1488399180,
+	"end" : 1803932880,
+	"description" : "Research collaboration between UChicago-Chameleon and RENCI-ExoGENI ESNET-20170227-008"
+  },
+  "XMHK" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3611
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3611
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7006 ],
+	  "wash-cr5" : [ 7000 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/2/1", "aofa-cr5:5/1/1", "aofa-cr5", "aofa-cr5:6/2/1", "wash-cr5:4/1/1", "wash-cr5" ] ],
+	"start" : 1541975548,
+	"end" : 1542038347,
+	"description" : "0f809d30-fe76-4c4e-9b5a-b8d0774acf9e"
+  },
+  "es.net-6448" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 3296
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3296
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6128 ]
+	},
+	"eros" : [ ],
+	"start" : 1488399240,
+	"end" : 1803932940,
+	"description" : "Research collaboration between UChicago-Chameleon and RENCI-ExoGENI ESNET-20170227-008"
+  },
+  "PG44" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3600
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3600
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7008 ],
+	  "wash-cr5" : [ 7006 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1542223590,
+	"end" : 1542225069,
+	"description" : "913ad452-8177-4ea2-a35b-2300d04d6d9e"
+  },
+  "es.net-6449" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 3297
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3297
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6129 ]
+	},
+	"eros" : [ ],
+	"start" : 1488399300,
+	"end" : 1803933000,
+	"description" : "Research collaboration between UChicago-Chameleon and RENCI-ExoGENI ESNET-20170227-008"
+  },
+  "FC9P" : {
+	"endpoints" : [ {
+	  "router" : "sacr-cr5",
+	  "port" : "4/1/1",
+	  "vlan" : 2205
+	}, {
+	  "router" : "sacr-cr5",
+	  "port" : "5/1/1",
+	  "vlan" : 2205
+	} ],
+	"sdps" : { },
+	"eros" : [ ],
+	"start" : 1535302705,
+	"end" : 1535339694,
+	"description" : "deltaId+fc561dd4-3412-423b-a91f-bee7bfd7b537:uuid+c877f679-68b7-479c-a769-8484c6077eee"
+  },
+  "F9FR" : {
+	"endpoints" : [ {
+	  "router" : "sacr-cr5",
+	  "port" : "4/1/1",
+	  "vlan" : 2210
+	}, {
+	  "router" : "sacr-cr5",
+	  "port" : "5/1/1",
+	  "vlan" : 2210
+	} ],
+	"sdps" : { },
+	"eros" : [ ],
+	"start" : 1534393335,
+	"end" : 1534445371,
+	"description" : "deltaId+b0239e02-3c8b-4fb0-8042-fff7ed01be5d:uuid+0c03f501-9aa3-4d65-abac-8dd51af97a23"
+  },
+  "N9MG" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 1662
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 1662
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7004, 7003 ],
+	  "chic-cr5" : [ 7004, 7003 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/1/1", "chic-cr5:2/1/1", "chic-cr5" ] ],
+	"start" : 1535456312,
+	"end" : 1535664304,
+	"description" : "FNAL-KISTI path"
+  },
+  "K6PH" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3609
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3609
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7008 ],
+	  "wash-cr5" : [ 7010 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1540576348,
+	"end" : 1543513648,
+	"description" : "a3d1956e-2434-4061-9113-4beacff12168"
+  },
+  "H32R" : {
+	"endpoints" : [ {
+	  "router" : "sunn-cr5",
+	  "port" : "8/1/1",
+	  "vlan" : 3611
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3618
+	} ],
+	"sdps" : {
+	  "sunn-cr5" : [ 7004 ],
+	  "wash-cr5" : [ 7008 ]
+	},
+	"eros" : [ [ "sunn-cr5", "sunn-cr5:5/1/1", "elpa-cr5:3/1/1", "elpa-cr5", "elpa-cr5:1/1/1", "hous-cr5:1/1/1", "hous-cr5", "hous-cr5:3/1/1", "nash-cr5:3/1/1", "nash-cr5", "nash-cr5:4/2/1", "wash-cr5:5/2/1", "wash-cr5" ] ],
+	"start" : 1541550460,
+	"end" : 1541551145,
+	"description" : "1bcaf806-2c1f-41ea-a608-21e48250a460"
+  },
+  "G4XX" : {
+	"endpoints" : [ {
+	  "router" : "eqx-ash-cr5",
+	  "port" : "10/2/4",
+	  "vlan" : 2181
+	}, {
+	  "router" : "nash-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 2181
+	} ],
+	"sdps" : {
+	  "eqx-ash-cr5" : [ 7004, 7003 ],
+	  "nash-cr5" : [ 7002, 7001 ]
+	},
+	"eros" : [ [ "nash-cr5", "nash-cr5:4/1/1", "chic-cr5:6/1/1", "chic-cr5", "chic-cr5:7/1/1", "eqx-chi-cr5:1/1/1", "eqx-chi-cr5", "eqx-chi-cr5:2/1/1", "eqx-ash-cr5:2/1/1", "eqx-ash-cr5" ] ],
+	"start" : 1534968136,
+	"end" : 1535662390,
+	"description" : "ORNL AZURE to NASH"
+  },
+  "es.net-6674" : {
+	"endpoints" : [ {
+	  "router" : "amst-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 2030
+	}, {
+	  "router" : "aofa-cr5",
+	  "port" : "2/1/1",
+	  "vlan" : 2030
+	} ],
+	"sdps" : {
+	  "aofa-cr5" : [ 6000, 6144 ],
+	  "amst-cr5" : [ 6000, 6144 ]
+	},
+	"eros" : [ [ "amst-cr5", "amst-cr5:2/1/1", "lond-cr5:2/1/1", "lond-cr5", "lond-cr5:5/1/1", "aofa-cr5:7/2/1", "aofa-cr5" ] ],
+	"start" : 1509663420,
+	"end" : 1604362320,
+	"description" : "ANA-BACKUP: NORDUNET MANLAN to NETHERLIGHT 2030"
+  },
+  "es.net-6432" : {
+	"endpoints" : [ {
+	  "router" : "osti-rt2",
+	  "port" : "ae0",
+	  "vlan" : 803
+	}, {
+	  "router" : "atla-cr5",
+	  "port" : "10/1/3",
+	  "vlan" : 803
+	} ],
+	"sdps" : {
+	  "atla-cr5" : [ 6069 ]
+	},
+	"eros" : [ [ "osti-rt2", "osti-rt2:xe-1/2/0", "ornl-cr5:9/1/4", "ornl-cr5", "ornl-cr5:6/1/1", "atla-cr5:3/1/1", "atla-cr5" ] ],
+	"start" : 1487401980,
+	"end" : 2118554880,
+	"description" : "OSTI - SRS VLAN 803 - CHG0030540 - circuit 1 - part 1"
+  },
+  "FTJH" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3606
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3606
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7004 ],
+	  "wash-cr5" : [ 7000 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5" ] ],
+	"start" : 1542322834,
+	"end" : 1542344425,
+	"description" : "7f3698fb-1795-4538-96f2-a1fb81549266"
+  },
+  "KRXC" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3619
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3619
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7004 ],
+	  "wash-cr5" : [ 7000 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5" ] ],
+	"start" : 1541782599,
+	"end" : 1541782883,
+	"description" : "f6cfb23c-dbcd-4890-9bb6-618034ee33fa"
+  },
+  "W92J" : {
+	"endpoints" : [ {
+	  "router" : "sacr-cr5",
+	  "port" : "4/1/1",
+	  "vlan" : 2205
+	}, {
+	  "router" : "sacr-cr5",
+	  "port" : "5/1/1",
+	  "vlan" : 2205
+	} ],
+	"sdps" : { },
+	"eros" : [ ],
+	"start" : 1535827970,
+	"end" : 1535848518,
+	"description" : "deltaId+406794ed-96aa-40dc-b585-f91120818766:uuid+5beace94-32fc-4122-ae39-c27affcd8e11"
+  },
+  "XPN2" : {
+	"endpoints" : [ {
+	  "router" : "sacr-cr5",
+	  "port" : "4/1/1",
+	  "vlan" : 2205
+	}, {
+	  "router" : "sacr-cr5",
+	  "port" : "5/1/1",
+	  "vlan" : 2205
+	} ],
+	"sdps" : { },
+	"eros" : [ ],
+	"start" : 1535848938,
+	"end" : 1535867734,
+	"description" : "deltaId+5f3a0616-3489-4b87-8243-e12d0324cee6:uuid+087ef435-c0d2-490c-86e4-5b6e6a6ef982"
+  },
+  "DRM6" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3619
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3619
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7007 ],
+	  "wash-cr5" : [ 7005 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5" ] ],
+	"start" : 1542212897,
+	"end" : 1542213020,
+	"description" : "2d415446-7ab6-4346-bf5c-786413c5e6c7"
+  },
+  "CGJM" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3611
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3611
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7017, 7016 ],
+	  "wash-cr5" : [ 7008, 7009 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:5/1/1", "chic-cr5:6/2/1", "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1539684180,
+	"end" : 1539692461,
+	"description" : "deltaId+db7325e3-aff5-4831-87bc-1fd4ace32d19:uuid+7fe2b3da-3760-4a50-9905-b238e4227928"
+  },
+  "P6RG" : {
+	"endpoints" : [ {
+	  "router" : "sacr-cr5",
+	  "port" : "4/1/1",
+	  "vlan" : 2205
+	}, {
+	  "router" : "sacr-cr5",
+	  "port" : "5/1/1",
+	  "vlan" : 2205
+	} ],
+	"sdps" : { },
+	"eros" : [ ],
+	"start" : 1539887623,
+	"end" : 1539888672,
+	"description" : "deltaId+dcba95ff-8f26-4aa6-98ea-34ef92e8eab1:uuid+d8f7b4c5-3b34-460a-a9df-d62dc532cb30"
+  },
+  "X3FT" : {
+	"endpoints" : [ {
+	  "router" : "eqx-ash-cr5",
+	  "port" : "10/2/4",
+	  "vlan" : 2181
+	}, {
+	  "router" : "nash-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 2181
+	} ],
+	"sdps" : {
+	  "eqx-ash-cr5" : [ 7001, 7002 ],
+	  "nash-cr5" : [ 7000, 7001 ]
+	},
+	"eros" : [ [ "nash-cr5", "nash-cr5:4/1/1", "chic-cr5:6/1/1", "chic-cr5", "chic-cr5:7/1/1", "eqx-chi-cr5:1/1/1", "eqx-chi-cr5", "eqx-chi-cr5:2/1/1", "eqx-ash-cr5:2/1/1", "eqx-ash-cr5" ] ],
+	"start" : 1534865163,
+	"end" : 1566400263,
+	"description" : "ORNL Azure 02"
+  },
+  "CKCX" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3613
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3613
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7020 ],
+	  "wash-cr5" : [ 7013 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5", "chic-cr5:2/1/1", "star-cr5:4/1/1", "star-cr5" ] ],
+	"start" : 1541530489,
+	"end" : 1541531453,
+	"description" : "e70711d8-f859-4052-97cb-0a2706cd0b9a"
+  },
+  "KRJM" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3619
+	}, {
+	  "router" : "sunn-cr5",
+	  "port" : "8/1/1",
+	  "vlan" : 3619
+	} ],
+	"sdps" : {
+	  "sunn-cr5" : [ 7002 ],
+	  "star-cr5" : [ 7006 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/1/1", "chic-cr5:2/1/1", "chic-cr5", "chic-cr5:6/1/1", "nash-cr5:4/1/1", "nash-cr5", "nash-cr5:3/1/1", "hous-cr5:3/1/1", "hous-cr5", "hous-cr5:1/1/1", "elpa-cr5:1/1/1", "elpa-cr5", "elpa-cr5:3/1/1", "sunn-cr5:5/1/1", "sunn-cr5" ] ],
+	"start" : 1542038919,
+	"end" : 1542039044,
+	"description" : "217d2976-1d38-411a-bb1a-5238d9c0d778"
+  },
+  "es.net-6582" : {
+	"endpoints" : [ {
+	  "router" : "aofa-cr5",
+	  "port" : "9/1/5",
+	  "vlan" : 3611
+	}, {
+	  "router" : "lond-cr5",
+	  "port" : "10/1/1",
+	  "vlan" : 3611
+	} ],
+	"sdps" : {
+	  "aofa-cr5" : [ 6169 ],
+	  "lond-cr5" : [ 6169 ]
+	},
+	"eros" : [ [ "aofa-cr5", "aofa-cr5:2/1/1", "lond-cr5:2/2/1", "lond-cr5" ] ],
+	"start" : 1505939820,
+	"end" : 1979499120,
+	"description" : "OWAMP path between AOFA and LOND over NEAAR TA circuit"
+  },
+  "es.net-6340" : {
+	"endpoints" : [ {
+	  "router" : "newy-cr5",
+	  "port" : "10/1/3",
+	  "vlan" : 3605
+	}, {
+	  "router" : "lond-cr5",
+	  "port" : "10/1/1",
+	  "vlan" : 3605
+	} ],
+	"sdps" : {
+	  "newy-cr5" : [ 6138 ],
+	  "lond-cr5" : [ 6138 ]
+	},
+	"eros" : [ [ "newy-cr5", "newy-cr5:4/1/1", "lond-cr5:3/1/1", "lond-cr5" ] ],
+	"start" : 1478205840,
+	"end" : 2077736340,
+	"description" : "NEWY-LOND_owamp"
+  },
+  "F4NJ" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3613
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3613
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7006, 7011 ],
+	  "wash-cr5" : [ 7002, 7003 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:5/1/1", "chic-cr5:6/2/1", "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1539008705,
+	"end" : 1541780756,
+	"description" : "deltaId+93e8c327-c842-41fa-b774-60d05bfad439:uuid+0a2e1c21-af9c-4bcc-88fb-7da3cc085569"
+  },
+  "es.net-6343" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "10/1/9",
+	  "vlan" : 3610
+	}, {
+	  "router" : "cern-513-cr5",
+	  "port" : "10/1/2",
+	  "vlan" : 3610
+	} ],
+	"sdps" : {
+	  "cern-513-cr5" : [ 6142 ],
+	  "wash-cr5" : [ 6142 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:5/1/1", "cern-513-cr5:1/1/1", "cern-513-cr5" ] ],
+	"start" : 1478206560,
+	"end" : 2077737060,
+	"description" : "WASH-CERN-513_bw"
+  },
+  "es.net-6344" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "10/1/3",
+	  "vlan" : 3609
+	}, {
+	  "router" : "cern-513-cr5",
+	  "port" : "10/1/3",
+	  "vlan" : 3609
+	} ],
+	"sdps" : {
+	  "cern-513-cr5" : [ 6146 ],
+	  "wash-cr5" : [ 6146 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:5/1/1", "cern-513-cr5:1/1/1", "cern-513-cr5" ] ],
+	"start" : 1478206680,
+	"end" : 2077737180,
+	"description" : "WASH-CERN-513_owamp"
+  },
+  "YF92" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3610
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3610
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7008 ],
+	  "wash-cr5" : [ 7006 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5" ] ],
+	"start" : 1542227042,
+	"end" : 1542227471,
+	"description" : "54e3ac4c-eff8-41e3-a586-9dc4d8437e2b"
+  },
+  "WP32" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3601
+	}, {
+	  "router" : "sunn-cr5",
+	  "port" : "2/1/1",
+	  "vlan" : 3617
+	} ],
+	"sdps" : {
+	  "sunn-cr5" : [ 7003 ],
+	  "chic-cr5" : [ 7008 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:3/1/1", "kans-cr5:1/1/1", "kans-cr5", "kans-cr5:2/1/1", "denv-cr5:1/1/1", "denv-cr5", "denv-cr5:2/1/1", "sacr-cr5:2/1/1", "sacr-cr5", "sacr-cr5:1/1/1", "sunn-cr5:1/1/1", "sunn-cr5" ] ],
+	"start" : 1541546967,
+	"end" : 1541619883,
+	"description" : "89a3bac1-d677-4d0a-a5ad-152c0fb07b86"
+  },
+  "N2C4" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3616
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3616
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7007 ],
+	  "wash-cr5" : [ 7006 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1542141738,
+	"end" : 1542145477,
+	"description" : "ff7c3d9f-b066-460f-bb85-808d1b41ded7"
+  },
+  "XDYJ" : {
+	"endpoints" : [ {
+	  "router" : "sacr-cr5",
+	  "port" : "4/1/1",
+	  "vlan" : 2205
+	}, {
+	  "router" : "sacr-cr5",
+	  "port" : "5/1/1",
+	  "vlan" : 2205
+	} ],
+	"sdps" : { },
+	"eros" : [ ],
+	"start" : 1535380902,
+	"end" : 1535390876,
+	"description" : "deltaId+7a772931-6a8c-44d9-beb8-c5bfd9529db9:uuid+a49a80b8-3618-4bea-85e4-c6bdb0049875"
+  },
+  "NWKR" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3610
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 61
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7012 ],
+	  "wash-cr5" : [ 7000 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:2/1/1", "aofa-cr5:1/1/1", "aofa-cr5", "aofa-cr5:5/1/1", "star-cr5:4/2/1", "star-cr5" ] ],
+	"start" : 1542045943,
+	"end" : 1542046072,
+	"description" : "50ebd679-96f2-425c-a7ca-39524287fc74"
+  },
+  "KRK9" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3607
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3607
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7020, 7021 ],
+	  "wash-cr5" : [ 7013, 7012 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:5/1/1", "chic-cr5:6/2/1", "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1540403060,
+	"end" : 1540407236,
+	"description" : "deltaId+8cab45dd-193f-4b78-a0a4-668d7d033ab4:uuid+1ee04bc8-303d-497a-adbb-d1828f6026e8"
+  },
+  "FYH3" : {
+	"endpoints" : [ {
+	  "router" : "sunn-cr5",
+	  "port" : "2/1/1",
+	  "vlan" : 3610
+	}, {
+	  "router" : "sunn-cr5",
+	  "port" : "8/1/1",
+	  "vlan" : 3610
+	} ],
+	"sdps" : { },
+	"eros" : [ ],
+	"start" : 1542206114,
+	"end" : 1542207907,
+	"description" : "fa3b154d-3ea1-4735-9837-c8d8fff7be1d"
+  },
+  "NC2C" : {
+	"endpoints" : [ {
+	  "router" : "eqx-ash-cr5",
+	  "port" : "10/2/4",
+	  "vlan" : 2180
+	}, {
+	  "router" : "ornl-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 2180
+	} ],
+	"sdps" : {
+	  "eqx-ash-cr5" : [ 7003, 7002 ],
+	  "ornl-cr5" : [ 7002, 7001 ]
+	},
+	"eros" : [ [ "ornl-cr5", "ornl-cr5:6/1/1", "atla-cr5:3/1/1", "atla-cr5", "atla-cr5:1/1/1", "wash-cr5:3/1/1", "wash-cr5", "wash-cr5:4/2/1", "eqx-ash-cr5:1/1/1", "eqx-ash-cr5" ] ],
+	"start" : 1534967879,
+	"end" : 1535662366,
+	"description" : "ORNL AZURE to Campus"
+  },
+  "DP9R" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3619
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3619
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7004 ],
+	  "wash-cr5" : [ 7000 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1542049606,
+	"end" : 1542049678,
+	"description" : "a1d9bdd9-a676-4eb1-b740-40f602de746c"
+  },
+  "es.net-6450" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 3298
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3298
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6121 ]
+	},
+	"eros" : [ ],
+	"start" : 1488399540,
+	"end" : 1803933240,
+	"description" : "Research collaboration between UChicago-Chameleon and RENCI-ExoGENI ESNET-20170227-008"
+  },
+  "es.net-6451" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 3299
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3299
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6119 ]
+	},
+	"eros" : [ ],
+	"start" : 1488399840,
+	"end" : 1803933540,
+	"description" : "Research collaboration between UChicago-Chameleon and RENCI-ExoGENI ESNET-20170227-008"
+  },
+  "es.net-6452" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 3291
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3291
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6122 ]
+	},
+	"eros" : [ ],
+	"start" : 1488399900,
+	"end" : 1803933600,
+	"description" : "Research collaboration between UChicago-Chameleon and RENCI-ExoGENI ESNET-20170227-008"
+  },
+  "es.net-6453" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 3292
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3292
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6130 ]
+	},
+	"eros" : [ ],
+	"start" : 1488399960,
+	"end" : 1803933660,
+	"description" : "Research collaboration between UChicago-Chameleon and RENCI-ExoGENI ESNET-20170227-008"
+  },
+  "es.net-6454" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 3294
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3294
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6131 ]
+	},
+	"eros" : [ ],
+	"start" : 1488400020,
+	"end" : 1803933720,
+	"description" : "Research collaboration between UChicago-Chameleon and RENCI-ExoGENI ESNET-20170227-008"
+  },
+  "KTMR" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3604
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3604
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7020, 7021 ],
+	  "wash-cr5" : [ 7012, 7013 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:5/1/1", "chic-cr5:6/2/1", "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1539688228,
+	"end" : 1539688364,
+	"description" : "deltaId+6a0ed15b-7488-4ee7-acd3-e4bed57df695:uuid+031fd3c3-90e8-4bfb-9402-43646b6c92fc"
+  },
+  "es.net-6455" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 3293
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3293
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6139 ]
+	},
+	"eros" : [ ],
+	"start" : 1488400140,
+	"end" : 1803933840,
+	"description" : "Research collaboration between UChicago-Chameleon and RENCI-ExoGENI ESNET-20170227-008"
+  },
+  "MPP7" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3605
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3605
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7011 ],
+	  "wash-cr5" : [ 7004 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/2/1", "aofa-cr5:5/1/1", "aofa-cr5", "aofa-cr5:6/2/1", "wash-cr5:4/1/1", "wash-cr5" ] ],
+	"start" : 1542032015,
+	"end" : 1542032489,
+	"description" : "ad6faa7d-7209-49e1-9dfc-55c8f9dba70e"
+  },
+  "es.net-6338" : {
+	"endpoints" : [ {
+	  "router" : "newy-cr5",
+	  "port" : "10/1/2",
+	  "vlan" : 3606
+	}, {
+	  "router" : "lond-cr5",
+	  "port" : "10/1/2",
+	  "vlan" : 3606
+	} ],
+	"sdps" : {
+	  "newy-cr5" : [ 6137 ],
+	  "lond-cr5" : [ 6137 ]
+	},
+	"eros" : [ [ "newy-cr5", "newy-cr5:4/1/1", "lond-cr5:3/1/1", "lond-cr5" ] ],
+	"start" : 1478205720,
+	"end" : 2077736220,
+	"description" : "NEWY-LOND_bw"
+  },
+  "es.net-6218" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 2150
+	}, {
+	  "router" : "ornl-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 2150
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 6135 ],
+	  "ornl-cr5" : [ 6135 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:4/1/1", "nash-cr5:1/1/1", "nash-cr5", "nash-cr5:2/1/1", "atla-cr5:2/1/1", "atla-cr5", "atla-cr5:3/1/1", "ornl-cr5:6/1/1", "ornl-cr5" ] ],
+	"start" : 1464703560,
+	"end" : 1685542860,
+	"description" : "FNAL-ORNL SDN Collaboration"
+  },
+  "MM9P" : {
+	"endpoints" : [ {
+	  "router" : "denv-cr5",
+	  "port" : "10/1/7",
+	  "vlan" : 1001
+	}, {
+	  "router" : "kans-cr5",
+	  "port" : "10/1/4",
+	  "vlan" : 1001
+	} ],
+	"sdps" : {
+	  "denv-cr5" : [ 7001, 7000 ],
+	  "kans-cr5" : [ 7001, 7000 ]
+	},
+	"eros" : [ [ "kans-cr5", "kans-cr5:2/1/1", "denv-cr5:1/1/1", "denv-cr5" ] ],
+	"start" : 1534353542,
+	"end" : 1534353847,
+	"description" : "test for 1.0 - ALU-ALU, manual"
+  },
+  "H22Z" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3200
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3200
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7005, 7004 ],
+	  "chic-cr5" : [ 7004, 7005 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:2/1/1", "star-cr5:4/1/1", "star-cr5" ] ],
+	"start" : 1535473353,
+	"end" : 1535664173,
+	"description" : "user=Wenji;vlan=3200;bw=1000Mbps"
+  },
+  "THKH" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3617
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3609
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7017, 7016 ],
+	  "chic-cr5" : [ 7009, 7008 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:5/1/1", "chic-cr5:6/2/1", "chic-cr5" ] ],
+	"start" : 1540410477,
+	"end" : 1540411032,
+	"description" : "deltaId+315527b2-623e-414d-8553-357f253850a6:uuid+f3c61cdc-bd44-410c-95aa-6f9d6423593e"
+  },
+  "M3WJ" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3607
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3607
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7008 ],
+	  "wash-cr5" : [ 7006 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5" ] ],
+	"start" : 1542221148,
+	"end" : 1542221577,
+	"description" : "ac21a035-0d24-495a-8834-4bc5c65fa582"
+  },
+  "TNGJ" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3603
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3603
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7004 ],
+	  "wash-cr5" : [ 7000 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5" ] ],
+	"start" : 1542250833,
+	"end" : 1542254421,
+	"description" : "ca9a05c2-cf83-4772-99d7-fd24f3e67c5f"
+  },
+  "es.net-7171" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 265
+	}, {
+	  "router" : "cern-773-cr5",
+	  "port" : "lag-1",
+	  "vlan" : 265
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6013, 6110 ],
+	  "cern-773-cr5" : [ 6010, 6110 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/2/1", "aofa-cr5:5/1/1", "aofa-cr5", "aofa-cr5:7/2/1", "lond-cr5:5/1/1", "lond-cr5", "lond-cr5:2/1/1", "amst-cr5:2/1/1", "amst-cr5", "amst-cr5:1/1/1", "cern-513-cr5:5/1/1", "cern-513-cr5", "cern-513-cr5:1/2/1", "cern-773-cr5:2/1/1", "cern-773-cr5" ] ],
+	"start" : 1528408200,
+	"end" : 1592345100,
+	"description" : "CERN - KREOnet, VLAN 265, 1M"
+  },
+  "TRR7" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3609
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3609
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7017 ],
+	  "wash-cr5" : [ 7009 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/2/1", "aofa-cr5:5/1/1", "aofa-cr5", "aofa-cr5:6/2/1", "wash-cr5:4/1/1", "wash-cr5" ] ],
+	"start" : 1540561607,
+	"end" : 1543498907,
+	"description" : "917ad15a-1244-4922-b761-b01e509f8b14"
+  },
+  "es.net-7172" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 3526
+	}, {
+	  "router" : "cern-773-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3526
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6112, 6015 ],
+	  "cern-773-cr5" : [ 6011, 6112 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/2/1", "aofa-cr5:5/1/1", "aofa-cr5", "aofa-cr5:7/2/1", "lond-cr5:5/1/1", "lond-cr5", "lond-cr5:2/1/1", "amst-cr5:2/1/1", "amst-cr5", "amst-cr5:1/1/1", "cern-513-cr5:5/1/1", "cern-513-cr5", "cern-513-cr5:1/2/1", "cern-773-cr5:2/1/1", "cern-773-cr5" ] ],
+	"start" : 1528408320,
+	"end" : 1592258820,
+	"description" : "CERN - ASGC LHCOPN backup, VLAN 3526, 1M"
+  },
+  "es.net-7173" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 2031
+	}, {
+	  "router" : "lond-cr5",
+	  "port" : "2/2/1",
+	  "vlan" : 2031
+	} ],
+	"sdps" : {
+	  "lond-cr5" : [ 6000, 6116 ],
+	  "wash-cr5" : [ 6000, 6116 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:5/1/1", "cern-513-cr5:1/1/1", "cern-513-cr5", "cern-513-cr5:1/2/1", "cern-773-cr5:2/1/1", "cern-773-cr5", "cern-773-cr5:1/1/1", "lond-cr5:1/1/1", "lond-cr5" ] ],
+	"start" : 1528409640,
+	"end" : 1718144940,
+	"description" : "ANA-BACKUP: NORDUNET WIX to GEANTOPEN 2031"
+  },
+  "P4RP" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3611
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3611
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7016 ],
+	  "wash-cr5" : [ 7008 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/1/1", "chic-cr5:2/1/1", "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1540498354,
+	"end" : 1543349254,
+	"description" : "819d8794-0c99-40a3-9571-91dcaeab7bc6"
+  },
+  "FYYN" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3613
+	}, {
+	  "router" : "sunn-cr5",
+	  "port" : "2/1/1",
+	  "vlan" : 1410
+	} ],
+	"sdps" : {
+	  "sunn-cr5" : [ 7002 ],
+	  "wash-cr5" : [ 7006 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:5/2/1", "nash-cr5:4/2/1", "nash-cr5", "nash-cr5:3/1/1", "hous-cr5:3/1/1", "hous-cr5", "hous-cr5:1/1/1", "elpa-cr5:1/1/1", "elpa-cr5", "elpa-cr5:3/1/1", "sunn-cr5:5/1/1", "sunn-cr5" ] ],
+	"start" : 1541976353,
+	"end" : 1542038364,
+	"description" : "6995486c-9052-42cc-9c52-66dc0a456f74"
+  },
+  "J79Z" : {
+	"endpoints" : [ {
+	  "router" : "sunn-cr5",
+	  "port" : "2/1/1",
+	  "vlan" : 3613
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3613
+	} ],
+	"sdps" : {
+	  "sunn-cr5" : [ 7003 ],
+	  "chic-cr5" : [ 7008 ]
+	},
+	"eros" : [ [ "sunn-cr5", "sunn-cr5:1/1/1", "sacr-cr5:1/1/1", "sacr-cr5", "sacr-cr5:2/1/1", "denv-cr5:2/1/1", "denv-cr5", "denv-cr5:1/1/1", "kans-cr5:2/1/1", "kans-cr5", "kans-cr5:1/1/1", "chic-cr5:3/1/1", "chic-cr5" ] ],
+	"start" : 1541518947,
+	"end" : 1541522464,
+	"description" : "821d04d3-d57e-4afc-9814-ec2705b17a96"
+  },
+  "es.net-6523" : {
+	"endpoints" : [ {
+	  "router" : "ornl-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3000
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "10/1/4",
+	  "vlan" : 3000
+	} ],
+	"sdps" : {
+	  "wash-cr5" : [ 6150 ],
+	  "ornl-cr5" : [ 6150 ]
+	},
+	"eros" : [ [ "ornl-cr5", "ornl-cr5:6/1/1", "atla-cr5:3/1/1", "atla-cr5", "atla-cr5:1/1/1", "wash-cr5:3/1/1", "wash-cr5" ] ],
+	"start" : 1498174740,
+	"end" : 1813708440,
+	"description" : "VA to ORNL circuit in support of the MVP project"
+  },
+  "es.net-6646" : {
+	"endpoints" : [ {
+	  "router" : "aofa-cr5",
+	  "port" : "10/1/1",
+	  "vlan" : 3612
+	}, {
+	  "router" : "lond-cr5",
+	  "port" : "10/1/2",
+	  "vlan" : 3612
+	} ],
+	"sdps" : {
+	  "aofa-cr5" : [ 6168 ],
+	  "lond-cr5" : [ 6168 ]
+	},
+	"eros" : [ [ "aofa-cr5", "aofa-cr5:2/1/1", "lond-cr5:2/2/1", "lond-cr5" ] ],
+	"start" : 1509547260,
+	"end" : 1825080960,
+	"description" : "AOFA to LOND pinned PT test over NEAAR"
+  },
+  "MJWJ" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "10/1/1",
+	  "vlan" : 1001
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "10/1/7",
+	  "vlan" : 1001
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7001, 7000 ],
+	  "chic-cr5" : [ 7001, 7000 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/1/1", "chic-cr5:2/1/1", "chic-cr5" ] ],
+	"start" : 1534353392,
+	"end" : 1534355835,
+	"description" : "Test reservation for 1.0 - scheduled"
+  },
+  "DRPC" : {
+	"endpoints" : [ {
+	  "router" : "sunn-cr5",
+	  "port" : "8/1/1",
+	  "vlan" : 3018
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "5/1/1",
+	  "vlan" : 2417
+	} ],
+	"sdps" : {
+	  "sunn-cr5" : [ 7003, 7002 ],
+	  "chic-cr5" : [ 7013, 7014 ]
+	},
+	"eros" : [ [ "sunn-cr5", "sunn-cr5:10/2/4", "lsvn-cr1:xe-1/2/0", "lsvn-cr1", "lsvn-cr1:xe-2/2/0", "denv-cr5:10/1/10", "denv-cr5", "denv-cr5:1/1/1", "kans-cr5:2/1/1", "kans-cr5", "kans-cr5:1/1/1", "chic-cr5:3/1/1", "chic-cr5" ] ],
+	"start" : 1540849100,
+	"end" : 1540849219,
+	"description" : "deltaId+cc1326e5-838a-4087-ba27-b5305b8e9399:uuid+71ba24da-f0f8-4a0b-9317-d94b995288c5"
+  },
+  "GFP4" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3607
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3607
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7007 ],
+	  "wash-cr5" : [ 7005 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5" ] ],
+	"start" : 1542147207,
+	"end" : 1542751827,
+	"description" : "9a30a134-ae63-4176-b43d-6edbe3bd22b6"
+  },
+  "ZG96" : {
+	"endpoints" : [ {
+	  "router" : "sunn-cr5",
+	  "port" : "2/1/1",
+	  "vlan" : 3619
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3619
+	} ],
+	"sdps" : {
+	  "sunn-cr5" : [ 7008, 7009 ],
+	  "star-cr5" : [ 7016, 7017 ]
+	},
+	"eros" : [ [ "sunn-cr5", "sunn-cr5:1/1/1", "sacr-cr5:1/1/1", "sacr-cr5", "sacr-cr5:2/1/1", "denv-cr5:2/1/1", "denv-cr5", "denv-cr5:1/1/1", "kans-cr5:2/1/1", "kans-cr5", "kans-cr5:1/1/1", "chic-cr5:3/1/1", "chic-cr5", "chic-cr5:2/1/1", "star-cr5:4/1/1", "star-cr5" ] ],
+	"start" : 1540293407,
+	"end" : 1540405317,
+	"description" : "deltaId+74240b52-cc51-4e93-9b86-46df9239011a:uuid+c9f02fe3-c2f8-4bf2-8f42-89bca9d9c8e7"
+  },
+  "es.net-7160" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 121
+	}, {
+	  "router" : "cern-773-cr5",
+	  "port" : "lag-1",
+	  "vlan" : 121
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6006, 6093 ],
+	  "cern-773-cr5" : [ 6093, 6003 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/2/1", "aofa-cr5:5/1/1", "aofa-cr5", "aofa-cr5:7/2/1", "lond-cr5:5/1/1", "lond-cr5", "lond-cr5:2/1/1", "amst-cr5:2/1/1", "amst-cr5", "amst-cr5:1/1/1", "cern-513-cr5:5/1/1", "cern-513-cr5", "cern-513-cr5:1/2/1", "cern-773-cr5:2/1/1", "cern-773-cr5" ] ],
+	"start" : 1528407300,
+	"end" : 1592344200,
+	"description" : "CERN - Internet2, VLAN 121, 1M"
+  },
+  "es.net-7162" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 136
+	}, {
+	  "router" : "cern-773-cr5",
+	  "port" : "lag-1",
+	  "vlan" : 136
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6099, 6007 ],
+	  "cern-773-cr5" : [ 6005, 6099 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/2/1", "aofa-cr5:5/1/1", "aofa-cr5", "aofa-cr5:7/2/1", "lond-cr5:5/1/1", "lond-cr5", "lond-cr5:2/1/1", "amst-cr5:2/1/1", "amst-cr5", "amst-cr5:1/1/1", "cern-513-cr5:5/1/1", "cern-513-cr5", "cern-513-cr5:1/2/1", "cern-773-cr5:2/1/1", "cern-773-cr5" ] ],
+	"start" : 1528407420,
+	"end" : 1592344320,
+	"description" : "CERN - Canarie Winnipeg, VLAN 136, 1M"
+  },
+  "D3DM" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3619
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3619
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7004 ],
+	  "wash-cr5" : [ 7000 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1542047987,
+	"end" : 1542652607,
+	"description" : "ce7039f6-1064-4966-a84a-234969d291d8"
+  },
+  "es.net-7164" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 141
+	}, {
+	  "router" : "cern-773-cr5",
+	  "port" : "lag-1",
+	  "vlan" : 141
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6000, 6089 ],
+	  "cern-773-cr5" : [ 6004, 6089 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/2/1", "aofa-cr5:5/1/1", "aofa-cr5", "aofa-cr5:7/2/1", "lond-cr5:5/1/1", "lond-cr5", "lond-cr5:2/1/1", "amst-cr5:2/1/1", "amst-cr5", "amst-cr5:1/1/1", "cern-513-cr5:5/1/1", "cern-513-cr5", "cern-513-cr5:1/2/1", "cern-773-cr5:2/1/1", "cern-773-cr5" ] ],
+	"start" : 1528407480,
+	"end" : 1592344380,
+	"description" : "CERN - Canarie Toronto, VLAN 141, 1M"
+  },
+  "KHH4" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 201
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "lag-1",
+	  "vlan" : 201
+	} ],
+	"sdps" : { },
+	"eros" : [ ],
+	"start" : 1534895577,
+	"end" : 1553789073,
+	"description" : "FNAL- UMN-NOVA-A VLAN 201"
+  },
+  "ZPJT" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3608
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3608
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7007 ],
+	  "wash-cr5" : [ 7005 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1542148000,
+	"end" : 1542173228,
+	"description" : "1da32235-7fe2-48a8-a576-7e19fb32658c"
+  },
+  "es.net-7166" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 224
+	}, {
+	  "router" : "cern-773-cr5",
+	  "port" : "lag-1",
+	  "vlan" : 224
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6008, 6101 ],
+	  "cern-773-cr5" : [ 6006, 6101 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:5/1/1", "chic-cr5:6/2/1", "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5", "wash-cr5:5/1/1", "cern-513-cr5:1/1/1", "cern-513-cr5", "cern-513-cr5:1/2/1", "cern-773-cr5:2/1/1", "cern-773-cr5" ] ],
+	"start" : 1528407600,
+	"end" : 1718142660,
+	"description" : "CERN - NASA NISN, VLAN 224, 200M"
+  },
+  "WHCT" : {
+	"endpoints" : [ {
+	  "router" : "sunn-cr5",
+	  "port" : "2/1/1",
+	  "vlan" : 3605
+	}, {
+	  "router" : "sunn-cr5",
+	  "port" : "8/1/1",
+	  "vlan" : 3605
+	} ],
+	"sdps" : { },
+	"eros" : [ ],
+	"start" : 1541997740,
+	"end" : 1542047213,
+	"description" : "c84f9b94-9e02-49e3-a94e-89ddf6210426"
+  },
+  "es.net-7167" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 160
+	}, {
+	  "router" : "cern-773-cr5",
+	  "port" : "lag-1",
+	  "vlan" : 160
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6009, 6104 ],
+	  "cern-773-cr5" : [ 6104, 6007 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/2/1", "aofa-cr5:5/1/1", "aofa-cr5", "aofa-cr5:7/2/1", "lond-cr5:5/1/1", "lond-cr5", "lond-cr5:2/1/1", "amst-cr5:2/1/1", "amst-cr5", "amst-cr5:1/1/1", "cern-513-cr5:5/1/1", "cern-513-cr5", "cern-513-cr5:1/2/1", "cern-773-cr5:2/1/1", "cern-773-cr5" ] ],
+	"start" : 1528407840,
+	"end" : 1592344740,
+	"description" : "CERN - ASGC, VLAN 160, 1M"
+  },
+  "es.net-7168" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 258
+	}, {
+	  "router" : "cern-773-cr5",
+	  "port" : "lag-1",
+	  "vlan" : 258
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6010, 6106 ],
+	  "cern-773-cr5" : [ 6106, 6008 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/2/1", "aofa-cr5:5/1/1", "aofa-cr5", "aofa-cr5:7/2/1", "lond-cr5:5/1/1", "lond-cr5", "lond-cr5:2/1/1", "amst-cr5:2/1/1", "amst-cr5", "amst-cr5:1/1/1", "cern-513-cr5:5/1/1", "cern-513-cr5", "cern-513-cr5:1/2/1", "cern-773-cr5:2/1/1", "cern-773-cr5" ] ],
+	"start" : 1528407900,
+	"end" : 1592344800,
+	"description" : "CERN - Internet2 IPv6, VLAN 258, 1M"
+  },
+  "es.net-7169" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 266
+	}, {
+	  "router" : "cern-773-cr5",
+	  "port" : "lag-1",
+	  "vlan" : 266
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6011, 6108 ],
+	  "cern-773-cr5" : [ 6108, 6009 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/2/1", "aofa-cr5:5/1/1", "aofa-cr5", "aofa-cr5:7/2/1", "lond-cr5:5/1/1", "lond-cr5", "lond-cr5:2/1/1", "amst-cr5:2/1/1", "amst-cr5", "amst-cr5:1/1/1", "cern-513-cr5:5/1/1", "cern-513-cr5", "cern-513-cr5:1/2/1", "cern-773-cr5:2/1/1", "cern-773-cr5" ] ],
+	"start" : 1528408020,
+	"end" : 1592344920,
+	"description" : "CERN - KREOnet IPv6, VLAN 266, 1M"
+  },
+  "F9Z9" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3605
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3605
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7006 ],
+	  "wash-cr5" : [ 7004 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5" ] ],
+	"start" : 1542304460,
+	"end" : 1542321036,
+	"description" : "c1d5ae45-5a82-45f5-9387-4c87ad664c2d"
+  },
+  "es.net-6757" : {
+	"endpoints" : [ {
+	  "router" : "amst-cr5",
+	  "port" : "10/1/4",
+	  "vlan" : 2280
+	}, {
+	  "router" : "denv-cr5",
+	  "port" : "9/1/4",
+	  "vlan" : 2280
+	} ],
+	"sdps" : {
+	  "denv-cr5" : [ 6147 ],
+	  "amst-cr5" : [ 6147 ]
+	},
+	"eros" : [ [ "amst-cr5", "amst-cr5:2/1/1", "lond-cr5:2/1/1", "lond-cr5", "lond-cr5:5/1/1", "aofa-cr5:7/2/1", "aofa-cr5", "aofa-cr5:1/1/1", "wash-cr5:2/1/1", "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5", "chic-cr5:3/1/1", "kans-cr5:1/1/1", "kans-cr5", "kans-cr5:2/1/1", "denv-cr5:1/1/1", "denv-cr5" ] ],
+	"start" : 1511998200,
+	"end" : 1551384000,
+	"description" : "CALIBERS 9/14: AMST - DENV"
+  },
+  "MDZZ" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3611
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3611
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7019, 7018 ],
+	  "chic-cr5" : [ 7008, 7009 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/1/1", "chic-cr5:2/1/1", "chic-cr5" ] ],
+	"start" : 1540218942,
+	"end" : 1540410379,
+	"description" : "deltaId+899f6ca0-881e-475b-b645-25e37700d110:uuid+cb7321d2-3d52-42fa-8fdb-9867eaed850b"
+  },
+  "NMYK" : {
+	"endpoints" : [ {
+	  "router" : "sunn-cr5",
+	  "port" : "8/1/1",
+	  "vlan" : 3618
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3618
+	} ],
+	"sdps" : {
+	  "sunn-cr5" : [ 7003 ],
+	  "wash-cr5" : [ 7005 ]
+	},
+	"eros" : [ [ "sunn-cr5", "sunn-cr5:5/1/1", "elpa-cr5:3/1/1", "elpa-cr5", "elpa-cr5:1/1/1", "hous-cr5:1/1/1", "hous-cr5", "hous-cr5:3/1/1", "nash-cr5:3/1/1", "nash-cr5", "nash-cr5:4/2/1", "wash-cr5:5/2/1", "wash-cr5" ] ],
+	"start" : 1541957322,
+	"end" : 1542142128,
+	"description" : "26305ea0-1d07-47b4-8ab4-f51a5ea10e13"
+  },
+  "EWWZ" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3614
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3614
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7006 ],
+	  "chic-cr5" : [ 7004 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:6/2/1", "star-cr5:5/1/1", "star-cr5" ] ],
+	"start" : 1542048249,
+	"end" : 1542048602,
+	"description" : "442e5a98-6ba3-41c5-a888-3c05b0958497"
+  },
+  "KXGN" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3600
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3600
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7017 ],
+	  "wash-cr5" : [ 7009 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:2/1/1", "aofa-cr5:1/1/1", "aofa-cr5", "aofa-cr5:5/1/1", "star-cr5:4/2/1", "star-cr5" ] ],
+	"start" : 1540562320,
+	"end" : 1543499620,
+	"description" : "39861213-a839-48a9-b42c-4252ed0a46a9"
+  },
+  "EH9N" : {
+	"endpoints" : [ {
+	  "router" : "hous-cr5",
+	  "port" : "10/1/4",
+	  "vlan" : 550
+	}, {
+	  "router" : "nash-cr5",
+	  "port" : "10/1/6",
+	  "vlan" : 550
+	} ],
+	"sdps" : {
+	  "hous-cr5" : [ 7000, 7001 ],
+	  "nash-cr5" : [ 7001, 7000 ]
+	},
+	"eros" : [ [ "nash-cr5", "nash-cr5:3/1/1", "hous-cr5:3/1/1", "hous-cr5" ] ],
+	"start" : 1542041884,
+	"end" : 1573576984,
+	"description" : "netlog test"
+  },
+  "YYPC" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3617
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3617
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7004, 7005 ],
+	  "wash-cr5" : [ 7000, 7001 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1538487484,
+	"end" : 1541780573,
+	"description" : "deltaId+78156505-8a28-4af1-9c00-071207a3d564:uuid+1da90c6f-e328-4eb2-90dd-6ac0586c77ed"
+  },
+  "GC9Y" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3613
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3613
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7007 ],
+	  "wash-cr5" : [ 7005 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1541869065,
+	"end" : 1541870463,
+	"description" : "1ff7fff3-59bc-41cd-b642-78fbddc1b2db"
+  },
+  "CC67" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3601
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3601
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7018 ],
+	  "chic-cr5" : [ 7008 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:6/2/1", "star-cr5:5/1/1", "star-cr5" ] ],
+	"start" : 1540502085,
+	"end" : 1543352985,
+	"description" : "2df7a9da-1719-4d95-90a7-47282d652e7b"
+  },
+  "XZDX" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3615
+	}, {
+	  "router" : "sunn-cr5",
+	  "port" : "2/1/1",
+	  "vlan" : 3615
+	} ],
+	"sdps" : {
+	  "sunn-cr5" : [ 7002 ],
+	  "chic-cr5" : [ 7004 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:3/1/1", "kans-cr5:1/1/1", "kans-cr5", "kans-cr5:3/1/1", "hous-cr5:2/1/1", "hous-cr5", "hous-cr5:1/1/1", "elpa-cr5:1/1/1", "elpa-cr5", "elpa-cr5:3/1/1", "sunn-cr5:5/1/1", "sunn-cr5" ] ],
+	"start" : 1542236495,
+	"end" : 1542249752,
+	"description" : "31020573-4cff-44c6-90cf-639479675721"
+  },
+  "es.net-7190" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "5/1/1",
+	  "vlan" : 1999
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "lag-1",
+	  "vlan" : 1999
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6053 ],
+	  "chic-cr5" : [ 6053 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:2/1/1", "star-cr5:4/1/1", "star-cr5" ] ],
+	"start" : 1531406340,
+	"end" : 1720709640,
+	"description" : "FNAL - UFL, VLAN 1999, 10G"
+  },
+  "es.net-7191" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "lag-1",
+	  "vlan" : 1304
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "5/1/1",
+	  "vlan" : 1304
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6060 ],
+	  "chic-cr5" : [ 6060 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/1/1", "chic-cr5:2/1/1", "chic-cr5" ] ],
+	"start" : 1531406400,
+	"end" : 1720709700,
+	"description" : "FNAL - UFL (via AL2S CHIC), VLAN 1304, 1G"
+  },
+  "es.net-7192" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "lag-1",
+	  "vlan" : 2499
+	}, {
+	  "router" : "cern-513-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 2499
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6065 ],
+	  "cern-513-cr5" : [ 6065 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:1/1/1", "bost-cr5:2/1/1", "bost-cr5", "bost-cr5:3/1/1", "amst-cr5:5/1/1", "amst-cr5", "amst-cr5:1/1/1", "cern-513-cr5:5/1/1", "cern-513-cr5" ] ],
+	"start" : 1531407240,
+	"end" : 1720710540,
+	"description" : "FNAL - TIFR, VLAN 2499, 1M"
+  },
+  "es.net-7198" : {
+	"endpoints" : [ {
+	  "router" : "eqx-ash-cr5",
+	  "port" : "lag-2",
+	  "vlan" : 2180
+	}, {
+	  "router" : "ornl-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 2180
+	} ],
+	"sdps" : {
+	  "eqx-ash-cr5" : [ 6070 ],
+	  "ornl-cr5" : [ 6070 ]
+	},
+	"eros" : [ [ "eqx-ash-cr5", "eqx-ash-cr5:1/1/1", "wash-cr5:4/2/1", "wash-cr5", "wash-cr5:3/1/1", "atla-cr5:1/1/1", "atla-cr5", "atla-cr5:3/1/1", "ornl-cr5:6/1/1", "ornl-cr5" ] ],
+	"start" : 1531851900,
+	"end" : 1595011200,
+	"description" : "ORNL Azure Cloud A"
+  },
+  "es.net-7199" : {
+	"endpoints" : [ {
+	  "router" : "eqx-ash-cr5",
+	  "port" : "lag-2",
+	  "vlan" : 2181
+	}, {
+	  "router" : "nash-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 2181
+	} ],
+	"sdps" : {
+	  "eqx-ash-cr5" : [ 6074 ],
+	  "nash-cr5" : [ 6074 ]
+	},
+	"eros" : [ [ "eqx-ash-cr5", "eqx-ash-cr5:1/1/1", "wash-cr5:4/2/1", "wash-cr5", "wash-cr5:5/2/1", "nash-cr5:4/2/1", "nash-cr5" ] ],
+	"start" : 1531852380,
+	"end" : 1595011680,
+	"description" : "ORNL Azure Cloud B"
+  },
+  "es.net-7079" : {
+	"endpoints" : [ {
+	  "router" : "nash-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 2018
+	}, {
+	  "router" : "denv-cr5",
+	  "port" : "10/1/12",
+	  "vlan" : 2018
+	} ],
+	"sdps" : {
+	  "denv-cr5" : [ 6097 ],
+	  "nash-cr5" : [ 6097 ]
+	},
+	"eros" : [ [ "nash-cr5", "nash-cr5:1/1/1", "chic-cr5:4/1/1", "chic-cr5", "chic-cr5:3/1/1", "kans-cr5:1/1/1", "kans-cr5", "kans-cr5:2/1/1", "denv-cr5:1/1/1", "denv-cr5" ] ],
+	"start" : 1525883760,
+	"end" : 1841503860,
+	"description" : "ORNL to NREL OSCARS circuit for FLISR project CHG0030800"
+  },
+  "YJDX" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3608
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3608
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7015, 7014 ],
+	  "wash-cr5" : [ 7006, 7007 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/1/1", "chic-cr5:2/1/1", "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1539205607,
+	"end" : 1541780713,
+	"description" : "deltaId+6aeff0e8-8fb4-4250-b2fc-a94a98587a17:uuid+63d1b8c1-7d1f-42ea-9ce7-0cf871656531"
+  },
+  "es.net-5211" : {
+	"endpoints" : [ {
+	  "router" : "aofa-cr5",
+	  "port" : "4/2/1",
+	  "vlan" : 2623
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "6/2/1",
+	  "vlan" : 2623
+	} ],
+	"sdps" : {
+	  "aofa-cr5" : [ 6064 ],
+	  "star-cr5" : [ 6064 ]
+	},
+	"eros" : [ [ "aofa-cr5", "aofa-cr5:3/1/1", "newy-cr5:2/1/1", "newy-cr5", "newy-cr5:4/2/1", "bost-cr5:1/1/1", "bost-cr5", "bost-cr5:2/1/1", "star-cr5:1/1/1", "star-cr5" ] ],
+	"start" : 1415896320,
+	"end" : 1573663620,
+	"description" : "BNL ATLAS to UOC via production core"
+  },
+  "es.net-6666" : {
+	"endpoints" : [ {
+	  "router" : "aofa-cr5",
+	  "port" : "10/1/1",
+	  "vlan" : 3614
+	}, {
+	  "router" : "lond-cr5",
+	  "port" : "10/1/2",
+	  "vlan" : 3614
+	} ],
+	"sdps" : {
+	  "aofa-cr5" : [ 6181 ],
+	  "lond-cr5" : [ 6181 ]
+	},
+	"eros" : [ [ "aofa-cr5", "aofa-cr5:7/2/1", "lond-cr5:5/1/1", "lond-cr5" ] ],
+	"start" : 1509641220,
+	"end" : 1825347720,
+	"description" : "AOFA to LOND pinned PT test over Aqua Comms"
+  },
+  "WKMR" : {
+	"endpoints" : [ {
+	  "router" : "sunn-cr5",
+	  "port" : "8/1/1",
+	  "vlan" : 3601
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3601
+	} ],
+	"sdps" : {
+	  "sunn-cr5" : [ 7004 ],
+	  "wash-cr5" : [ 7008 ]
+	},
+	"eros" : [ [ "sunn-cr5", "sunn-cr5:5/1/1", "elpa-cr5:3/1/1", "elpa-cr5", "elpa-cr5:1/1/1", "hous-cr5:1/1/1", "hous-cr5", "hous-cr5:3/1/1", "nash-cr5:3/1/1", "nash-cr5", "nash-cr5:4/2/1", "wash-cr5:5/2/1", "wash-cr5" ] ],
+	"start" : 1541618471,
+	"end" : 1541639567,
+	"description" : "3ed2bb9f-97ea-4b39-a128-1effcac0adb8"
+  },
+  "NFNK" : {
+	"endpoints" : [ {
+	  "router" : "sunn-cr5",
+	  "port" : "8/1/1",
+	  "vlan" : 3616
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3616
+	} ],
+	"sdps" : {
+	  "sunn-cr5" : [ 7002 ],
+	  "chic-cr5" : [ 7005 ]
+	},
+	"eros" : [ [ "sunn-cr5", "sunn-cr5:10/2/4", "lsvn-cr1:xe-1/2/0", "lsvn-cr1", "lsvn-cr1:xe-2/2/0", "denv-cr5:10/1/10", "denv-cr5", "denv-cr5:1/1/1", "kans-cr5:2/1/1", "kans-cr5", "kans-cr5:1/1/1", "chic-cr5:3/1/1", "chic-cr5" ] ],
+	"start" : 1541957953,
+	"end" : 1541959149,
+	"description" : "9e4d08a0-f782-4764-bfed-c5f7510eb398"
+  },
+  "es.net-6667" : {
+	"endpoints" : [ {
+	  "router" : "aofa-cr5",
+	  "port" : "9/1/5",
+	  "vlan" : 3613
+	}, {
+	  "router" : "lond-cr5",
+	  "port" : "10/1/1",
+	  "vlan" : 3613
+	} ],
+	"sdps" : {
+	  "aofa-cr5" : [ 6182 ],
+	  "lond-cr5" : [ 6182 ]
+	},
+	"eros" : [ [ "aofa-cr5", "aofa-cr5:7/2/1", "lond-cr5:5/1/1", "lond-cr5" ] ],
+	"start" : 1509641520,
+	"end" : 1825175220,
+	"description" : "OWAMP pinned path between AOFA and LOND over Aqua Comms circuit"
+  },
+  "NDJJ" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3606
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3606
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7004 ],
+	  "wash-cr5" : [ 7003 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1542030473,
+	"end" : 1542034061,
+	"description" : "3389d2e6-5d9e-4798-922a-be3fbec01739"
+  },
+  "NC7X" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3617
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3617
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7004 ],
+	  "wash-cr5" : [ 7000 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1541924254,
+	"end" : 1541925441,
+	"description" : "932c76b8-6d73-4bb1-a35c-9ae1e9979810"
+  },
+  "J9PX" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3612
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3612
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7016 ],
+	  "wash-cr5" : [ 7008 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/2/1", "aofa-cr5:5/1/1", "aofa-cr5", "aofa-cr5:6/2/1", "wash-cr5:4/1/1", "wash-cr5" ] ],
+	"start" : 1540560990,
+	"end" : 1543498290,
+	"description" : "9913fdf6-f109-4cd2-b523-1cfa0f35b548"
+  },
+  "H9FM" : {
+	"endpoints" : [ {
+	  "router" : "sacr-cr5",
+	  "port" : "4/1/1",
+	  "vlan" : 2205
+	}, {
+	  "router" : "sacr-cr5",
+	  "port" : "5/1/1",
+	  "vlan" : 2205
+	} ],
+	"sdps" : { },
+	"eros" : [ ],
+	"start" : 1534393151,
+	"end" : 1534861256,
+	"description" : "deltaId+673455b2-a90d-463f-af17-b21e8a280c6c:uuid+60203725-0cc2-42cb-a1b5-4878174d3e99"
+  },
+  "PFXZ" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3619
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3619
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7004 ],
+	  "wash-cr5" : [ 7000 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1542051643,
+	"end" : 1542051778,
+	"description" : "d894066a-e740-4dc4-8b6d-ce6c2ef01acd"
+  },
+  "FDRR" : {
+	"endpoints" : [ {
+	  "router" : "sacr-cr5",
+	  "port" : "4/1/1",
+	  "vlan" : 2205
+	}, {
+	  "router" : "sacr-cr5",
+	  "port" : "5/1/1",
+	  "vlan" : 2205
+	} ],
+	"sdps" : { },
+	"eros" : [ ],
+	"start" : 1539976346,
+	"end" : 1539982897,
+	"description" : "deltaId+0f4181dd-86b6-41d6-bb88-56dae1bed029:uuid+f210e62b-d2e7-46be-9d68-3ec93c4fffe7"
+  },
+  "R9GD" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "lag-1",
+	  "vlan" : 3500
+	}, {
+	  "router" : "cern-513-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 3500
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7006, 7005 ],
+	  "cern-513-cr5" : [ 7000, 7001 ]
+	},
+	"eros" : [ [ "cern-513-cr5", "cern-513-cr5:5/1/1", "amst-cr5:1/1/1", "amst-cr5", "amst-cr5:5/1/1", "bost-cr5:3/1/1", "bost-cr5", "bost-cr5:2/1/1", "star-cr5:1/1/1", "star-cr5" ] ],
+	"start" : 1535480438,
+	"end" : 1535653818,
+	"description" : "FNAL Primary LHCOPN VLAN 3500"
+  },
+  "es.net-7182" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "lag-1",
+	  "vlan" : 3500
+	}, {
+	  "router" : "cern-513-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 3500
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6001, 6004 ],
+	  "cern-513-cr5" : [ 6004, 6000 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:1/1/1", "bost-cr5:2/1/1", "bost-cr5", "bost-cr5:3/1/1", "amst-cr5:5/1/1", "amst-cr5", "amst-cr5:1/1/1", "cern-513-cr5:5/1/1", "cern-513-cr5" ] ],
+	"start" : 1531405140,
+	"end" : 1720708440,
+	"description" : "FNAL Primary LHCOPN VLAN 3500"
+  },
+  "es.net-7183" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "lag-1",
+	  "vlan" : 3506
+	}, {
+	  "router" : "cern-513-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 3506
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6014 ],
+	  "cern-513-cr5" : [ 6014 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/1/1", "chic-cr5:2/1/1", "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5", "wash-cr5:5/1/1", "cern-513-cr5:1/1/1", "cern-513-cr5" ] ],
+	"start" : 1531405380,
+	"end" : 1720708680,
+	"description" : "FNAL Secondary LHCOPN"
+  },
+  "es.net-7184" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "lag-1",
+	  "vlan" : 3120
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 3120
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6023 ]
+	},
+	"eros" : [ ],
+	"start" : 1531405500,
+	"end" : 1720708800,
+	"description" : "FNAL - ASGC, VLAN 3120, 1G"
+  },
+  "HJFK" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3601
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3601
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7004 ],
+	  "wash-cr5" : [ 7003 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5" ] ],
+	"start" : 1542124833,
+	"end" : 1542137449,
+	"description" : "9a369d15-e0d6-4afd-8b80-62c24db64763"
+  },
+  "es.net-7187" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "lag-1",
+	  "vlan" : 3021
+	}, {
+	  "router" : "sunn-cr5",
+	  "port" : "8/1/1",
+	  "vlan" : 3021
+	} ],
+	"sdps" : {
+	  "sunn-cr5" : [ 6028 ],
+	  "star-cr5" : [ 6028 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/1/1", "chic-cr5:2/1/1", "chic-cr5", "chic-cr5:4/1/1", "nash-cr5:1/1/1", "nash-cr5", "nash-cr5:3/1/1", "hous-cr5:3/1/1", "hous-cr5", "hous-cr5:1/1/1", "elpa-cr5:1/1/1", "elpa-cr5", "elpa-cr5:3/1/1", "sunn-cr5:5/1/1", "sunn-cr5" ] ],
+	"start" : 1531406040,
+	"end" : 1720709340,
+	"description" : "FNAL - UCSD, VLAN 3021, 1G"
+  },
+  "XWPT" : {
+	"endpoints" : [ {
+	  "router" : "sacr-cr5",
+	  "port" : "4/1/1",
+	  "vlan" : 2210
+	}, {
+	  "router" : "sacr-cr5",
+	  "port" : "5/1/1",
+	  "vlan" : 2210
+	} ],
+	"sdps" : { },
+	"eros" : [ ],
+	"start" : 1534445535,
+	"end" : 1534463141,
+	"description" : "deltaId+e46280ee-f30e-4782-9bd0-c01be31a6b89:uuid+3c4a4405-234f-4a09-9fee-86766fd3c40e"
+  },
+  "es.net-7188" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "6/2/1",
+	  "vlan" : 203
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "lag-1",
+	  "vlan" : 203
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6033 ]
+	},
+	"eros" : [ ],
+	"start" : 1531406160,
+	"end" : 1720709460,
+	"description" : "FNAL- UMN-NOVA-B VLAN 203"
+  },
+  "es.net-7189" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "lag-1",
+	  "vlan" : 2549
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "6/2/1",
+	  "vlan" : 2549
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6049 ]
+	},
+	"eros" : [ ],
+	"start" : 1531406280,
+	"end" : 1720709580,
+	"description" : "FNAL - PURDUE, VLAN 2549, 1G"
+  },
+  "FXHC" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3602
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3602
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7008 ],
+	  "wash-cr5" : [ 7008 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5" ] ],
+	"start" : 1540485332,
+	"end" : 1543336232,
+	"description" : "639ea065-11bf-43be-9fec-61db5f2d899d"
+  },
+  "es.net-6776" : {
+	"endpoints" : [ {
+	  "router" : "bost-cr5",
+	  "port" : "10/1/2",
+	  "vlan" : 3603
+	}, {
+	  "router" : "amst-cr5",
+	  "port" : "10/1/1",
+	  "vlan" : 3603
+	} ],
+	"sdps" : {
+	  "amst-cr5" : [ 6126 ],
+	  "bost-cr5" : [ 6126 ]
+	},
+	"eros" : [ [ "bost-cr5", "bost-cr5:3/1/1", "amst-cr5:5/1/1", "amst-cr5" ] ],
+	"start" : 1512671640,
+	"end" : 1638902940,
+	"description" : "BOST_AMST_owamp"
+  },
+  "es.net-6777" : {
+	"endpoints" : [ {
+	  "router" : "bost-cr5",
+	  "port" : "10/2/3",
+	  "vlan" : 3604
+	}, {
+	  "router" : "amst-cr5",
+	  "port" : "10/1/2",
+	  "vlan" : 3604
+	} ],
+	"sdps" : {
+	  "amst-cr5" : [ 6133 ],
+	  "bost-cr5" : [ 6133 ]
+	},
+	"eros" : [ [ "bost-cr5", "bost-cr5:3/1/1", "amst-cr5:5/1/1", "amst-cr5" ] ],
+	"start" : 1512671940,
+	"end" : 1638903240,
+	"description" : "BOST_AMST-bw"
+  },
+  "PF73" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3612
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3612
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7004 ],
+	  "wash-cr5" : [ 7000 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5" ] ],
+	"start" : 1541957830,
+	"end" : 1541958714,
+	"description" : "255bbadd-693f-43f5-a692-e9b550ceb176"
+  },
+  "H2XG" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3608
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3608
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7007 ],
+	  "wash-cr5" : [ 7005 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5" ] ],
+	"start" : 1541871043,
+	"end" : 1541890076,
+	"description" : "05915732-9767-440e-b69b-c1a4e71926ae"
+  },
+  "FNDW" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3619
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3619
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7004 ],
+	  "wash-cr5" : [ 7000 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1542046165,
+	"end" : 1542046276,
+	"description" : "1256ce78-7306-4ee6-b88b-7052ee85c1ce"
+  },
+  "PN74" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 1662
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 1662
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7003, 7002 ],
+	  "chic-cr5" : [ 7002, 7003 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:5/1/1", "chic-cr5:6/2/1", "chic-cr5" ] ],
+	"start" : 1535670371,
+	"end" : 1553789075,
+	"description" : "user=Wenji;vlan=1662;bw=20000Mbps"
+  },
+  "YH2P" : {
+	"endpoints" : [ {
+	  "router" : "eqx-ash-cr5",
+	  "port" : "10/2/4",
+	  "vlan" : 2180
+	}, {
+	  "router" : "ornl-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 2180
+	} ],
+	"sdps" : {
+	  "eqx-ash-cr5" : [ 7006, 7005 ],
+	  "ornl-cr5" : [ 7004, 7003 ]
+	},
+	"eros" : [ [ "ornl-cr5", "ornl-cr5:6/1/1", "atla-cr5:3/1/1", "atla-cr5", "atla-cr5:1/1/1", "wash-cr5:3/1/1", "wash-cr5", "wash-cr5:4/2/1", "eqx-ash-cr5:1/1/1", "eqx-ash-cr5" ] ],
+	"start" : 1535662957,
+	"end" : 1553789075,
+	"description" : "ORNL AZURE to Campus"
+  },
+  "DD93" : {
+	"endpoints" : [ {
+	  "router" : "nash-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 2181
+	}, {
+	  "router" : "eqx-ash-cr5",
+	  "port" : "10/2/4",
+	  "vlan" : 2181
+	} ],
+	"sdps" : {
+	  "eqx-ash-cr5" : [ 7007, 7008 ],
+	  "nash-cr5" : [ 7004, 7003 ]
+	},
+	"eros" : [ [ "eqx-ash-cr5", "eqx-ash-cr5:1/1/1", "wash-cr5:4/2/1", "wash-cr5", "wash-cr5:3/1/1", "atla-cr5:1/1/1", "atla-cr5", "atla-cr5:2/1/1", "nash-cr5:2/1/1", "nash-cr5" ] ],
+	"start" : 1535663554,
+	"end" : 1544123353,
+	"description" : "ORNL AZURE to NASH"
+  },
+  "JDXF" : {
+	"endpoints" : [ {
+	  "router" : "sunn-cr5",
+	  "port" : "2/1/1",
+	  "vlan" : 3601
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3601
+	} ],
+	"sdps" : {
+	  "sunn-cr5" : [ 7007, 7006 ],
+	  "chic-cr5" : [ 7014, 7015 ]
+	},
+	"eros" : [ [ "sunn-cr5", "sunn-cr5:1/1/1", "sacr-cr5:1/1/1", "sacr-cr5", "sacr-cr5:2/1/1", "denv-cr5:2/1/1", "denv-cr5", "denv-cr5:1/1/1", "kans-cr5:2/1/1", "kans-cr5", "kans-cr5:1/1/1", "chic-cr5:3/1/1", "chic-cr5" ] ],
+	"start" : 1540246470,
+	"end" : 1540405324,
+	"description" : "deltaId+dac1afc9-8427-4ed4-85e7-aaa87121a426:uuid+00d3916d-3809-4824-93cd-e710aba2884b"
+  },
+  "GXHF" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3601
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3601
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7006 ],
+	  "wash-cr5" : [ 7004 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5" ] ],
+	"start" : 1542236467,
+	"end" : 1542258027,
+	"description" : "9e24e6f3-da04-428e-a64c-385caa9bef24"
+  },
+  "R2MD" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3498
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3498
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7005, 7004 ],
+	  "wash-cr5" : [ 7000, 7001 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1538487108,
+	"end" : 1538487231,
+	"description" : "deltaId+d9a1057f-e821-4fb0-9aad-dfbbaab8e5e0:uuid+9be1404d-a08c-4aa0-a634-af46c3fb891d"
+  },
+  "YY4P" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3200
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 320
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7003, 7002 ],
+	  "chic-cr5" : [ 7002, 7003 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:2/1/1", "star-cr5:4/1/1", "star-cr5" ] ],
+	"start" : 1534359757,
+	"end" : 1535473036,
+	"description" : "user=Wenji;vlan=3200;bw=1000Mbps"
+  },
+  "CJWZ" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3605
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3605
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7013, 7012 ],
+	  "wash-cr5" : [ 7005, 7004 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:5/1/1", "chic-cr5:6/2/1", "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1539011539,
+	"end" : 1541780664,
+	"description" : "deltaId+995313bd-34d0-4302-a778-7a1a55b2cdd2:uuid+5ec520f5-f19a-4895-a86c-ec683a4b163e"
+  },
+  "DRTF" : {
+	"endpoints" : [ {
+	  "router" : "sunn-cr5",
+	  "port" : "2/1/1",
+	  "vlan" : 3600
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3610
+	} ],
+	"sdps" : {
+	  "sunn-cr5" : [ 7002, 7003 ],
+	  "wash-cr5" : [ 7012, 7013 ]
+	},
+	"eros" : [ [ "sunn-cr5", "sunn-cr5:1/1/1", "sacr-cr5:1/1/1", "sacr-cr5", "sacr-cr5:2/1/1", "denv-cr5:2/1/1", "denv-cr5", "denv-cr5:1/1/1", "kans-cr5:2/1/1", "kans-cr5", "kans-cr5:1/1/1", "chic-cr5:3/1/1", "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1540235505,
+	"end" : 1540236996,
+	"description" : "deltaId+b757fdbe-b9ee-4eef-9947-5d406000fa2c:uuid+1f411bd2-b8f5-4d5c-b79b-5a9669245c28"
+  },
+  "GJKM" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3612
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3612
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7010, 7011 ],
+	  "wash-cr5" : [ 7010, 7011 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5" ] ],
+	"start" : 1540233853,
+	"end" : 1540408644,
+	"description" : "deltaId+89ce911c-811c-4d73-bc8b-5090aa11c9f7:uuid+34bf89a6-bb7c-4150-b706-329f2facc401"
+  },
+  "JGM7" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3619
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3619
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7007 ],
+	  "wash-cr5" : [ 7005 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1542218144,
+	"end" : 1542648986,
+	"description" : "289aa0a7-c3d2-449b-aa70-6f6b9594675e"
+  },
+  "es.net-6274" : {
+	"endpoints" : [ {
+	  "router" : "srs-rt3",
+	  "port" : "ge-0/1/0",
+	  "vlan" : 803
+	}, {
+	  "router" : "srs-rt3",
+	  "port" : "ge-0/0/0",
+	  "vlan" : 803
+	} ],
+	"sdps" : { },
+	"eros" : [ ],
+	"start" : 1551830271,
+	"end" : 1551829189,
+	"description" : "SRS to OSTI VLAN 803 - CHG0030540 - circuit 1 - part 2"
+  },
+  "HP47" : {
+	"endpoints" : [ {
+	  "router" : "sacr-cr5",
+	  "port" : "4/1/1",
+	  "vlan" : 2210
+	}, {
+	  "router" : "sacr-cr5",
+	  "port" : "5/1/1",
+	  "vlan" : 2210
+	} ],
+	"sdps" : { },
+	"eros" : [ ],
+	"start" : 1534463302,
+	"end" : 1534463566,
+	"description" : "deltaId+d796a310-24e5-4159-9686-ad85af426721:uuid+69542e9c-89e7-45e0-b4a7-3325167ec2b6"
+  },
+  "es.net-7122" : {
+	"endpoints" : [ {
+	  "router" : "cern-513-cr5",
+	  "port" : "lag-1",
+	  "vlan" : 2027
+	}, {
+	  "router" : "sunn-cr5",
+	  "port" : "8/1/1",
+	  "vlan" : 1072
+	} ],
+	"sdps" : {
+	  "sunn-cr5" : [ 6034, 6000 ],
+	  "cern-513-cr5" : [ 6001, 6034 ]
+	},
+	"eros" : [ [ "cern-513-cr5", "cern-513-cr5:1/1/1", "wash-cr5:5/1/1", "wash-cr5", "wash-cr5:3/1/1", "atla-cr5:1/1/1", "atla-cr5", "atla-cr5:2/1/1", "nash-cr5:2/1/1", "nash-cr5", "nash-cr5:3/1/1", "hous-cr5:3/1/1", "hous-cr5", "hous-cr5:1/1/1", "elpa-cr5:1/1/1", "elpa-cr5", "elpa-cr5:3/1/1", "sunn-cr5:5/1/1", "sunn-cr5" ] ],
+	"start" : 1528230780,
+	"end" : 1718138880,
+	"description" : "CalTech PacWave to CERN HEP Circuit"
+  },
+  "R9YZ" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3612
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3612
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7004 ],
+	  "wash-cr5" : [ 7000 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5" ] ],
+	"start" : 1541966384,
+	"end" : 1541968175,
+	"description" : "94e2b5ef-6041-4908-af00-7a292a8b22ce"
+  },
+  "es.net-6830" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "8/2/1",
+	  "vlan" : 201
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 201
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 6051 ]
+	},
+	"eros" : [ ],
+	"start" : 1521487800,
+	"end" : 1647719100,
+	"description" : "FNAL- UMN-NOVA-A VLAN 201"
+  },
+  "es.net-6710" : {
+	"endpoints" : [ {
+	  "router" : "bois-cr1",
+	  "port" : "xe-1/2/0",
+	  "vlan" : 3960
+	}, {
+	  "router" : "bois-cr1",
+	  "port" : "xe-7/0/0",
+	  "vlan" : 3960
+	} ],
+	"sdps" : { },
+	"eros" : [ ],
+	"start" : 1510348920,
+	"end" : 1700084220,
+	"description" : "INL to IRON_Commodity"
+  },
+  "NP2D" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3606
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3606
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7016 ],
+	  "chic-cr5" : [ 7010 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/1/1", "chic-cr5:2/1/1", "chic-cr5" ] ],
+	"start" : 1541713237,
+	"end" : 1541714987,
+	"description" : "a0488ed6-7d6b-4729-b9d7-e3fcb021465d"
+  },
+  "XDMY" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3619
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3619
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7007 ],
+	  "wash-cr5" : [ 7005 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5" ] ],
+	"start" : 1542212396,
+	"end" : 1542817016,
+	"description" : "63ef839a-ad28-4d50-992e-81f79149060f"
+  },
+  "es.net-6711" : {
+	"endpoints" : [ {
+	  "router" : "bois-cr1",
+	  "port" : "xe-1/2/0",
+	  "vlan" : 3961
+	}, {
+	  "router" : "bois-cr1",
+	  "port" : "xe-7/0/0",
+	  "vlan" : 3961
+	} ],
+	"sdps" : { },
+	"eros" : [ ],
+	"start" : 1510349040,
+	"end" : 1700084340,
+	"description" : "INL to IRON_Internet2"
+  },
+  "es.net-6712" : {
+	"endpoints" : [ {
+	  "router" : "bois-cr1",
+	  "port" : "xe-1/2/0",
+	  "vlan" : 3962
+	}, {
+	  "router" : "bois-cr1",
+	  "port" : "xe-7/0/0",
+	  "vlan" : 3962
+	} ],
+	"sdps" : { },
+	"eros" : [ ],
+	"start" : 1510349160,
+	"end" : 1700084460,
+	"description" : "INL to IRON_Telehealth"
+  },
+  "es.net-6713" : {
+	"endpoints" : [ {
+	  "router" : "bois-cr1",
+	  "port" : "xe-1/2/0",
+	  "vlan" : 3963
+	}, {
+	  "router" : "bois-cr1",
+	  "port" : "xe-7/0/0",
+	  "vlan" : 3963
+	} ],
+	"sdps" : { },
+	"eros" : [ ],
+	"start" : 1510349220,
+	"end" : 1700084520,
+	"description" : "INL to IRON_High-Performance"
+  },
+  "X2JM" : {
+	"endpoints" : [ {
+	  "router" : "sacr-cr5",
+	  "port" : "4/1/1",
+	  "vlan" : 2205
+	}, {
+	  "router" : "sacr-cr5",
+	  "port" : "5/1/1",
+	  "vlan" : 2205
+	} ],
+	"sdps" : { },
+	"eros" : [ ],
+	"start" : 1535340419,
+	"end" : 1535348915,
+	"description" : "deltaId+93cb3bf3-a2a8-478f-9ed1-2003605aaf6e:uuid+53efd2aa-2417-499c-adb0-79bfcf508d9d"
+  },
+  "F6GP" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3619
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3619
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7006 ],
+	  "wash-cr5" : [ 7000 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/2/1", "aofa-cr5:5/1/1", "aofa-cr5", "aofa-cr5:6/2/1", "wash-cr5:4/1/1", "wash-cr5" ] ],
+	"start" : 1542056293,
+	"end" : 1542056764,
+	"description" : "ad265fff-d4dd-4070-ba05-14da10f07ab8"
+  },
+  "MCM4" : {
+	"endpoints" : [ {
+	  "router" : "sunn-cr5",
+	  "port" : "8/1/1",
+	  "vlan" : 3610
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3610
+	} ],
+	"sdps" : {
+	  "sunn-cr5" : [ 7002 ],
+	  "star-cr5" : [ 7006 ]
+	},
+	"eros" : [ [ "sunn-cr5", "sunn-cr5:5/1/1", "elpa-cr5:3/1/1", "elpa-cr5", "elpa-cr5:1/1/1", "hous-cr5:1/1/1", "hous-cr5", "hous-cr5:3/1/1", "nash-cr5:3/1/1", "nash-cr5", "nash-cr5:4/1/1", "chic-cr5:6/1/1", "chic-cr5", "chic-cr5:6/2/1", "star-cr5:5/1/1", "star-cr5" ] ],
+	"start" : 1542039980,
+	"end" : 1542047342,
+	"description" : "3913cc4f-df30-4c75-9c34-61a40fc19f18"
+  },
+  "NZ6C" : {
+	"endpoints" : [ {
+	  "router" : "sacr-cr5",
+	  "port" : "4/1/1",
+	  "vlan" : 2205
+	}, {
+	  "router" : "sacr-cr5",
+	  "port" : "5/1/1",
+	  "vlan" : 2205
+	} ],
+	"sdps" : { },
+	"eros" : [ ],
+	"start" : 1535268377,
+	"end" : 1535300791,
+	"description" : "deltaId+76962b46-d7fb-4d84-a26a-a0f8e0181dfe:uuid+68a11113-3474-413c-a698-50a769752b2d"
+  },
+  "GH7R" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3611
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3609
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3609
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7004, 7005 ],
+	  "wash-cr5" : [ 7001, 7002 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5", "chic-cr5:6/2/1", "star-cr5:5/1/1", "star-cr5" ], [ "star-cr5", "star-cr5:4/2/1", "aofa-cr5:5/1/1", "aofa-cr5", "aofa-cr5:6/2/1", "wash-cr5:4/1/1", "wash-cr5" ] ],
+	"start" : 1541796969,
+	"end" : 1542321013,
+	"description" : "f4eae4b2-b50b-40ef-9de2-93a0d39ccc38"
+  },
+  "EWKW" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3617
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3617
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7005 ],
+	  "wash-cr5" : [ 7003 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5" ] ],
+	"start" : 1542337231,
+	"end" : 1542340825,
+	"description" : "79855fe7-2365-44d1-ad31-80ff2acf6841"
+  },
+  "CFPM" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3612
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3612
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7008, 7009 ],
+	  "wash-cr5" : [ 7009, 7008 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5" ] ],
+	"start" : 1540414671,
+	"end" : 1540415357,
+	"description" : "deltaId+7f4b9470-f55a-44e8-8c61-614df033bd76:uuid+6b9199d6-0574-43d2-a0cb-d6f83fd63add"
+  },
+  "PR36" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3619
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3619
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7005 ],
+	  "wash-cr5" : [ 7004 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1542061902,
+	"end" : 1542062053,
+	"description" : "8be459e4-895d-4449-9b8a-8094fd707719"
+  },
+  "es.net-7151" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 119
+	}, {
+	  "router" : "cern-773-cr5",
+	  "port" : "lag-1",
+	  "vlan" : 119
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6003, 6058 ],
+	  "cern-773-cr5" : [ 6000, 6058 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:1/1/1", "bost-cr5:2/1/1", "bost-cr5", "bost-cr5:3/1/1", "amst-cr5:5/1/1", "amst-cr5", "amst-cr5:1/1/1", "cern-513-cr5:5/1/1", "cern-513-cr5", "cern-513-cr5:1/2/1", "cern-773-cr5:2/1/1", "cern-773-cr5" ] ],
+	"start" : 1528401180,
+	"end" : 1718648220,
+	"description" : "CERN - MREN"
+  },
+  "es.net-7153" : {
+	"endpoints" : [ {
+	  "router" : "newy-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 3513
+	}, {
+	  "router" : "cern-773-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3513
+	} ],
+	"sdps" : {
+	  "newy-cr5" : [ 6077 ],
+	  "cern-773-cr5" : [ 6077 ]
+	},
+	"eros" : [ [ "newy-cr5", "newy-cr5:4/1/1", "lond-cr5:3/1/1", "lond-cr5", "lond-cr5:1/1/1", "cern-773-cr5:1/1/1", "cern-773-cr5" ] ],
+	"start" : 1528403340,
+	"end" : 1718138280,
+	"description" : "BNL Secondary LHCOPN"
+  },
+  "es.net-7154" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3501
+	}, {
+	  "router" : "cern-773-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3501
+	} ],
+	"sdps" : {
+	  "cern-773-cr5" : [ 6076, 6001 ],
+	  "chic-cr5" : [ 6076, 6000 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:6/1/1", "nash-cr5:4/1/1", "nash-cr5", "nash-cr5:2/1/1", "atla-cr5:2/1/1", "atla-cr5", "atla-cr5:1/1/1", "wash-cr5:3/1/1", "wash-cr5", "wash-cr5:4/1/1", "aofa-cr5:6/2/1", "aofa-cr5", "aofa-cr5:7/2/1", "lond-cr5:5/1/1", "lond-cr5", "lond-cr5:1/1/1", "cern-773-cr5:1/1/1", "cern-773-cr5" ] ],
+	"start" : 1528404480,
+	"end" : 1718139780,
+	"description" : "FNAL Tertiary LHCOPN"
+  },
+  "es.net-7155" : {
+	"endpoints" : [ {
+	  "router" : "aofa-cr5",
+	  "port" : "4/2/1",
+	  "vlan" : 3524
+	}, {
+	  "router" : "cern-773-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3524
+	} ],
+	"sdps" : {
+	  "aofa-cr5" : [ 6044 ],
+	  "cern-773-cr5" : [ 6044 ]
+	},
+	"eros" : [ [ "aofa-cr5", "aofa-cr5:7/2/1", "lond-cr5:5/1/1", "lond-cr5", "lond-cr5:1/1/1", "cern-773-cr5:1/1/1", "cern-773-cr5" ] ],
+	"start" : 1528406160,
+	"end" : 1718141460,
+	"description" : "BNL Primary LHCOPN"
+  },
+  "Y979" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3612
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3612
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3617
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7018, 7017 ],
+	  "chic-cr5" : [ 7008, 7012 ],
+	  "wash-cr5" : [ 7013, 7008 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:6/2/1", "star-cr5:5/1/1", "star-cr5" ], [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5" ], [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5", "chic-cr5:2/1/1", "star-cr5:4/1/1", "star-cr5" ] ],
+	"start" : 1541442610,
+	"end" : 1541442936,
+	"description" : "1ae01eda-8780-4368-a269-e60f24e833ae"
+  },
+  "es.net-4679" : {
+	"endpoints" : [ {
+	  "router" : "sunn-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 116
+	}, {
+	  "router" : "jgi-mr2",
+	  "port" : "xe-2/1/0",
+	  "vlan" : 116
+	} ],
+	"sdps" : {
+	  "sunn-cr5" : [ 6042 ]
+	},
+	"eros" : [ [ "sunn-cr5", "sunn-cr5:1/1/1", "sacr-cr5:1/1/1", "sacr-cr5", "sacr-cr5:10/2/3", "jgi-mr2:xe-2/2/0", "jgi-mr2" ] ],
+	"start" : 1404237960,
+	"end" : 1719858060,
+	"description" : "LBL - JGI, VLAN 116, 9G"
+  },
+  "es.net-7158" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 120
+	}, {
+	  "router" : "cern-773-cr5",
+	  "port" : "lag-1",
+	  "vlan" : 120
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6083, 6005 ],
+	  "cern-773-cr5" : [ 6083, 6002 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:4/2/1", "aofa-cr5:5/1/1", "aofa-cr5", "aofa-cr5:7/2/1", "lond-cr5:5/1/1", "lond-cr5", "lond-cr5:2/1/1", "amst-cr5:2/1/1", "amst-cr5", "amst-cr5:1/1/1", "cern-513-cr5:5/1/1", "cern-513-cr5", "cern-513-cr5:1/2/1", "cern-773-cr5:2/1/1", "cern-773-cr5" ] ],
+	"start" : 1528407120,
+	"end" : 1592257620,
+	"description" : "CERN - Starlight, VLAN 120, 1M"
+  },
+  "TR7P" : {
+	"endpoints" : [ {
+	  "router" : "eqx-ash-cr5",
+	  "port" : "10/2/3",
+	  "vlan" : 2180
+	}, {
+	  "router" : "ornl-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 2180
+	} ],
+	"sdps" : {
+	  "eqx-ash-cr5" : [ 7000, 7001 ],
+	  "ornl-cr5" : [ 7001, 7000 ]
+	},
+	"eros" : [ [ "ornl-cr5", "ornl-cr5:6/1/1", "atla-cr5:3/1/1", "atla-cr5", "atla-cr5:1/1/1", "wash-cr5:3/1/1", "wash-cr5", "wash-cr5:4/2/1", "eqx-ash-cr5:1/1/1", "eqx-ash-cr5" ] ],
+	"start" : 1534864047,
+	"end" : 1534877725,
+	"description" : "ORNL Azure 01"
+  },
+  "es.net-5654" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 1814
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 1814
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 6132 ]
+	},
+	"eros" : [ ],
+	"start" : 1432829220,
+	"end" : 1748451600,
+	"description" : "MREN-ANL-UCHIC-1814-40G"
+  },
+  "DRWY" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3602
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3602
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7006 ],
+	  "wash-cr5" : [ 7006 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5" ] ],
+	"start" : 1542128433,
+	"end" : 1542132022,
+	"description" : "cdaf70cf-f5e0-4a4d-9aec-5caba2fff822"
+  },
+  "WWYJ" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3606
+	}, {
+	  "router" : "sunn-cr5",
+	  "port" : "8/1/1",
+	  "vlan" : 3606
+	} ],
+	"sdps" : {
+	  "sunn-cr5" : [ 7004 ],
+	  "wash-cr5" : [ 7013 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:5/2/1", "nash-cr5:4/2/1", "nash-cr5", "nash-cr5:3/1/1", "hous-cr5:3/1/1", "hous-cr5", "hous-cr5:1/1/1", "elpa-cr5:1/1/1", "elpa-cr5", "elpa-cr5:3/1/1", "sunn-cr5:5/1/1", "sunn-cr5" ] ],
+	"start" : 1541535532,
+	"end" : 1541536597,
+	"description" : "a6502256-e511-4d53-b376-95d1d48c8da3"
+  },
+  "P36N" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "lag-1",
+	  "vlan" : 3506
+	}, {
+	  "router" : "cern-513-cr5",
+	  "port" : "3/1/1",
+	  "vlan" : 3506
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7006 ],
+	  "cern-513-cr5" : [ 7001 ]
+	},
+	"eros" : [ [ "cern-513-cr5", "cern-513-cr5:1/1/1", "wash-cr5:5/1/1", "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5", "chic-cr5:2/1/1", "star-cr5:4/1/1", "star-cr5" ] ],
+	"start" : 1535652545,
+	"end" : 1535654104,
+	"description" : "FNAL Secondary LHCOPN"
+  },
+  "CTNZ" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3619
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3619
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7004 ],
+	  "wash-cr5" : [ 7000 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5" ] ],
+	"start" : 1542058081,
+	"end" : 1542059378,
+	"description" : "eb0b36e8-45b5-4997-a1d4-2c9cf7bfb9c2"
+  },
+  "MCMZ" : {
+	"endpoints" : [ {
+	  "router" : "kans-cr5",
+	  "port" : "4/1/1",
+	  "vlan" : 3025
+	}, {
+	  "router" : "sunn-cr5",
+	  "port" : "9/1/5",
+	  "vlan" : 3025
+	} ],
+	"sdps" : {
+	  "sunn-cr5" : [ 7001, 7000 ],
+	  "kans-cr5" : [ 7001, 7000 ]
+	},
+	"eros" : [ [ "sunn-cr5", "sunn-cr5:1/1/1", "sacr-cr5:1/1/1", "sacr-cr5", "sacr-cr5:2/1/1", "denv-cr5:2/1/1", "denv-cr5", "denv-cr5:1/1/1", "kans-cr5:2/1/1", "kans-cr5" ] ],
+	"start" : 1536886002,
+	"end" : 1553789075,
+	"description" : "GPN - NASA, VLAN 3025, 200M"
+  },
+  "NZHG" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3200
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3200
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7000, 7001 ],
+	  "chic-cr5" : [ 7001, 7000 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:6/2/1", "star-cr5:5/1/1", "star-cr5" ] ],
+	"start" : 1535669794,
+	"end" : 1553789075,
+	"description" : "user=Wenji;vlan=3200;bw=1000Mbps"
+  },
+  "TRWJ" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3611
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3611
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3617
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7017, 7016 ],
+	  "wash-cr5" : [ 7009, 7010 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:4/1/1", "aofa-cr5:6/2/1", "aofa-cr5", "aofa-cr5:5/1/1", "star-cr5:4/2/1", "star-cr5" ] ],
+	"start" : 1541727805,
+	"end" : 1541773214,
+	"description" : "12759517-b7b0-440a-9829-263ae8ad4812"
+  },
+  "TTKJ" : {
+	"endpoints" : [ {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3617
+	}, {
+	  "router" : "wash-cr5",
+	  "port" : "6/1/1",
+	  "vlan" : 3619
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7018, 7019 ],
+	  "wash-cr5" : [ 7011, 7010 ]
+	},
+	"eros" : [ [ "star-cr5", "star-cr5:5/1/1", "chic-cr5:6/2/1", "chic-cr5", "chic-cr5:1/1/1", "wash-cr5:1/1/1", "wash-cr5" ] ],
+	"start" : 1539684983,
+	"end" : 1539692272,
+	"description" : "deltaId+c39a301c-4c13-48a4-8e38-78b824d0152a:uuid+07d62254-4c31-401a-973a-56ff249919ba"
+  },
+  "YH46" : {
+	"endpoints" : [ {
+	  "router" : "wash-cr5",
+	  "port" : "7/1/1",
+	  "vlan" : 3619
+	}, {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3619
+	} ],
+	"sdps" : {
+	  "chic-cr5" : [ 7004 ],
+	  "wash-cr5" : [ 7000 ]
+	},
+	"eros" : [ [ "wash-cr5", "wash-cr5:1/1/1", "chic-cr5:1/1/1", "chic-cr5" ] ],
+	"start" : 1541783409,
+	"end" : 1541912876,
+	"description" : "5e00a5dd-a321-49d7-a12d-0aae687ea6db"
+  },
+  "GMD6" : {
+	"endpoints" : [ {
+	  "router" : "sacr-cr5",
+	  "port" : "5/1/1",
+	  "vlan" : 2205
+	}, {
+	  "router" : "sacr-cr5",
+	  "port" : "4/1/1",
+	  "vlan" : 2205
+	} ],
+	"sdps" : { },
+	"eros" : [ ],
+	"start" : 1534391480,
+	"end" : 1534391688,
+	"description" : "deltaId+c0f4d78c-05e8-4a8a-8545-bd505eab1fba:uuid+26fb95f6-2e94-4ee6-be38-0be146a87ee4"
+  },
+  "Z7PC" : {
+	"endpoints" : [ {
+	  "router" : "sacr-cr5",
+	  "port" : "5/1/1",
+	  "vlan" : 2210
+	}, {
+	  "router" : "sacr-cr5",
+	  "port" : "4/1/1",
+	  "vlan" : 2210
+	} ],
+	"sdps" : { },
+	"eros" : [ ],
+	"start" : 1534391392,
+	"end" : 1534391792,
+	"description" : "deltaId+30d4270d-b540-4694-8e2c-db837025bc52:uuid+97fc343c-7ea2-4932-b332-fe2dc57a6d1a"
+  },
+  "WCPW" : {
+	"endpoints" : [ {
+	  "router" : "chic-cr5",
+	  "port" : "3/2/1",
+	  "vlan" : 3613
+	}, {
+	  "router" : "star-cr5",
+	  "port" : "1/2/1",
+	  "vlan" : 3613
+	} ],
+	"sdps" : {
+	  "star-cr5" : [ 7011 ],
+	  "chic-cr5" : [ 7004 ]
+	},
+	"eros" : [ [ "chic-cr5", "chic-cr5:6/2/1", "star-cr5:5/1/1", "star-cr5" ] ],
+	"start" : 1542045889,
+	"end" : 1542046148,
+	"description" : "771dbceb-7e17-44db-afef-3b28dd553dc5"
+  },
+  "CJJF" : {
+	"endpoints" : [ {
+	  "router" : "sacr-cr5",
+	  "port" : "4/1/1",
+	  "vlan" : 2205
+	}, {
+	  "router" : "sacr-cr5",
+	  "port" : "5/1/1",
+	  "vlan" : 2205
+	} ],
+	"sdps" : { },
+	"eros" : [ ],
+	"start" : 1535812648,
+	"end" : 1535827348,
+	"description" : "deltaId+6ccea2ae-2029-4cc5-bcdd-639fd90deafb:uuid+dfe9a6bb-e681-45ac-ad9b-a013e15528d1"
+  }
+}

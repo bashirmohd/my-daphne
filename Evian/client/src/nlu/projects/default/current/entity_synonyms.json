@@ -1,0 +1,13 @@
+{
+  "argonne national laboratory": "anl",
+  "move": "transfer",
+  "lawrence livermore national laboratory": "llnl",
+  "transfer ": "transfer",
+  "type of file": "type_file",
+  "output path": "output_path",
+  "ames laboratory": "ames",
+  "lawrence berkeley national lab": "lbl",
+  "input path": "input_path",
+  "endpoints": "endpoint",
+  "size of the file": "size_file"
+}

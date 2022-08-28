@@ -1,0 +1,138 @@
+﻿{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "at 3:30pm",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "3:30pm",
+            "entity": "exact_time"
+          }
+        ]
+      },
+      {
+        "text": "at 2:10am",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "2:10am",
+            "entity": "exact_time"
+          }
+        ]
+      },
+      {
+        "text": "at 2pm",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 3,
+            "end": 6,
+            "value": "2pm",
+            "entity": "exact_time"
+          }
+        ]
+      },
+      {
+        "text": "at 4pm",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 3,
+            "end": 6,
+            "value": "4pm",
+            "entity": "exact_time"
+          }
+        ]
+      },
+      {
+        "text": "at 10am",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 3,
+            "end": 7,
+            "value": "10am",
+            "entity": "exact_time"
+          }
+        ]
+      },
+      {
+        "text": "at 2:10am",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "2:10am",
+            "entity": "exact_time"
+          }
+        ]
+      },
+      {
+        "text": "at 3:20pm",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "3:20pm",
+            "entity": "exact_time"
+          }
+        ]
+      },
+      {
+        "text": "at 4:45pm",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "4:45pm",
+            "entity": "exact_time"
+          }
+        ]
+      },
+      {
+        "text": "send it at 10pm",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "10pm",
+            "entity": "exact_time"
+          }
+        ]
+      },
+      {
+        "text": "send it at 2:10am",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 11,
+            "end": 17,
+            "value": "2:10am",
+            "entity": "exact_time"
+          }
+        ]
+      },
+      {
+        "text": "send it at 4:53pm",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 11,
+            "end": 17,
+            "value": "4:53pm",
+            "entity": "exact_time"
+          }
+        ]
+      }
+    ]
+  }
+}

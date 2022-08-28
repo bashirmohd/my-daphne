@@ -1,0 +1,957 @@
+{
+  "data": {
+    "mapTopology": {
+      "edges": [
+        {
+          "name": "AMES--STAR",
+          "ends": [
+            {
+              "id": "457",
+              "name": "AMES"
+            },
+            {
+              "id": "515",
+              "name": "STAR"
+            }
+          ]
+        },
+        {
+          "name": "EQX-ASH--NETL-PGH",
+          "ends": [
+            {
+              "id": "806",
+              "name": "EQX-ASH"
+            },
+            {
+              "id": "818",
+              "name": "NETL-PGH"
+            }
+          ]
+        },
+        {
+          "name": "BOIS--INL",
+          "ends": [
+            {
+              "id": "463",
+              "name": "BOIS"
+            },
+            {
+              "id": "477",
+              "name": "INL"
+            }
+          ]
+        },
+        {
+          "name": "PNNL--PNWG",
+          "ends": [
+            {
+              "id": "503",
+              "name": "PNNL"
+            },
+            {
+              "id": "504",
+              "name": "PNWG"
+            }
+          ]
+        },
+        {
+          "name": "BOIS--PNWG",
+          "ends": [
+            {
+              "id": "463",
+              "name": "BOIS"
+            },
+            {
+              "id": "504",
+              "name": "PNWG"
+            }
+          ]
+        },
+        {
+          "name": "EQX-ASH--EQX-CHI",
+          "ends": [
+            {
+              "id": "806",
+              "name": "EQX-ASH"
+            },
+            {
+              "id": "805",
+              "name": "EQX-CHI"
+            }
+          ]
+        },
+        {
+          "name": "LIGO--PNWG",
+          "ends": [
+            {
+              "id": "486",
+              "name": "LIGO"
+            },
+            {
+              "id": "504",
+              "name": "PNWG"
+            }
+          ]
+        },
+        {
+          "name": "BOST--PSFC",
+          "ends": [
+            {
+              "id": "464",
+              "name": "BOST"
+            },
+            {
+              "id": "506",
+              "name": "PSFC"
+            }
+          ]
+        },
+        {
+          "name": "KANS--KCNSC",
+          "ends": [
+            {
+              "id": "480",
+              "name": "KANS"
+            },
+            {
+              "id": "481",
+              "name": "KCNSC"
+            }
+          ]
+        },
+        {
+          "name": "ATLA--ORAU",
+          "ends": [
+            {
+              "id": "461",
+              "name": "ATLA"
+            },
+            {
+              "id": "499",
+              "name": "ORAU"
+            }
+          ]
+        },
+        {
+          "name": "BOST--LNS",
+          "ends": [
+            {
+              "id": "464",
+              "name": "BOST"
+            },
+            {
+              "id": "488",
+              "name": "LNS"
+            }
+          ]
+        },
+        {
+          "name": "AMST--BOST",
+          "ends": [
+            {
+              "id": "458",
+              "name": "AMST"
+            },
+            {
+              "id": "464",
+              "name": "BOST"
+            }
+          ]
+        },
+        {
+          "name": "NERSC--SUNN",
+          "ends": [
+            {
+              "id": "493",
+              "name": "NERSC"
+            },
+            {
+              "id": "516",
+              "name": "SUNN"
+            }
+          ]
+        },
+        {
+          "name": "JLAB--WASH",
+          "ends": [
+            {
+              "id": "479",
+              "name": "JLAB"
+            },
+            {
+              "id": "517",
+              "name": "WASH"
+            }
+          ]
+        },
+        {
+          "name": "ATLA--SRS",
+          "ends": [
+            {
+              "id": "461",
+              "name": "ATLA"
+            },
+            {
+              "id": "513",
+              "name": "SRS"
+            }
+          ]
+        },
+        {
+          "name": "HOUS--PANTEX",
+          "ends": [
+            {
+              "id": "475",
+              "name": "HOUS"
+            },
+            {
+              "id": "502",
+              "name": "PANTEX"
+            }
+          ]
+        },
+        {
+          "name": "GA--SUNN",
+          "ends": [
+            {
+              "id": "474",
+              "name": "GA"
+            },
+            {
+              "id": "516",
+              "name": "SUNN"
+            }
+          ]
+        },
+        {
+          "name": "FNAL--STAR",
+          "ends": [
+            {
+              "id": "473",
+              "name": "FNAL"
+            },
+            {
+              "id": "515",
+              "name": "STAR"
+            }
+          ]
+        },
+        {
+          "name": "LBNL--NPS",
+          "ends": [
+            {
+              "id": "485",
+              "name": "LBNL"
+            },
+            {
+              "id": "496",
+              "name": "NPS"
+            }
+          ]
+        },
+        {
+          "name": "HOUS--KANS",
+          "ends": [
+            {
+              "id": "475",
+              "name": "HOUS"
+            },
+            {
+              "id": "480",
+              "name": "KANS"
+            }
+          ]
+        },
+        {
+          "name": "ATLA--ETTP",
+          "ends": [
+            {
+              "id": "461",
+              "name": "ATLA"
+            },
+            {
+              "id": "472",
+              "name": "ETTP"
+            }
+          ]
+        },
+        {
+          "name": "CHIC--KANS",
+          "ends": [
+            {
+              "id": "466",
+              "name": "CHIC"
+            },
+            {
+              "id": "480",
+              "name": "KANS"
+            }
+          ]
+        },
+        {
+          "name": "ALBQ--DENV",
+          "ends": [
+            {
+              "id": "456",
+              "name": "ALBQ"
+            },
+            {
+              "id": "467",
+              "name": "DENV"
+            }
+          ]
+        },
+        {
+          "name": "JGI--SACR",
+          "ends": [
+            {
+              "id": "478",
+              "name": "JGI"
+            },
+            {
+              "id": "507",
+              "name": "SACR"
+            }
+          ]
+        },
+        {
+          "name": "LSVN--SUNN",
+          "ends": [
+            {
+              "id": "490",
+              "name": "LSVN"
+            },
+            {
+              "id": "516",
+              "name": "SUNN"
+            }
+          ]
+        },
+        {
+          "name": "LBNL--SUNN",
+          "ends": [
+            {
+              "id": "485",
+              "name": "LBNL"
+            },
+            {
+              "id": "516",
+              "name": "SUNN"
+            }
+          ]
+        },
+        {
+          "name": "ALBQ--KCNSC-NM",
+          "ends": [
+            {
+              "id": "456",
+              "name": "ALBQ"
+            },
+            {
+              "id": "482",
+              "name": "KCNSC-NM"
+            }
+          ]
+        },
+        {
+          "name": "CHIC--STAR",
+          "ends": [
+            {
+              "id": "466",
+              "name": "CHIC"
+            },
+            {
+              "id": "515",
+              "name": "STAR"
+            }
+          ]
+        },
+        {
+          "name": "DENV--LSVN",
+          "ends": [
+            {
+              "id": "467",
+              "name": "DENV"
+            },
+            {
+              "id": "490",
+              "name": "LSVN"
+            }
+          ]
+        },
+        {
+          "name": "DENV--NREL",
+          "ends": [
+            {
+              "id": "467",
+              "name": "DENV"
+            },
+            {
+              "id": "497",
+              "name": "NREL"
+            }
+          ]
+        },
+        {
+          "name": "ATLA--Y12",
+          "ends": [
+            {
+              "id": "461",
+              "name": "ATLA"
+            },
+            {
+              "id": "518",
+              "name": "Y12"
+            }
+          ]
+        },
+        {
+          "name": "DENV--KANS",
+          "ends": [
+            {
+              "id": "467",
+              "name": "DENV"
+            },
+            {
+              "id": "480",
+              "name": "KANS"
+            }
+          ]
+        },
+        {
+          "name": "DENV--NGA-SW",
+          "ends": [
+            {
+              "id": "467",
+              "name": "DENV"
+            },
+            {
+              "id": "495",
+              "name": "NGA-SW"
+            }
+          ]
+        },
+        {
+          "name": "LSVN--NNSS",
+          "ends": [
+            {
+              "id": "490",
+              "name": "LSVN"
+            },
+            {
+              "id": "498",
+              "name": "NNSS"
+            }
+          ]
+        },
+        {
+          "name": "HOUS--NASH",
+          "ends": [
+            {
+              "id": "475",
+              "name": "HOUS"
+            },
+            {
+              "id": "492",
+              "name": "NASH"
+            }
+          ]
+        },
+        {
+          "name": "PNWG--SACR",
+          "ends": [
+            {
+              "id": "504",
+              "name": "PNWG"
+            },
+            {
+              "id": "507",
+              "name": "SACR"
+            }
+          ]
+        },
+        {
+          "name": "CHIC--WASH",
+          "ends": [
+            {
+              "id": "466",
+              "name": "CHIC"
+            },
+            {
+              "id": "517",
+              "name": "WASH"
+            }
+          ]
+        },
+        {
+          "name": "LLNL--SUNN",
+          "ends": [
+            {
+              "id": "487",
+              "name": "LLNL"
+            },
+            {
+              "id": "516",
+              "name": "SUNN"
+            }
+          ]
+        },
+        {
+          "name": "LOND--NEWY",
+          "ends": [
+            {
+              "id": "489",
+              "name": "LOND"
+            },
+            {
+              "id": "494",
+              "name": "NEWY"
+            }
+          ]
+        },
+        {
+          "name": "CERN-513--CERN-773",
+          "ends": [
+            {
+              "id": "788",
+              "name": "CERN-513"
+            },
+            {
+              "id": "787",
+              "name": "CERN-773"
+            }
+          ]
+        },
+        {
+          "name": "ATLA--NASH",
+          "ends": [
+            {
+              "id": "461",
+              "name": "ATLA"
+            },
+            {
+              "id": "492",
+              "name": "NASH"
+            }
+          ]
+        },
+        {
+          "name": "AMST--CERN-513",
+          "ends": [
+            {
+              "id": "458",
+              "name": "AMST"
+            },
+            {
+              "id": "788",
+              "name": "CERN-513"
+            }
+          ]
+        },
+        {
+          "name": "CERN--CERN-513",
+          "ends": [
+            {
+              "id": "465",
+              "name": "CERN"
+            },
+            {
+              "id": "788",
+              "name": "CERN-513"
+            }
+          ]
+        },
+        {
+          "name": "ANL--STAR",
+          "ends": [
+            {
+              "id": "459",
+              "name": "ANL"
+            },
+            {
+              "id": "515",
+              "name": "STAR"
+            }
+          ]
+        },
+        {
+          "name": "PPPL--WASH",
+          "ends": [
+            {
+              "id": "505",
+              "name": "PPPL"
+            },
+            {
+              "id": "517",
+              "name": "WASH"
+            }
+          ]
+        },
+        {
+          "name": "SLAC--SUNN",
+          "ends": [
+            {
+              "id": "509",
+              "name": "SLAC"
+            },
+            {
+              "id": "516",
+              "name": "SUNN"
+            }
+          ]
+        },
+        {
+          "name": "ATLA--ORNL",
+          "ends": [
+            {
+              "id": "461",
+              "name": "ATLA"
+            },
+            {
+              "id": "500",
+              "name": "ORNL"
+            }
+          ]
+        },
+        {
+          "name": "BOST--STAR",
+          "ends": [
+            {
+              "id": "464",
+              "name": "BOST"
+            },
+            {
+              "id": "515",
+              "name": "STAR"
+            }
+          ]
+        },
+        {
+          "name": "ALBQ--LANL",
+          "ends": [
+            {
+              "id": "456",
+              "name": "ALBQ"
+            },
+            {
+              "id": "483",
+              "name": "LANL"
+            }
+          ]
+        },
+        {
+          "name": "NASH--WASH",
+          "ends": [
+            {
+              "id": "492",
+              "name": "NASH"
+            },
+            {
+              "id": "517",
+              "name": "WASH"
+            }
+          ]
+        },
+        {
+          "name": "EQX-ASH--WASH",
+          "ends": [
+            {
+              "id": "806",
+              "name": "EQX-ASH"
+            },
+            {
+              "id": "517",
+              "name": "WASH"
+            }
+          ]
+        },
+        {
+          "name": "AMST--LOND",
+          "ends": [
+            {
+              "id": "458",
+              "name": "AMST"
+            },
+            {
+              "id": "489",
+              "name": "LOND"
+            }
+          ]
+        },
+        {
+          "name": "AOFA--STAR",
+          "ends": [
+            {
+              "id": "460",
+              "name": "AOFA"
+            },
+            {
+              "id": "515",
+              "name": "STAR"
+            }
+          ]
+        },
+        {
+          "name": "AOFA--WASH",
+          "ends": [
+            {
+              "id": "460",
+              "name": "AOFA"
+            },
+            {
+              "id": "517",
+              "name": "WASH"
+            }
+          ]
+        },
+        {
+          "name": "ELPA--HOUS",
+          "ends": [
+            {
+              "id": "471",
+              "name": "ELPA"
+            },
+            {
+              "id": "475",
+              "name": "HOUS"
+            }
+          ]
+        },
+        {
+          "name": "ELPA--SUNN",
+          "ends": [
+            {
+              "id": "471",
+              "name": "ELPA"
+            },
+            {
+              "id": "516",
+              "name": "SUNN"
+            }
+          ]
+        },
+        {
+          "name": "ALBQ--SNLA",
+          "ends": [
+            {
+              "id": "456",
+              "name": "ALBQ"
+            },
+            {
+              "id": "510",
+              "name": "SNLA"
+            }
+          ]
+        },
+        {
+          "name": "SACR--SUNN",
+          "ends": [
+            {
+              "id": "507",
+              "name": "SACR"
+            },
+            {
+              "id": "516",
+              "name": "SUNN"
+            }
+          ]
+        },
+        {
+          "name": "CERN-773--LOND",
+          "ends": [
+            {
+              "id": "787",
+              "name": "CERN-773"
+            },
+            {
+              "id": "489",
+              "name": "LOND"
+            }
+          ]
+        },
+        {
+          "name": "CHIC--NASH",
+          "ends": [
+            {
+              "id": "466",
+              "name": "CHIC"
+            },
+            {
+              "id": "492",
+              "name": "NASH"
+            }
+          ]
+        },
+        {
+          "name": "CERN-513--WASH",
+          "ends": [
+            {
+              "id": "788",
+              "name": "CERN-513"
+            },
+            {
+              "id": "517",
+              "name": "WASH"
+            }
+          ]
+        },
+        {
+          "name": "DENV--PNWG",
+          "ends": [
+            {
+              "id": "467",
+              "name": "DENV"
+            },
+            {
+              "id": "504",
+              "name": "PNWG"
+            }
+          ]
+        },
+        {
+          "name": "EQX-ASH--NETL-MGN",
+          "ends": [
+            {
+              "id": "806",
+              "name": "EQX-ASH"
+            },
+            {
+              "id": "817",
+              "name": "NETL-MGN"
+            }
+          ]
+        },
+        {
+          "name": "AOFA--LOND",
+          "ends": [
+            {
+              "id": "460",
+              "name": "AOFA"
+            },
+            {
+              "id": "489",
+              "name": "LOND"
+            }
+          ]
+        },
+        {
+          "name": "BNL--NEWY",
+          "ends": [
+            {
+              "id": "462",
+              "name": "BNL"
+            },
+            {
+              "id": "494",
+              "name": "NEWY"
+            }
+          ]
+        },
+        {
+          "name": "CHIC--EQX-CHI",
+          "ends": [
+            {
+              "id": "466",
+              "name": "CHIC"
+            },
+            {
+              "id": "805",
+              "name": "EQX-CHI"
+            }
+          ]
+        },
+        {
+          "name": "ATLA--WASH",
+          "ends": [
+            {
+              "id": "461",
+              "name": "ATLA"
+            },
+            {
+              "id": "517",
+              "name": "WASH"
+            }
+          ]
+        },
+        {
+          "name": "BOIS--DENV",
+          "ends": [
+            {
+              "id": "463",
+              "name": "BOIS"
+            },
+            {
+              "id": "467",
+              "name": "DENV"
+            }
+          ]
+        },
+        {
+          "name": "AOFA--NEWY",
+          "ends": [
+            {
+              "id": "460",
+              "name": "AOFA"
+            },
+            {
+              "id": "494",
+              "name": "NEWY"
+            }
+          ]
+        },
+        {
+          "name": "BOST--NEWY",
+          "ends": [
+            {
+              "id": "464",
+              "name": "BOST"
+            },
+            {
+              "id": "494",
+              "name": "NEWY"
+            }
+          ]
+        },
+        {
+          "name": "ALBQ--ELPA",
+          "ends": [
+            {
+              "id": "456",
+              "name": "ALBQ"
+            },
+            {
+              "id": "471",
+              "name": "ELPA"
+            }
+          ]
+        },
+        {
+          "name": "DENV--SACR",
+          "ends": [
+            {
+              "id": "467",
+              "name": "DENV"
+            },
+            {
+              "id": "507",
+              "name": "SACR"
+            }
+          ]
+        },
+        {
+          "name": "SACR--SNLL",
+          "ends": [
+            {
+              "id": "507",
+              "name": "SACR"
+            },
+            {
+              "id": "511",
+              "name": "SNLL"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

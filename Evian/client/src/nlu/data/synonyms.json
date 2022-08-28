@@ -1,0 +1,10 @@
+{
+  "rasa_nlu_data": {
+    "entity_synonyms": [
+      {
+        "value": "transfer",
+        "synonyms": ["move"]
+      }
+    ]
+  }
+}

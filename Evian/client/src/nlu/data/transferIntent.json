@@ -1,0 +1,174 @@
+﻿{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "I would like to transfer a file",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 16,
+            "end": 24,
+            "value": "transfer",
+            "entity": "intent"
+          }
+        ]
+      },
+      {
+        "text": "I wonder if i can transfer a file",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 18,
+            "end": 26,
+            "value": "transfer",
+            "entity": "intent"
+          }
+        ]
+      },
+      {
+        "text": "I am planning an experiment. Can i transfer a file ?",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 35,
+            "end": 43,
+            "value": "transfer",
+            "entity": "intent"
+          }
+        ]
+      },
+      {
+        "text": "Can i transfer a file please ?",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 6,
+            "end": 14,
+            "value": "transfer",
+            "entity": "intent"
+          }
+        ]
+      },
+      {
+        "text": "I would like to transfer a folder ",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 16,
+            "end": 25,
+            "value": "transfer",
+            "entity": "intent"
+          }
+        ]
+      },
+      {
+        "text": "transfer please",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "transfer",
+            "entity": "intent"
+          }
+        ]
+      },
+      {
+        "text": "transfer",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "transfer",
+            "entity": "intent"
+          }
+        ]
+      },
+      {
+        "text": "I would like to move a file",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 16,
+            "end": 20,
+            "value": "transfer",
+            "entity": "intent"
+          }
+        ]
+      },
+      {
+        "text": "I wonder if i can move a file",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 18,
+            "end": 22,
+            "value": "transfer",
+            "entity": "intent"
+          }
+        ]
+      },
+      {
+        "text": "I am planning an experiment. Can i move a file ?",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 35,
+            "end": 39,
+            "value": "transfer",
+            "entity": "intent"
+          }
+        ]
+      },
+      {
+        "text": "Can i move a file please ?",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 6,
+            "end": 10,
+            "value": "transfer",
+            "entity": "intent"
+          }
+        ]
+      },
+      {
+        "text": "I would like to move a folder ",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 16,
+            "end": 20,
+            "value": "transfer",
+            "entity": "intent"
+          }
+        ]
+      },
+      {
+        "text": "move please",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "transfer",
+            "entity": "intent"
+          }
+        ]
+      },
+      {
+        "text": "move",
+        "intent": "intent_transfer",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "transfer",
+            "entity": "intent"
+          }
+        ]
+      }
+    ]
+  }
+}

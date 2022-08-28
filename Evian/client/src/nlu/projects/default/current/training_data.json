@@ -1,0 +1,1354 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 14, 
+            "value": "Human Genotype", 
+            "entity": "type_file"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "Human Genotype"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 7, 
+            "value": "Climate", 
+            "entity": "type_file"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "Climate"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 4, 
+            "end": 6, 
+            "value": "MB", 
+            "entity": "unit_size_file"
+          }, 
+          {
+            "start": 0, 
+            "end": 3, 
+            "value": "100", 
+            "entity": "size_file"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "100 MB"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 4, 
+            "end": 6, 
+            "value": "KB", 
+            "entity": "unit_size_file"
+          }, 
+          {
+            "start": 0, 
+            "end": 3, 
+            "value": "100", 
+            "entity": "size_file"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "100 KB"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 4, 
+            "end": 6, 
+            "value": "GB", 
+            "entity": "unit_size_file"
+          }, 
+          {
+            "start": 0, 
+            "end": 3, 
+            "value": "100", 
+            "entity": "size_file"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "100 GB"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 4, 
+            "end": 6, 
+            "value": "TB", 
+            "entity": "unit_size_file"
+          }, 
+          {
+            "start": 0, 
+            "end": 3, 
+            "value": "100", 
+            "entity": "size_file"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "100 TB"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 4, 
+            "end": 6, 
+            "value": "PB", 
+            "entity": "unit_size_file"
+          }, 
+          {
+            "start": 0, 
+            "end": 3, 
+            "value": "100", 
+            "entity": "size_file"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "100 PB"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 4, 
+            "value": "10.4", 
+            "entity": "size_file"
+          }, 
+          {
+            "start": 5, 
+            "end": 7, 
+            "value": "TB", 
+            "entity": "unit_size_file"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "10.4 TB"
+      }, 
+      {
+        "text": "What are the endpoints available ?", 
+        "intent": "get_endpoints"
+      }, 
+      {
+        "text": "From where can I send this file ?", 
+        "intent": "get_endpoints"
+      }, 
+      {
+        "text": "To where can I send this file ?", 
+        "intent": "get_endpoints"
+      }, 
+      {
+        "text": "What are the endpoints ?", 
+        "intent": "get_endpoints"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 3, 
+            "end": 9, 
+            "value": "3:30pm", 
+            "entity": "exact_time"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "at 3:30pm"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 3, 
+            "end": 9, 
+            "value": "2:10am", 
+            "entity": "exact_time"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "at 2:10am"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 3, 
+            "end": 6, 
+            "value": "2pm", 
+            "entity": "exact_time"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "at 2pm"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 3, 
+            "end": 6, 
+            "value": "4pm", 
+            "entity": "exact_time"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "at 4pm"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 3, 
+            "end": 7, 
+            "value": "10am", 
+            "entity": "exact_time"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "at 10am"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 3, 
+            "end": 9, 
+            "value": "2:10am", 
+            "entity": "exact_time"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "at 2:10am"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 3, 
+            "end": 9, 
+            "value": "3:20pm", 
+            "entity": "exact_time"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "at 3:20pm"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 3, 
+            "end": 9, 
+            "value": "4:45pm", 
+            "entity": "exact_time"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "at 4:45pm"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 11, 
+            "end": 15, 
+            "value": "10pm", 
+            "entity": "exact_time"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "send it at 10pm"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 11, 
+            "end": 17, 
+            "value": "2:10am", 
+            "entity": "exact_time"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "send it at 2:10am"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 11, 
+            "end": 17, 
+            "value": "4:53pm", 
+            "entity": "exact_time"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "send it at 4:53pm"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 29, 
+            "end": 32, 
+            "value": "lbl", 
+            "entity": "endpoint_output"
+          }, 
+          {
+            "start": 10, 
+            "end": 18, 
+            "value": "transfer", 
+            "entity": "intent"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "I want to transfer a file to lbl"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 10, 
+            "end": 18, 
+            "value": "transfer", 
+            "entity": "intent"
+          }, 
+          {
+            "start": 29, 
+            "end": 59, 
+            "value": "lbl", 
+            "entity": "endpoint_output"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "i want to transfer a file to Lawrence Berkeley National Lab"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 10, 
+            "end": 18, 
+            "value": "transfer", 
+            "entity": "intent"
+          }, 
+          {
+            "start": 31, 
+            "end": 34, 
+            "value": "anl", 
+            "entity": "endpoint_input"
+          }, 
+          {
+            "start": 38, 
+            "end": 41, 
+            "value": "lbl", 
+            "entity": "endpoint_output"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "i want to transfer a file from anl to lbl"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 35, 
+            "end": 38, 
+            "value": "anl", 
+            "entity": "endpoint_output"
+          }, 
+          {
+            "start": 16, 
+            "end": 24, 
+            "value": "transfer", 
+            "entity": "intent"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "i would like to transfer a file to anl"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 27, 
+            "end": 31, 
+            "value": "13.3", 
+            "entity": "size_file"
+          }, 
+          {
+            "start": 32, 
+            "end": 34, 
+            "value": "TB", 
+            "entity": "unit_size_file"
+          }, 
+          {
+            "start": 43, 
+            "end": 46, 
+            "value": "lbl", 
+            "entity": "endpoint_output"
+          }, 
+          {
+            "start": 16, 
+            "end": 24, 
+            "value": "transfer", 
+            "entity": "intent"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "i would like to transfer a 13.3 TB file to lbl"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 31, 
+            "end": 46, 
+            "value": "ames", 
+            "entity": "endpoint_input"
+          }, 
+          {
+            "start": 10, 
+            "end": 18, 
+            "value": "transfer", 
+            "entity": "intent"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "i want to transfer a file from Ames Laboratory"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 32, 
+            "end": 36, 
+            "value": "ames", 
+            "entity": "endpoint_output"
+          }, 
+          {
+            "start": 21, 
+            "end": 25, 
+            "value": "22.1", 
+            "entity": "size_file"
+          }, 
+          {
+            "start": 26, 
+            "end": 28, 
+            "value": "PB", 
+            "entity": "unit_size_file"
+          }, 
+          {
+            "start": 10, 
+            "end": 18, 
+            "value": "transfer", 
+            "entity": "intent"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "i want to transfer a 22.1 PB to ames"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 37, 
+            "end": 52, 
+            "value": "Ames Laboratory", 
+            "entity": "endpoint_output"
+          }, 
+          {
+            "start": 21, 
+            "end": 25, 
+            "value": "13.2", 
+            "entity": "size_file"
+          }, 
+          {
+            "start": 26, 
+            "end": 28, 
+            "value": "TB", 
+            "entity": "unit_size_file"
+          }, 
+          {
+            "start": 10, 
+            "end": 18, 
+            "value": "transfer", 
+            "entity": "intent"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "i want to transfer a 13.2 TB file to Ames Laboratory"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 44, 
+            "end": 71, 
+            "value": "anl", 
+            "entity": "endpoint_output"
+          }, 
+          {
+            "start": 16, 
+            "end": 24, 
+            "value": "transfer", 
+            "entity": "intent"
+          }, 
+          {
+            "start": 27, 
+            "end": 30, 
+            "value": "0.2", 
+            "entity": "size_file"
+          }, 
+          {
+            "start": 31, 
+            "end": 33, 
+            "value": "TB", 
+            "entity": "unit_size_file"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "i would like to transfer a 0.2 TB file from Argonne National Laboratory"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 42, 
+            "end": 48, 
+            "value": "3:10pm", 
+            "entity": "exact_time"
+          }, 
+          {
+            "start": 27, 
+            "end": 30, 
+            "value": "230", 
+            "entity": "unit_size_file"
+          }, 
+          {
+            "start": 31, 
+            "end": 33, 
+            "value": "KB", 
+            "entity": "unit_size_file"
+          }, 
+          {
+            "start": 16, 
+            "end": 24, 
+            "value": "transfer", 
+            "entity": "intent"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "i would like to transfer a 230 KB file at 3:10pm"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 29, 
+            "end": 32, 
+            "value": "1am", 
+            "entity": "exact_time"
+          }, 
+          {
+            "start": 38, 
+            "end": 42, 
+            "value": "ames", 
+            "entity": "endpoint_input"
+          }, 
+          {
+            "start": 46, 
+            "end": 49, 
+            "value": "lbl", 
+            "entity": "endpoint_output"
+          }, 
+          {
+            "start": 10, 
+            "end": 18, 
+            "value": "transfer", 
+            "entity": "intent"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "i want to transfer a file at 1am from ames to lbl"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 27, 
+            "end": 30, 
+            "value": "2.1", 
+            "entity": "size_file"
+          }, 
+          {
+            "start": 31, 
+            "end": 33, 
+            "value": "TB", 
+            "entity": "unit_size_file"
+          }, 
+          {
+            "start": 44, 
+            "end": 47, 
+            "value": "anl", 
+            "entity": "endpoint_input"
+          }, 
+          {
+            "start": 51, 
+            "end": 54, 
+            "value": "lbl", 
+            "entity": "endpoint_output"
+          }, 
+          {
+            "start": 58, 
+            "end": 61, 
+            "value": "2pm", 
+            "entity": "exact_time"
+          }, 
+          {
+            "start": 16, 
+            "end": 24, 
+            "value": "transfer", 
+            "entity": "intent"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "i would like to transfer a 2.1 TB file from anl to lbl at 2pm"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 29, 
+            "end": 36, 
+            "value": "10:45am", 
+            "entity": "exact_time"
+          }, 
+          {
+            "start": 40, 
+            "end": 43, 
+            "value": "anl", 
+            "entity": "endpoint_output"
+          }, 
+          {
+            "start": 10, 
+            "end": 18, 
+            "value": "transfer", 
+            "entity": "intent"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "i want to transfer a file at 10:45am to anl"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 102, 
+            "end": 108, 
+            "value": "3:30pm", 
+            "entity": "exact_time"
+          }, 
+          {
+            "start": 19, 
+            "end": 23, 
+            "value": "22.2", 
+            "entity": "size_file"
+          }, 
+          {
+            "start": 24, 
+            "end": 26, 
+            "value": "TB", 
+            "entity": "unit_size_file"
+          }, 
+          {
+            "start": 37, 
+            "end": 64, 
+            "value": "anl", 
+            "entity": "endpoint_input"
+          }, 
+          {
+            "start": 68, 
+            "end": 98, 
+            "value": "lbl", 
+            "entity": "endpoint_output"
+          }
+        ], 
+        "text": "i want to transfer 22.2 TB file from Argonne National Laboratory to Lawrence Berkeley National Lab at 3:30pm"
+      }, 
+      {
+        "text": "i want to set a connection", 
+        "intent": "intent_connection"
+      }, 
+      {
+        "text": "i would like to be connected with a scientist", 
+        "intent": "intent_connection"
+      }, 
+      {
+        "text": "Connection please", 
+        "intent": "intent_connection"
+      }, 
+      {
+        "text": "Can you set a connection please ?", 
+        "intent": "intent_connection"
+      }, 
+      {
+        "text": "i want to be connected with another scientific site", 
+        "intent": "intent_connection"
+      }, 
+      {
+        "text": "i want to see my intents", 
+        "intent": "intent_show"
+      }, 
+      {
+        "text": "i would like to see my intents", 
+        "intent": "intent_show"
+      }, 
+      {
+        "text": "Show me my intents", 
+        "intent": "intent_show"
+      }, 
+      {
+        "text": "What are my intents ?", 
+        "intent": "intent_show"
+      }, 
+      {
+        "text": "My intents please", 
+        "intent": "intent_show"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 35, 
+            "end": 38, 
+            "value": "5pm", 
+            "entity": "exact_time"
+          }, 
+          {
+            "start": 16, 
+            "end": 24, 
+            "value": "transfer", 
+            "entity": "intent"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "i would like to transfer a file at 5pm"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 16, 
+            "end": 20, 
+            "value": "transfer", 
+            "entity": "intent"
+          }, 
+          {
+            "start": 31, 
+            "end": 37, 
+            "value": "5:10am", 
+            "entity": "exact_time"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "i would like to move a file at 5:10am"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 10, 
+            "end": 18, 
+            "value": "transfer", 
+            "entity": "intent"
+          }, 
+          {
+            "start": 35, 
+            "end": 41, 
+            "value": "1:10pm", 
+            "entity": "exact_time"
+          }, 
+          {
+            "start": 21, 
+            "end": 23, 
+            "value": "14", 
+            "entity": "size_file"
+          }, 
+          {
+            "start": 24, 
+            "end": 26, 
+            "value": "MB", 
+            "entity": "unit_size_file"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "i want to transfer a 14 MB file at 1:10pm"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 37, 
+            "end": 44, 
+            "value": "10:45am", 
+            "entity": "exact_time"
+          }, 
+          {
+            "start": 23, 
+            "end": 25, 
+            "value": "17", 
+            "entity": "size_file"
+          }, 
+          {
+            "start": 26, 
+            "end": 28, 
+            "value": "TB", 
+            "entity": "unit_size_file"
+          }, 
+          {
+            "start": 18, 
+            "end": 22, 
+            "value": "move", 
+            "entity": "intent"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "i wonder if i can move 17 TB file at 10:45am"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 46, 
+            "end": 52, 
+            "value": "4:10pm", 
+            "entity": "exact_time"
+          }, 
+          {
+            "start": 27, 
+            "end": 35, 
+            "value": "transfer", 
+            "entity": "intent"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "For a experiment I need to transfer a file at 4:10pm"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 21, 
+            "end": 25, 
+            "value": "13.3", 
+            "entity": "size_file"
+          }, 
+          {
+            "start": 26, 
+            "end": 28, 
+            "value": "KB", 
+            "entity": "unit_size_file"
+          }, 
+          {
+            "start": 10, 
+            "end": 18, 
+            "value": "transfer", 
+            "entity": "intent"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "i need to transfer a 13.3 KB file please"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 21, 
+            "end": 25, 
+            "value": "12.2", 
+            "entity": "size_file"
+          }, 
+          {
+            "start": 26, 
+            "end": 28, 
+            "value": "TB", 
+            "entity": "unit_size_file"
+          }, 
+          {
+            "start": 10, 
+            "end": 18, 
+            "value": "transfer", 
+            "entity": "intent"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "i want to transfer a 12.2 TB file"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 16, 
+            "end": 24, 
+            "value": "transfer", 
+            "entity": "intent"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "I would like to transfer a file"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 18, 
+            "end": 26, 
+            "value": "transfer", 
+            "entity": "intent"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "I wonder if i can transfer a file"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 35, 
+            "end": 43, 
+            "value": "transfer", 
+            "entity": "intent"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "I am planning an experiment. Can i transfer a file ?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 6, 
+            "end": 14, 
+            "value": "transfer", 
+            "entity": "intent"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "Can i transfer a file please ?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 16, 
+            "end": 25, 
+            "value": "transfer", 
+            "entity": "intent"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "I would like to transfer a folder "
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 8, 
+            "value": "transfer", 
+            "entity": "intent"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "transfer please"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 8, 
+            "value": "transfer", 
+            "entity": "intent"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "transfer"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 16, 
+            "end": 20, 
+            "value": "transfer", 
+            "entity": "intent"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "I would like to move a file"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 18, 
+            "end": 22, 
+            "value": "transfer", 
+            "entity": "intent"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "I wonder if i can move a file"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 35, 
+            "end": 39, 
+            "value": "transfer", 
+            "entity": "intent"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "I am planning an experiment. Can i move a file ?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 6, 
+            "end": 10, 
+            "value": "transfer", 
+            "entity": "intent"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "Can i move a file please ?"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 16, 
+            "end": 20, 
+            "value": "transfer", 
+            "entity": "intent"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "I would like to move a folder "
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 4, 
+            "value": "transfer", 
+            "entity": "intent"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "move please"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 4, 
+            "value": "transfer", 
+            "entity": "intent"
+          }
+        ], 
+        "intent": "intent_transfer", 
+        "text": "move"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 21, 
+            "end": 33, 
+            "value": "type_file", 
+            "entity": "modfication"
+          }
+        ], 
+        "intent": "intent_modification", 
+        "text": "i want to change the type of file"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 21, 
+            "end": 37, 
+            "value": "size_file", 
+            "entity": "modfication"
+          }
+        ], 
+        "intent": "intent_modification", 
+        "text": "i want to change the size of the file"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 17, 
+            "end": 26, 
+            "value": "endpoint", 
+            "entity": "modfication"
+          }
+        ], 
+        "intent": "intent_modification", 
+        "text": "i want to change endpoints"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 27, 
+            "end": 38, 
+            "value": "output_path", 
+            "entity": "modfication"
+          }
+        ], 
+        "intent": "intent_modification", 
+        "text": "i would like to change the output path"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 21, 
+            "end": 31, 
+            "value": "input_path", 
+            "entity": "modfication"
+          }
+        ], 
+        "intent": "intent_modification", 
+        "text": "i want to change the input path"
+      }, 
+      {
+        "text": "Hello", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "goodbye", 
+        "intent": "goodbye"
+      }, 
+      {
+        "text": "hey", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "hello", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "hi", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "heya", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "howdy", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "hey there", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "bye", 
+        "intent": "goodbye"
+      }, 
+      {
+        "text": "goodbye", 
+        "intent": "goodbye"
+      }, 
+      {
+        "text": "bye bye", 
+        "intent": "goodbye"
+      }, 
+      {
+        "text": "see ya", 
+        "intent": "goodbye"
+      }, 
+      {
+        "text": "see you later", 
+        "intent": "goodbye"
+      }, 
+      {
+        "text": "No", 
+        "intent": "intent_deny"
+      }, 
+      {
+        "text": "Nop", 
+        "intent": "intent_deny"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 5, 
+            "end": 9, 
+            "value": "ames", 
+            "entity": "endpoint_input"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "from ames"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 5, 
+            "end": 20, 
+            "value": "ames", 
+            "entity": "endpoint_input"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "from Ames Laboratory"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 3, 
+            "end": 7, 
+            "value": "ames", 
+            "entity": "endpoint_output"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "to ames"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 3, 
+            "end": 18, 
+            "value": "ames", 
+            "entity": "endpoint_output"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "to Ames Laboratory"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 5, 
+            "end": 8, 
+            "value": "anl", 
+            "entity": "endpoint_input"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "from anl"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 5, 
+            "end": 32, 
+            "value": "anl", 
+            "entity": "endpoint_output"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "from Argonne National Laboratory"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 3, 
+            "end": 6, 
+            "value": "anl", 
+            "entity": "endpoint_output"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "to anl"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 3, 
+            "end": 30, 
+            "value": "anl", 
+            "entity": "endpoint_output"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "to Argonne National Laboratory"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 5, 
+            "end": 8, 
+            "value": "lbl", 
+            "entity": "endpoint_input"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "from lbl"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 5, 
+            "end": 35, 
+            "value": "lbl", 
+            "entity": "endpoint_input"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "from Lawrence Berkeley National Lab"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 3, 
+            "end": 6, 
+            "value": "lbl", 
+            "entity": "endpoint_output"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "to lbl"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 3, 
+            "end": 33, 
+            "value": "lbl", 
+            "entity": "endpoint_output"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "to Lawrence Berkeley National Lab"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 5, 
+            "end": 9, 
+            "value": "llnl", 
+            "entity": "endpoint_input"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "from llnl"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 5, 
+            "end": 43, 
+            "value": "llnl", 
+            "entity": "endpoint_input"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "from Lawrence Livermore National Laboratory"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 3, 
+            "end": 7, 
+            "value": "llnl", 
+            "entity": "endpoint_output"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "to llnl"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 3, 
+            "end": 41, 
+            "value": "llnl", 
+            "entity": "endpoint_output"
+          }
+        ], 
+        "intent": "inform", 
+        "text": "to Lawrence Livermore National Laboratory"
+      }
+    ], 
+    "entity_synonyms": [
+      {
+        "synonyms": [
+          "move"
+        ], 
+        "value": "transfer"
+      }
+    ], 
+    "regex_features": []
+  }
+}

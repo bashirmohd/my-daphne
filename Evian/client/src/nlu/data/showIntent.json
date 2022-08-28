@@ -1,0 +1,31 @@
+﻿{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "i want to see my intents",
+        "intent": "intent_show",
+        "entities": []
+      },
+      {
+        "text": "i would like to see my intents",
+        "intent": "intent_show",
+        "entities": []
+      },
+      {
+        "text": "Show me my intents",
+        "intent": "intent_show",
+        "entities": []
+      },
+      {
+        "text": "What are my intents ?",
+        "intent": "intent_show",
+        "entities": []
+      },
+      {
+        "text": "My intents please",
+        "intent": "intent_show",
+        "entities": []
+      }
+    ]
+  }
+}

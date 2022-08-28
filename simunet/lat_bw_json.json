@@ -1,0 +1,43 @@
+{
+  "data": {
+    "mapTopology": {
+      "nodes": [
+        {
+          "name": "SRC",
+          "x": 75.0,
+          "y": 85.0
+        },
+        {
+          "name": "DST",
+          "x": 100.0,
+          "y": 50.0
+        }
+        ]
+        , 
+        "edges":[
+          {
+           "name":"HLHB",
+            "BW":10,
+            "Lat": 3
+          },
+          {
+            "name":"LLHB",
+            "BW":10,
+            "Lat": 1
+          },
+          {
+            "name":"HLLB",
+            "BW":8,
+            "Lat": 3
+          },
+          {
+            "name":"LLLB",
+            "BW":8,
+            "Lat": 1
+          }
+          ]
+    }
+  
+  }
+  
+}

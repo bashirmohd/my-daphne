@@ -1,0 +1,27 @@
+Code Review (Kunal):
+
+Multi-step prediction 2,
+
+
+Multi-step predcition 15 minutes in future
+
+removing anomaly <15 around may 15th
+
+
+
+add features for hours/minutes/ didnt help
+
+not sliding window, use cut windows, skipped values to prevent overfitting
+leads to less trainign window
+model trains within 30 minutes
+
+seq-to seq learning, aggregation of max and min, applying to network data, finding anomalies without thresholds, more dynamic,
+
+running it on GPU? GCP
+clone into GCP, 
+
+false positives/negatives, mean square 
+MSE error
+
+
+20009359935
