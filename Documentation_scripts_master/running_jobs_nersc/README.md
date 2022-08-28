@@ -6,11 +6,11 @@
         password: PASSWORD + OTP
 
 <p align="center">
-<img src="https://github.com/esnet/daphne/blob/master/Documentation_scripts_master/running_jobs_nersc/figures/login.png" width="90%" height="90%" title="login">
+<img src="https://github.com/bashirmohd/my-daphne/blob/main/Documentation_scripts_master/running_jobs_nersc/figures/login.png" width="90%" height="90%" title="login">
 <p>
 
 <p align="center">
-<img src="https://github.com/esnet/daphne/blob/master/Documentation_scripts_master/running_jobs_nersc/figures/password.png" width="90%" height="90%" title="password">
+<img src="https://github.com/bashirmohd/my-daphne/blob/main/Documentation_scripts_master/running_jobs_nersc/figures/password.png" width="90%" height="90%" title="password">
 <p>
 
 * To obtain your remote directory path, type the following on Cori.
@@ -18,7 +18,7 @@
         pwd
 
 <p align="center">
-<img src="https://github.com/esnet/daphne/blob/master/Documentation_scripts_master/running_jobs_nersc/figures/path.png" width="90%" height="90%" title="path">
+<img src="https://github.com/bashirmohd/my-daphne/blob/main/Documentation_scripts_master/running_jobs_nersc/figures/path.png" width="90%" height="90%" title="path">
 <p>
         
 * To Transfer a 'folder/file' from your local directory(Your Computer) to your remote directory on Cori, run the following:
@@ -66,11 +66,11 @@
         squeue | grep mohammed
     
 <p align="center">
-<img src="https://github.com/esnet/daphne/blob/master/Documentation_scripts_master/running_jobs_nersc/figures/sbatch%20.png" width="90%" height="90%" title="sbatch">
+<img src="https://github.com/bashirmohd/my-daphne/blob/main/Documentation_scripts_master/running_jobs_nersc/figures/sbatch%20.png" width="90%" height="90%" title="sbatch">
 <p>
         
 <p align="center">
-<img src="https://github.com/esnet/daphne/blob/master/Documentation_scripts_master/running_jobs_nersc/figures/squeue_job_number.png" width="90%" height="90%" title="squeue">
+<img src="https://github.com/bashirmohd/my-daphne/blob/main/Documentation_scripts_master/running_jobs_nersc/figures/squeue_job_number.png" width="90%" height="90%" title="squeue">
 <p>
  
  
@@ -79,7 +79,7 @@
         squeue -j 30331136
  
 <p align="center">
-<img src="https://github.com/esnet/daphne/blob/master/Documentation_scripts_master/running_jobs_nersc/figures/salloc.png" width="90%" height="90%" title="salloc">
+<img src="https://github.com/bashirmohd/my-daphne/blob/main/Documentation_scripts_master/running_jobs_nersc/figures/salloc.png" width="90%" height="90%" title="salloc">
 <p>
    
    
@@ -90,7 +90,7 @@
   * Notice the State has changed from PENDING to RUNNING. This means your job is running.
   
 <p align="center">
-<img src="https://github.com/esnet/daphne/blob/master/Documentation_scripts_master/running_jobs_nersc/figures/salloc_running.png" width="90%" height="90%" title="job_running">
+<img src="https://github.com/bashirmohd/my-daphne/blob/main/Documentation_scripts_master/running_jobs_nersc/figures/salloc_running.png" width="90%" height="90%" title="job_running">
 <p>
     
 
@@ -101,7 +101,7 @@
         module load esslurm
         
 <p align="center">
-<img src="https://github.com/esnet/daphne/blob/master/Documentation_scripts_master/running_jobs_nersc/figures/module_load_gpu.png" width="90%" height="90%" title="esslurm">
+<img src="https://github.com/bashirmohd/my-daphne/blob/main/Documentation_scripts_master/running_jobs_nersc/figures/module_load_gpu.png" width="90%" height="90%" title="esslurm">
 <p>
         
   * Then login to your GPU node by typing the following:   
@@ -109,7 +109,7 @@
         salloc -C gpu -N 1 -t 01:00:00 -c 10 --gres=gpu:1
 
 <p align="center">
-<img src="https://github.com/esnet/daphne/blob/master/Documentation_scripts_master/running_jobs_nersc/figures/gpu_login.png" width="90%" height="90%" title="gpu_login">
+<img src="https://github.com/bashirmohd/my-daphne/blob/main/Documentation_scripts_master/running_jobs_nersc/figures/gpu_login.png" width="90%" height="90%" title="gpu_login">
 <p>
     
  
@@ -118,5 +118,5 @@
         srun nvidia-smi
         
  <p align="center">
-<img src="https://github.com/esnet/daphne/blob/master/Documentation_scripts_master/running_jobs_nersc/figures/check_gpu_specs.png" width="90%" height="90%" title="gpu_specs">
+<img src="https://github.com/bashirmohd/my-daphne/blob/main/Documentation_scripts_master/running_jobs_nersc/figures/check_gpu_specs.png" width="90%" height="90%" title="gpu_specs">
 <p>
